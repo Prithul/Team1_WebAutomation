@@ -112,4 +112,7 @@ public class CommonAPI {
         System.out.println("Current Page Title: " + driver.getTitle());
     }
 
+    //click
+
+
 }
