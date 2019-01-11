@@ -8,6 +8,6 @@ public class TestHomeCNN extends CommonAPI {
     @Test
     public void test2() {
 
-        getCurrentURL();
+       // getCurrentURL();
     }
 }

@@ -14,9 +14,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+
 public class CommonAPI {
 
     public WebDriver driver = null;
+
 
     @AfterMethod
     public void cleanUp(){
@@ -26,6 +28,22 @@ public class CommonAPI {
     @Parameters({"url"})
     @BeforeMethod
     public void setUp(String url){
+<<<<<<< HEAD
+        //driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
+
+        //Create prefs map to store all preferences
+        Map<String, Object> prefs = new HashMap<String, Object>();
+
+        //Put this into prefs map to switch off browser notification
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+
+        //Create chrome options to set this prefs
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("prefs", prefs);
+
+        //Now initialize chrome driver with chrome options which will switch off this browser notification on the chrome browser
+=======
         // change your setProperty
         System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
@@ -33,11 +51,14 @@ public class CommonAPI {
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
+>>>>>>> origin/Dev
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(400, TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
+
     }
+
 
     //type
     public void typeOnCss(String locator, String value){
@@ -102,5 +123,8 @@ public class CommonAPI {
 
         System.out.println("Current Page Title: " + driver.getTitle());
     }
+
+    //click
+
 
 }
