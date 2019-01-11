@@ -10,7 +10,7 @@ public class DBConnectTest {
         String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
         db = new ConnectDB();
         db.dbConnect(path);
-        db.readDataBase(path);
+        //db.readDataBase(path);
 
 
     }
