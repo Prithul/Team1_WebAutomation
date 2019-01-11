@@ -13,7 +13,11 @@
 
     <test name = "Amazon Home">
         <classes>
-            <class name="tests.TestHomeAmazon"/>
+            <class name="tests.TestSearchPageAmazon"/>
+            <!--<class name="tests.TestHomeAmazon"/>-->
+            <!--<class name="tests.TestSignInSignOutAmazon"/>-->
+            <!--<class name="tests.TestSearchAmazon"/>-->
+            <!--<class name="tests.TestSearchPageAmazon"/>-->
         </classes>
     </test>
 
