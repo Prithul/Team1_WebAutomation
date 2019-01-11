@@ -5,9 +5,13 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
@@ -24,7 +28,12 @@ public class CommonAPI {
     public void setUp(String url){
         // change your setProperty
         System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
+        Map<String, Object> prefs = new HashMap<String, Object>();
+        prefs.put("profile.default_content_setting_values.notifications", 2);
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("prefs", prefs);
+        driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(400, TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
