@@ -25,9 +25,13 @@ public class HomePageTest extends CommonAPI {
             //Initialize elements by using PageFactory
             page.GetInstance(HomePage.class).goCnn();
 
-
+            page.GetInstance(HomePage.class).
+                    gotoSearchPage();
+            page.GetInstance(HomePage.class).goCnn();
             page.GetInstance(HomePage.class).
                     goToNavPage();
+
+
 //
 //            //*************ASSERTIONS***********************
 //            Thread.sleep(500); //It is better to use explicit wait here.
