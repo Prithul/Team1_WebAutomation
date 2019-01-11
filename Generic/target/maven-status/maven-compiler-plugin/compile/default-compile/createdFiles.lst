@@ -1,1 +1,3 @@
 base\CommonAPI.class
+util\ConnectDB.class
+util\DBConnectTest.class
