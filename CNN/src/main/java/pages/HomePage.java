@@ -17,20 +17,22 @@ public class HomePage extends BasePage {
 
     //*********Web Elements By Using Page Factory*********
     //
-    @FindBy(how = How.CLASS_NAME, using = "btnSignIn")
-    public WebElement signInButton;
+    @FindBy(how = How.CLASS_NAME, using = "nav-menu__hamburger")
+    public WebElement navPageButton;
 
     //*********Page Methods*********
     //Go to Homepage
-    public void goToN11 (){
+    public void goCnn (){
         driver.get(baseURL);
+        driver.manage().window().maximize();
     }
 
-    //Go to LoginPage
-//    public LoginPage goToLoginPage (){
-//        click(signInButton);
-//        //I want to chain LoginPage's methods so I return LoginPage by initializing its elements
-//        return new PageFactory().initElements(driver,LoginPage.class);
-//    }
+    //Go to navPage
+    public NavPage goToNavPage (){
+       click(navPageButton);
+
+        //I want to chain LoginPage's methods so I return LoginPage by initializing its elements
+        return new PageFactory().initElements(driver,NavPage.class);
+  }
 
 }

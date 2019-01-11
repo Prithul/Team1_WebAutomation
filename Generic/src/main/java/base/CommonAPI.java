@@ -14,9 +14,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+
 public class CommonAPI {
 
     public WebDriver driver = null;
+
 
     @AfterMethod
     public void cleanUp(){
