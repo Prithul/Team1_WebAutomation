@@ -9,7 +9,7 @@ public class DBConnectTest {
     public static void main(String[] args)throws Exception {
         String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
         db = new ConnectDB();
-        db.dbConnect(path);
+        db.connectToSqlDatabase(path);
         //db.readDataBase(path);
 
 

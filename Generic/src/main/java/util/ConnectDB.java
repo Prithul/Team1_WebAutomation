@@ -3,6 +3,7 @@ package util;
 
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.Properties;
 public class ConnectDB {
     private Connection connect = null;
     private Statement statement = null;
-    private PreparedStatement preparedStatement = null;
+    private PreparedStatement ps = null;
     private ResultSet resultSet = null;
     List<String> list = new ArrayList<String>();
 
@@ -31,7 +32,7 @@ public class ConnectDB {
     }
 
     //Connect to Database
-    public void dbConnect(String path) throws Exception{
+    public void connectToSqlDatabase(String path) throws Exception{
         Properties prop = loadPropertiesFile(path);
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
         String url = prop.getProperty("MYSQLJDBC.url");
@@ -45,39 +46,55 @@ public class ConnectDB {
 
     }
 
-    public List<String> readDataBase(String path) throws Exception {
+    public List<String> readDataBase(String path, String tableName, String columnName)throws Exception{
+        List<String> data = new ArrayList<String>();
 
         try {
-
-            dbConnect(path);
-            // Statements allow to issue SQL queries to the database
+            connectToSqlDatabase(path);
             statement = connect.createStatement();
-            // Result set get the result of the SQL query
-            resultSet = statement
-                    .executeQuery("select * from DataToBeSearched");
-            getResultSetData(resultSet);
-        } catch (Exception e) {
+            resultSet = statement.executeQuery("select * from " + tableName);
+            data = getResultSetData(resultSet, columnName);
+        } catch (ClassNotFoundException e) {
             throw e;
-        } finally {
+        }finally{
             close();
         }
-
-        return list;
+        return data;
     }
     public void queryDatabase(){
 
     }
 
-    private List<String> getResultSetData(ResultSet resultSet) throws SQLException {
-
-        while (resultSet.next()) {
-            String itemName = resultSet.getString("item_name");
-
-            list.add(itemName);
-
+    private List<String> getResultSetData(ResultSet resultSet2, String columnName) throws SQLException {
+        List<String> dataList = new ArrayList<String>();
+        while(resultSet2.next()){
+            String itemName = resultSet2.getString(columnName);
+            dataList.add(itemName);
         }
+        return dataList;
+    }
 
-        return list;
+    public void insertDataFromArrayToSqlTable(String path, int [] ArrayData, String tableName, String columnName) throws Exception
+    {
+        try {
+            connectToSqlDatabase(path);
+            ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
+            ps.executeUpdate();
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`SortingNumbers` bigint(20) DEFAULT NULL,  PRIMARY KEY (`ID`) );");
+            ps.executeUpdate();
+            for(int n=0; n<ArrayData.length; n++){
+                ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
+                ps.setInt(1,ArrayData[n]);
+                ps.executeUpdate();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
     private void writeResultSetToConsole(ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
