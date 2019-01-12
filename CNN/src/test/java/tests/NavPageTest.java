@@ -1,4 +1,6 @@
 package tests;
+import org.openqa.selenium.WebElement;
+import pages.NavPage;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +9,8 @@ import pages.HomePage;
 import pages.NavPage;
 import pages.PageGenerator;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class NavPageTest extends CommonAPI {
@@ -16,35 +20,21 @@ public class NavPageTest extends CommonAPI {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         PageGenerator page = new PageGenerator(driver);
+        page.GetInstance(HomePage.class).goCnn();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        page.GetInstance(HomePage.class).goToNavPage();
+        List<WebElement> list = page.GetInstance(NavPage.class).navigationArrayList();
+        for(int i=0; i<list.size(); i++) {
+            list.get(i).click();
+            page.GetInstance(HomePage.class).goToNavPage();
+            //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        }
+        //page.GetInstance(NavPage.class).storeNavListToDb();
+        //List<String> list = page.GetInstance(NavPage.class).readNavListFromDb();
+        //page.GetInstance(NavPage.class).US.click();
+        //page.GetInstance(NavPage.class).health.click();
 
 
-        //*************PAGE METHODS WITH JAVA GENERICS********************
-        //Open HomePage
-        //Initialize elements by using PageFactory
 
-
-        page.GetInstance(NavPage.class).health.click();
-        page.GetInstance(NavPage.class).entertainment.click();
-
-
-//
-//            //*************ASSERTIONS***********************
-//            Thread.sleep(500); //It is better to use explicit wait here.
-//            page.GetInstance(LoginPage.class).verifyLoginPassword(("E-posta adresiniz veya şifreniz hatalı"));
-//        }
-
-//        @Test (priority = 1)
-//        public void invalidLoginTest_EmptyUserEmptyPassword () throws InterruptedException {
-//            //*************PAGE METHODS WITH JAVA GENERICS********************
-//            //Open N11 HomePage
-//            page.GetInstance(HomePage.class).goToN11();
-//
-//            //Method Chaining (Go to Login Page and then LoginToN11)
-//            page.GetInstance(HomePage.class).goToLoginPage().loginToN11("","");
-//
-//            //*************ASSERTIONS***********************
-//            Thread.sleep(500); //It is better to use explicit wait here.
-//            page.GetInstance(LoginPage.class).verifyLoginUserName("Lütfen e-posta adresinizi girin.");
-//            page.GetInstance(LoginPage.class).verifyLoginPassword("Bu alanın doldurulması zorunludur.");
     }
 }
