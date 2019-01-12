@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
 
 
     @AfterMethod
@@ -29,19 +29,20 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(String url){
 
-        // change your setProperty
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
+       //  driver = new ChromeDriver();
+      // System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
+
+        //change your setProperty
+        System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
+      //System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(400, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
-
     }
 
 
@@ -72,7 +73,7 @@ public class CommonAPI {
             }
         }
     }
-    public void typeOnElementNEnter(String locator, String value){
+    public static void typeOnElementNEnter(String locator, String value){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         }catch(Exception ex1) {
@@ -94,7 +95,7 @@ public class CommonAPI {
         driver.findElement(By.id(locator)).clear();
     }
 
-    public void navigateBack(){
+    public static void navigateBack(){
         driver.navigate().back();
     }
 
