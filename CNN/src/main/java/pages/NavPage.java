@@ -3,6 +3,10 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class NavPage extends BasePage {
 
@@ -10,39 +14,61 @@ public class NavPage extends BasePage {
         super(driver);
     }
 
-
-
-
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[1]/a")
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--us > a")
     public WebElement US;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[2]/a")
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--world > a")
     public WebElement world;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[3]/a")
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--politics > a")
     public WebElement politics;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[4]/a")
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--tech > a")
     public WebElement tech;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[5]/a")
+    @FindBy(how = How.CLASS_NAME, using = "nav-menu__img-health")
     public WebElement health;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[6]/a")
+    @FindBy(xpath = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--entertainment > a > img")
     public WebElement entertainment;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[7]/a")
-    public WebElement living;
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--business > a")
+    public WebElement business;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[8]/a")
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--travel > a > img")
     public WebElement travel;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[9]/a")
-    public WebElement money;
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--style > a > img")
+    public WebElement style;
 
-    @FindBy(xpath = ".//*[@id='nav-header']/nav/div/div[4]/ul/li[1]/div/ul/li[10]/a")
-    public WebElement sports;
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--bleacher > a > img")
+    public WebElement br;
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--videos > a")
+    public WebElement videos;
 
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--opinions > a")
+    public WebElement opinion;
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
+    public WebElement coupons;
+
+     public List<String> navigationList(){
+        List<String> navList = new ArrayList<String>();
+       navList.add("US");
+        navList.add("world");
+        navList.add("politics");
+        navList.add("tech");
+        navList.add("health");
+        navList.add("entertainment");
+        navList.add("business");
+        navList.add("travel");
+        navList.add("style");
+        navList.add("br");
+        navList.add("videos");
+        navList.add("opinion");
+        navList.add("coupons");
+
+       return navList;
+    }
 
     public WebElement clickTech(){
         return new NavPage(driver).tech;
