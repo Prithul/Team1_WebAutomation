@@ -28,7 +28,11 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+<<<<<<< HEAD
         </dependency>
+=======
+          </dependency>
+>>>>>>> 21ff02c49db6a39452ad9882e03086b50e01607e
     </dependencies>
 
 </project>

@@ -1,10 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: tests.TestHomeAmazon
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.547 sec <<< FAILURE!
 setUp(tests.TestHomeAmazon)  Time elapsed: 0.24 sec  <<< FAILURE!
 org.testng.TestNGException: 
 Parameter 'url' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+=======
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.91 sec <<< FAILURE!
+setUp(tests.TestHomeAmazon)  Time elapsed: 0.516 sec  <<< FAILURE!
+org.testng.TestNGException: 
+Parameter 'url' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+>>>>>>> 21ff02c49db6a39452ad9882e03086b50e01607e
 	at org.testng.internal.Parameters.createParams(Parameters.java:290)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -33,7 +41,11 @@ Parameter 'url' is required by BeforeMethod on method setUp but has not been mar
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<<<<<<< HEAD
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+=======
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+>>>>>>> 21ff02c49db6a39452ad9882e03086b50e01607e
 	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
 	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
