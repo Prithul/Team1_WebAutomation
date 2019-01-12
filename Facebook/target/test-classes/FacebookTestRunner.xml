@@ -13,7 +13,9 @@
 
     <test name = "FaceBook Home">
         <classes>
-            <class name="tests.TestHomeFacebook"/>
+            <class name="tests.DatabaseSearchFriends"/>
+            <!--<class name="tests.TestFrontPage"/>-->
+            <!--<class name="tests.DatabaseSearchFriendsk"/>-->
         </classes>
     </test>
 

@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
 
     @AfterMethod
     public void cleanUp(){
@@ -66,7 +66,7 @@ public class CommonAPI {
             }
         }
     }
-    public void typeOnElementNEnter(String locator, String value){
+    public static void typeOnElementNEnter(String locator, String value){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         }catch(Exception ex1) {
