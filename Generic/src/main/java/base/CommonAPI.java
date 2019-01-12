@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
 
 
     @AfterMethod
@@ -28,35 +28,22 @@ public class CommonAPI {
     @Parameters({"url"})
     @BeforeMethod
     public void setUp(String url){
-<<<<<<< HEAD
-        //driver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
 
-        //Create prefs map to store all preferences
-        Map<String, Object> prefs = new HashMap<String, Object>();
+       //  driver = new ChromeDriver();
+      // System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
 
-        //Put this into prefs map to switch off browser notification
-        prefs.put("profile.default_content_setting_values.notifications", 2);
-
-        //Create chrome options to set this prefs
-        ChromeOptions options = new ChromeOptions();
-        options.setExperimentalOption("prefs", prefs);
-
-        //Now initialize chrome driver with chrome options which will switch off this browser notification on the chrome browser
-=======
-        // change your setProperty
+        //change your setProperty
         System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
+      //System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
+
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("prefs", prefs);
->>>>>>> origin/Dev
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(400, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(200, TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
-
     }
 
 
@@ -87,7 +74,7 @@ public class CommonAPI {
             }
         }
     }
-    public void typeOnElementNEnter(String locator, String value){
+    public static void typeOnElementNEnter(String locator, String value){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         }catch(Exception ex1) {
@@ -109,7 +96,7 @@ public class CommonAPI {
         driver.findElement(By.id(locator)).clear();
     }
 
-    public void navigateBack(){
+    public static void navigateBack(){
         driver.navigate().back();
     }
 
