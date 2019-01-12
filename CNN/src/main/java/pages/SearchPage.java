@@ -40,7 +40,7 @@ public class SearchPage extends CommonAPI{
         getSubmitButtonWebElement().click();
     }
     public void clearInput(){
-        driver.findElement(By.className("cnn-search__clear")).click();
+        driver.findElement(By.className("icon icon--close")).click();
     }
     public void searchItemsAndSubmitButton()throws IOException {
         List<String> list = getItemValue();
