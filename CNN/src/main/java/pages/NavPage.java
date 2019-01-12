@@ -4,13 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import util.ConnectDB;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class NavPage extends BasePage {
 
-    public NavPage(WebDriver driver){
+    public List<String> navList = new ArrayList<String>();
+     public NavPage(WebDriver driver){
         super(driver);
     }
 
@@ -51,9 +53,9 @@ public class NavPage extends BasePage {
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
     public WebElement coupons;
 
-     public List<String> navigationList(){
-        List<String> navList = new ArrayList<String>();
-       navList.add("US");
+     public void navigationList(){
+        //List<String> navList = new ArrayList<String>();
+        navList.add("US");
         navList.add("world");
         navList.add("politics");
         navList.add("tech");
@@ -67,8 +69,42 @@ public class NavPage extends BasePage {
         navList.add("opinion");
         navList.add("coupons");
 
-       return navList;
+       //return navList;
     }
+    public void storeNavListToDb() {
+        ConnectDB db = new ConnectDB();
+
+        String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
+       try {
+           db.connectToSqlDatabase(path);
+       }catch (Exception e) {
+           System.out.println("Database connection Problem:  " + e);
+       }
+       try {
+           db.insertStringDataFromArrayListToSqlTable(path, navList, "Navtb", "navItem");
+       }catch (Exception e){
+           System.out.println("NavList Insertion probnem: "+e );
+       }
+
+        //db.readDataBase(path);
+    }
+
+    public void readNavListFromDb() {
+        ConnectDB db = new ConnectDB();
+
+        String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
+        try {
+            db.connectToSqlDatabase(path);
+        }catch (Exception e) {
+            System.out.println("Database connection Problem:  " + e);
+        }
+        try {
+           navList= db.readDataBase(path, "Navtb", "navItem");
+        }catch (Exception e){
+            System.out.println("NavList reading probnem: "+e );
+        }
+
+        }
 
     public WebElement clickTech(){
         return new NavPage(driver).tech;
