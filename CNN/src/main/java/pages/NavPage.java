@@ -7,14 +7,13 @@ import org.openqa.selenium.support.How;
 import util.ConnectDB;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class NavPage extends BasePage {
 
-    public List<String> navList = new ArrayList<String>();
-     public NavPage(WebDriver driver){
-        super(driver);
-    }
+     public Map<WebElement,String> navList = new HashMap< WebElement,String>();
 
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--us > a")
     public WebElement US;
@@ -53,27 +52,50 @@ public class NavPage extends BasePage {
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
     public WebElement coupons;
 
+    public NavPage(WebDriver driver){
+        super(driver);
+    }
+
      public void navigationList(){
         //List<String> navList = new ArrayList<String>();
-        navList.add("US");
-        navList.add("world");
-        navList.add("politics");
-        navList.add("tech");
-        navList.add("health");
-        navList.add("entertainment");
-        navList.add("business");
-        navList.add("travel");
-        navList.add("style");
-        navList.add("br");
-        navList.add("videos");
-        navList.add("opinion");
-        navList.add("coupons");
+        navList.put(US,"US");
+        navList.put(world,"world");
+        navList.put(politics,"politics");
+        navList.put(tech,"tech");
+        navList.put(health,"health");
+        navList.put(entertainment,"entertainment");
+        navList.put(business,"business");
+        navList.put(travel,"travel");
+        navList.put(style,"style");
+        navList.put(br,"br");
+        navList.put(videos,"videos");
+        navList.put(opinion,"opinion");
+        navList.put(coupons,"coupons");
 
-       //return navList;
+
     }
+    public List<WebElement> navigationArrayList(){
+        List<WebElement> list = new ArrayList<WebElement>();
+        list.add(US);
+        list.add(world);
+        list.add(politics);
+        list.add(tech);
+        list.add(health);
+        list.add(entertainment);
+        list.add(business);
+        list.add(travel);
+        list.add(style);
+        list.add(br);
+        list.add(videos);
+        list.add(opinion);
+        list.add(coupons);
+  return list;
+
+    }
+
     public void storeNavListToDb() {
         ConnectDB db = new ConnectDB();
-
+        List<String> list = null;  // later
         String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
        try {
            db.connectToSqlDatabase(path);
@@ -81,7 +103,7 @@ public class NavPage extends BasePage {
            System.out.println("Database connection Problem:  " + e);
        }
        try {
-           db.insertStringDataFromArrayListToSqlTable(path, navList, "Navtb", "navItem");
+           db.insertStringDataFromArrayListToSqlTable(path, list, "Navtb", "navItem");
        }catch (Exception e){
            System.out.println("NavList Insertion probnem: "+e );
        }
@@ -89,8 +111,9 @@ public class NavPage extends BasePage {
         //db.readDataBase(path);
     }
 
-    public void readNavListFromDb() {
+       public List<String> readNavListFromDb() {
         ConnectDB db = new ConnectDB();
+        List<String> list = new ArrayList<String>();
 
         String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
         try {
@@ -99,12 +122,19 @@ public class NavPage extends BasePage {
             System.out.println("Database connection Problem:  " + e);
         }
         try {
-           navList= db.readDataBase(path, "Navtb", "navItem");
+           list = db.readDataBase(path, "Navtb", "navItem");
         }catch (Exception e){
             System.out.println("NavList reading probnem: "+e );
         }
+        return list;
+        }
+    public void goNavSite() {
+        List<WebElement> list = navigationArrayList();
+        for(int i=0; i<list.size(); i++) {
+            list.get(i).click();
 
         }
+    }
 
     public WebElement clickTech(){
         return new NavPage(driver).tech;
