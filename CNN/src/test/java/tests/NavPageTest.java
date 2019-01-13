@@ -29,12 +29,5 @@ public class NavPageTest extends CommonAPI {
             page.GetInstance(HomePage.class).goToNavPage();
             //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         }
-        //page.GetInstance(NavPage.class).storeNavListToDb();
-        //List<String> list = page.GetInstance(NavPage.class).readNavListFromDb();
-        //page.GetInstance(NavPage.class).US.click();
-        //page.GetInstance(NavPage.class).health.click();
-
-
-
     }
 }

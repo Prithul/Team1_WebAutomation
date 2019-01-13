@@ -17,7 +17,7 @@ public class HomePageTest extends CommonAPI {
             System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        PageGenerator page = new PageGenerator(driver);
+            PageGenerator page = new PageGenerator(driver);
 
 
             //*************PAGE METHODS WITH JAVA GENERICS********************
@@ -31,26 +31,6 @@ public class HomePageTest extends CommonAPI {
             page.GetInstance(HomePage.class).
                     goToNavPage();
 
-
-//
-//            //*************ASSERTIONS***********************
-//            Thread.sleep(500); //It is better to use explicit wait here.
-//            page.GetInstance(LoginPage.class).verifyLoginPassword(("E-posta adresiniz veya şifreniz hatalı"));
-//        }
-
-//        @Test (priority = 1)
-//        public void invalidLoginTest_EmptyUserEmptyPassword () throws InterruptedException {
-//            //*************PAGE METHODS WITH JAVA GENERICS********************
-//            //Open N11 HomePage
-//            page.GetInstance(HomePage.class).goToN11();
-//
-//            //Method Chaining (Go to Login Page and then LoginToN11)
-//            page.GetInstance(HomePage.class).goToLoginPage().loginToN11("","");
-//
-//            //*************ASSERTIONS***********************
-//            Thread.sleep(500); //It is better to use explicit wait here.
-//            page.GetInstance(LoginPage.class).verifyLoginUserName("Lütfen e-posta adresinizi girin.");
-//            page.GetInstance(LoginPage.class).verifyLoginPassword("Bu alanın doldurulması zorunludur.");
         }
 
     }

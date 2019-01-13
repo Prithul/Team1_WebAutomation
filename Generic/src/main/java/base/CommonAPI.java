@@ -25,14 +25,17 @@ public class CommonAPI {
         driver.close();
     }
 
-    @Parameters({"url"})
-    @BeforeMethod
-    public void setUp(String url){
+    @Parameters({"url","user"})
 
+    @BeforeMethod
+    public void setUp(String url, String user){
         // change your setProperty
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
-        //System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
+        if(user.equals("cnn"))
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
+        else if(user.equals("amazon"))
+            System.setProperty("webdriver.chrome.driver","/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
+        else if(user.equals("facebook"))
+            System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
