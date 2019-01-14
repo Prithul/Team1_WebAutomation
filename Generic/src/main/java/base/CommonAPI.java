@@ -19,6 +19,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Optional;
+import org.testng.asserts.SoftAssert;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import reporting.TestLogger;
@@ -501,6 +502,27 @@ public class CommonAPI {
         }
     }
 
+
+    public void switchWindow(WebDriver driver){
+        for (String handle: driver.getWindowHandles()){
+            driver.switchTo().window(handle);
+        }
+    }
+    public void dropDown(WebElement web, int x){
+        Select dropdown = new Select(web);
+        dropdown.selectByIndex(x);
+    }
+    public void inputValueInTextBoxByWebElement(WebElement webElement, String value){
+        webElement.sendKeys(value + Keys.ENTER);
+    }
+    public void clearInputBox(WebElement webElement){
+        webElement.clear();
+    }
+    public String getTextByWebElement(WebElement webElement){
+        String text = webElement.getText();
+        return text;
+    }
+
     //Read Text by using JAVA Generics (You can use both By or Webelement)
     public <T> String readText (T elementAttr) {
         if(elementAttr.getClass().getName().contains("By")) {
@@ -509,4 +531,36 @@ public class CommonAPI {
             return ((WebElement) elementAttr).getText();
         }
     }
+
+    // Return list of links available in the HomePage
+    public List<String> findNumberOfLink(List<WebElement> anchorTag) {
+        System.out.println(anchorTag.size());
+        List<String> actualLinks = new ArrayList<>();
+        for (int i = 0; i < anchorTag.size(); i = i + 1) {
+            if (anchorTag.get(i).getText() != null && anchorTag.get(i).getText().length() > 0) {
+                actualLinks.add(anchorTag.get(i).getText());
+            }
+        }
+        for (String link : actualLinks) {
+            System.out.println(link);
+        }
+        return actualLinks;
+    }
+//    //Get Assert Data
+//    public List<String> getAssertData(String DataFilePath, int ColumnNo) throws IOException {
+//        utility.DataReader dtr = new utility.DataReader();
+//        List<String> output = Arrays.asList(dtr.colReader(DataFilePath,ColumnNo));
+//        return output;
+//    }
+
+    // Assert Data
+    public void assertData(List<String> actualList, List<String> expectedList){
+        for (int i = 0; i < actualList.size(); i++) {
+            SoftAssert softAssert = new SoftAssert();
+            softAssert.assertTrue(actualList.get(i).contains(expectedList.get(i)));
+            System.out.println("LinkVerified " + expectedList.get(i));
+        }
+    }
+
+    //****************Halima*************************
 }
