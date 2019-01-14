@@ -22,7 +22,7 @@ public class HomePage extends CommonAPI {
     @FindBy(how = How.CLASS_NAME, using = "nav-menu__hamburger")
     public WebElement navPageButton;
 
-    @FindBy(how=How.CSS, using = ".nav-menu__hamburger::after")
+    @FindBy(how=How.CSS, using = ".nav-menu__hamburger")
     public WebElement navPageCrossButton;
 
     @FindBy(how = How.CSS, using = "#search-button")

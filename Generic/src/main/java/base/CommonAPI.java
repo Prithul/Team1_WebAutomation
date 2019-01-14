@@ -39,15 +39,16 @@ import java.util.concurrent.TimeUnit;
 public class CommonAPI {
 
     public WebDriver driver = null;
-    public String browserstack_username= "victoriaarda1";
-    public String browserstack_accesskey = "Csjpsa97AQqfqypSgphy";
-    public String saucelabs_username = "";
-    public String saucelabs_accesskey = "";
+//    public String browserstack_username= "victoriaarda1";
+//    public String browserstack_accesskey = "Csjpsa97AQqfqypSgphy";
+//    public String saucelabs_username = "";
+//    public String saucelabs_accesskey = "";
 
 
 
     @AfterMethod
     public void cleanUp(){
+        System.out.println("Clean up");
         driver.close();
     }
 
@@ -73,7 +74,7 @@ public class CommonAPI {
         t.printStackTrace(pw);
         return sw.toString();
     }
-    @AfterMethod
+   // @AfterMethod
 //    public void afterEachTestMethod(ITestResult result) {
 //        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
 //        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
@@ -106,7 +107,7 @@ public class CommonAPI {
 //        return calendar.getTime();
 //    }
     //Selenium API start
-   
+
     @Parameters({"url"})
     @BeforeMethod
     public void setUp(String url){
@@ -123,9 +124,15 @@ public class CommonAPI {
         driver.manage().timeouts().implicitlyWait(400, TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
-
+        System.out.println("I am in before method ");
+        //Thread.sleep(500);
     }
-
+   public String getUrl()
+   {
+       String url = driver.getCurrentUrl();
+       System.out.println(url);
+  return url;
+   }
 
     //type
     public void typeOnCss(String locator, String value){
