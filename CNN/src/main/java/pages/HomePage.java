@@ -45,8 +45,12 @@ public class HomePage extends CommonAPI {
     @FindBy(how = How.CSS,using = "#nav-mobileTV")
     public WebElement liveTvButton;
 
-    @FindBy(how = How.CSS,using = "#nav > div.nav__container > div.nav-menu-links")
-    public List<WebElement> navItemList ;
+//    @FindBy(how = How.CSS,using = "#nav > div.nav__container > div.nav-menu-links")
+//    public List<WebElement> navItemList ;
+
+    @FindBy(how = How.XPATH,using = "//*[@id=\"nav\"]/div[2]/div[2]")
+   public List<WebElement> navItemList ;
+
 
     //*********Page Methods*********
     //Constructor

@@ -303,8 +303,11 @@ public class CommonAPI {
 
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
+        System.out.println(list.size());
+
         for (WebElement element : list) {
             items.add(element.getText());
+            System.out.println();
         }
         return items;
     }

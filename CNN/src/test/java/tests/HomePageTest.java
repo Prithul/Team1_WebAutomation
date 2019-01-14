@@ -82,15 +82,11 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavList()throws InterruptedException
     {
+        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
-           //List<String> slist = getListOfString(list);
-           for(int i = 0; i<list.size();i++) {
-               list.get(i).click();
-               Thread.sleep(500);
-           }
-
-//           for(int i=0;i<slist.size();i++)
-//               System.out.println(slist.get(i));
+           List<String> slist = getListOfString(list);
+           for(int i=0;i<slist.size();i++)
+               System.out.println("     " +slist.get(i));
 
 
     }
