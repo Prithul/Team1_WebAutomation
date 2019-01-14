@@ -1,5 +1,6 @@
 package pages;
 
+import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class NavPage extends BasePage {
+public class NavPage extends CommonAPI {
 
      public Map<WebElement,String> navList = new HashMap< WebElement,String>();
 
@@ -52,9 +53,9 @@ public class NavPage extends BasePage {
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
     public WebElement coupons;
 
-    public NavPage(WebDriver driver){
-        super(driver);
-    }
+//   // public NavPage(WebDriver driver){
+//       // super(driver);
+//    }
 
      public void navigationList(){
         //List<String> navList = new ArrayList<String>();
@@ -136,14 +137,14 @@ public class NavPage extends BasePage {
         }
     }
 
-    public WebElement clickTech(){
-        return new NavPage(driver).tech;
-    }
-    public WebElement clickWorld(){
-        return new NavPage(driver).world;
-    }
-    public void clickByElement(WebElement element){
-        element.click();
-    }
+//    //public WebElement clickTech(){
+//        return new NavPage(driver).tech;
+//    }
+//    public WebElement clickWorld(){
+//        return new NavPage(driver).world;
+//    }
+//    public void clickByElement(WebElement element){
+//        element.click();
+//    }
 
 }

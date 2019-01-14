@@ -20,9 +20,9 @@ import org.testng.annotations.*;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Optional;
 import org.testng.asserts.SoftAssert;
-import reporting.ExtentManager;
-import reporting.ExtentTestManager;
-import reporting.TestLogger;
+//import reporting.ExtentManager;
+//import reporting.ExtentTestManager;
+//import reporting.TestLogger;
 
 import java.io.File;
 import java.io.IOException;
@@ -52,20 +52,20 @@ public class CommonAPI {
     }
 
 
-    //ExtentReport
-    public static ExtentReports extent;
-    @BeforeSuite
-    public void extentSetup(ITestContext context) {
-        ExtentManager.setOutputDirectory(context);
-        extent = ExtentManager.getInstance();
-    }
-    @BeforeMethod
-    public void startExtent(Method method) {
-        String className = method.getDeclaringClass().getSimpleName();
-        String methodName = method.getName().toLowerCase();
-        ExtentTestManager.startTest(method.getName());
-        ExtentTestManager.getTest().assignCategory(className);
-    }
+//    //ExtentReport
+//    public static ExtentReports extent;
+//    @BeforeSuite
+//    public void extentSetup(ITestContext context) {
+//        ExtentManager.setOutputDirectory(context);
+//        extent = ExtentManager.getInstance();
+//    }
+//    @BeforeMethod
+//    public void startExtent(Method method) {
+//        String className = method.getDeclaringClass().getSimpleName();
+//        String methodName = method.getName().toLowerCase();
+//        ExtentTestManager.startTest(method.getName());
+//        ExtentTestManager.getTest().assignCategory(className);
+//    }
 
     protected String getStackTrace(Throwable t) {
         StringWriter sw = new StringWriter();
@@ -74,37 +74,37 @@ public class CommonAPI {
         return sw.toString();
     }
     @AfterMethod
-    public void afterEachTestMethod(ITestResult result) {
-        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
-        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
-
-        for (String group : result.getMethod().getGroups()) {
-            ExtentTestManager.getTest().assignCategory(group);
-        }
-
-        if (result.getStatus() == 1) {
-            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
-        } else if (result.getStatus() == 2) {
-            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
-        } else if (result.getStatus() == 3) {
-            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
-        }
-        ExtentTestManager.endTest();
-        extent.flush();
-        if (result.getStatus() == ITestResult.FAILURE) {
-            captureScreenshot(driver, result.getName());
-        }
-        driver.quit();
-    }
-    @AfterSuite
-    public void generateReport() {
-        extent.close();
-    }
-    private Date getTime(long millis) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(millis);
-        return calendar.getTime();
-    }
+//    public void afterEachTestMethod(ITestResult result) {
+//        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
+//        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
+//
+//        for (String group : result.getMethod().getGroups()) {
+//            ExtentTestManager.getTest().assignCategory(group);
+//        }
+//
+//        if (result.getStatus() == 1) {
+//            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
+//        } else if (result.getStatus() == 2) {
+//            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
+//        } else if (result.getStatus() == 3) {
+//            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+//        }
+//        ExtentTestManager.endTest();
+//        extent.flush();
+//        if (result.getStatus() == ITestResult.FAILURE) {
+//            captureScreenshot(driver, result.getName());
+//        }
+//        driver.quit();
+//    }
+//    @AfterSuite
+//    public void generateReport() {
+//        extent.close();
+//    }
+//    private Date getTime(long millis) {
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTimeInMillis(millis);
+//        return calendar.getTime();
+//    }
     //Selenium API start
     @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
     @BeforeMethod
@@ -119,12 +119,12 @@ public class CommonAPI {
                 getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
             }
         }else{
-            getLocalDriver(os, browserName);
+           driver=  getLocalDriver(os, browserName);
         }
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
     public WebDriver getLocalDriver(@Optional("mac") String OS, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
@@ -138,18 +138,18 @@ public class CommonAPI {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
             if(OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
             }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         }
 
         else if(browserName.equalsIgnoreCase("firefox")){
             if(OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
+                System.setProperty("webdriver.gecko.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
             }else if(OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\.idea\\browser\\chromedriver.exe");
             }
             driver = new FirefoxDriver();
 
@@ -214,7 +214,7 @@ public class CommonAPI {
         }
     }
     public void typeOnElementNEnter(String locator, String value){
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+       // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         }catch(Exception ex1) {
@@ -499,6 +499,15 @@ public class CommonAPI {
             driver.findElement((By) elementAttr).sendKeys(text);
         } else {
             ((WebElement) elementAttr).sendKeys(text);
+        }
+    }
+
+    //Write Text by using JAVA Generics (You can use both By or Webelement)
+    public <T> void writeTextAndEnter (T elementAttr, String text) {
+        if(elementAttr.getClass().getName().contains("By")) {
+            driver.findElement((By) elementAttr).sendKeys(text);
+        } else {
+            ((WebElement) elementAttr).sendKeys(text,Keys.ENTER);
         }
     }
 

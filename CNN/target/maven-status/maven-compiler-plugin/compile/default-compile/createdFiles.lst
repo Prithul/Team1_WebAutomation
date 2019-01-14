@@ -1,6 +1,4 @@
-pages\BasePage.class
 pages\NavPage.class
-search\searchPage.class
-pages\PageGenerator.class
+pages\LiveTvPage.class
 pages\HomePage.class
 pages\SearchPage.class

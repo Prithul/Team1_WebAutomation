@@ -30,6 +30,8 @@ public class HomePage extends CommonAPI {
 
     @FindBy(how = How.CSS, using = "#search-input-field")
     public WebElement searchTextBox;
+    @FindBy(how=How.CSS,using = "#submit-button")
+            public WebElement searchSubmitButton;
 
     @FindBy(how=How.CLASS_NAME, using = "nav-section__expand-icon")
     public WebElement navSectionExpand ;
@@ -48,11 +50,11 @@ public class HomePage extends CommonAPI {
 
     //*********Page Methods*********
     //Constructor
-    public HomePage(WebDriver driver)
-    {
-        this.driver = driver;
-        PageFactory.initElements(driver,this);
-    }
+//    public HomePage(WebDriver driver)
+//    {
+//        this.driver = driver;
+//        PageFactory.initElements(driver,this);
+//    }
     //Go to Homepage
     public void goCnn (){
         driver.get(baseURL);
@@ -60,6 +62,7 @@ public class HomePage extends CommonAPI {
     }
     public SearchPage gotoSearchPage(){
         searchButton.click();
+
 //        Actions builder = new Actions(driver);
 //        builder.moveToElement(searchButton).click(searchButton).build().perform();
         searchTextBox.sendKeys("politics", Keys.ENTER);
@@ -74,6 +77,7 @@ public class HomePage extends CommonAPI {
 
    //Go to Live Tv Page
    public LiveTvPage goToLiveTvPage () {
+
        click(liveTvButton);
        return new PageFactory().initElements(driver, LiveTvPage.class);
    }
