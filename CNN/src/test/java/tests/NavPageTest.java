@@ -1,5 +1,6 @@
 package tests;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import pages.NavPage;
 
@@ -12,17 +13,22 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class NavPageTest extends CommonAPI {
+    NavPage navPage;
 
+    @Test
+    public void checkEachNavItem()throws InterruptedException {
+        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+        navPage = new PageFactory().initElements(driver, NavPage.class);
+        List<WebElement> list = navPage.navigationArrayList();
+        for(WebElement l:list)
+        {
+            homePage.navPageButton.click();
+            l.click();
+            sleepFor(2);
+            homePage.goCnn();
+        }
 
-//    @Test
-//    public void
-//
-//
-//           //  List<WebElement> list = page.GetInstance(NavPage.class).navigationArrayList();
-//      //  for(int i=0; i<list.size(); i++) {
-//       //     list.get(i).click();
-//       //     page.GetInstance(HomePage.class).goToNavPage();
-//            //driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-//        }
     }
-
+    @Test
+    public void checkEachNavItemTitle
+}

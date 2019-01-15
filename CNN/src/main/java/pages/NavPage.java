@@ -32,8 +32,9 @@ public class NavPage extends CommonAPI {
     @FindBy(how = How.CLASS_NAME, using = "nav-menu__img-health")
     public WebElement health;
 
-    @FindBy(xpath = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--entertainment > a > img")
+    @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--entertainment > a > img")
     public WebElement entertainment;
+
 
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--business > a")
     public WebElement business;
@@ -136,6 +137,7 @@ public class NavPage extends CommonAPI {
         }
         return list;
         }
+
     public void goNavSite() {
         List<WebElement> list = navigationArrayList();
         for(int i=0; i<list.size(); i++) {

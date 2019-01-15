@@ -13,7 +13,8 @@
     <parameter name="user" value="cnn"/>
     <test name = "CNN Home">
         <classes>
-            <class name="tests.HomePageTest"/>
+          <!--  <class name="tests.HomePageTest"/> -->
+            <class name="tests.NavPageTest"/>
         </classes>
     </test>
 

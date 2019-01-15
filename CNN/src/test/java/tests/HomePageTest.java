@@ -17,16 +17,11 @@ import java.util.concurrent.TimeUnit;
 
 
 public class HomePageTest extends CommonAPI {
-   //WebDriver driver;
+
     HomePage homePage;
 
 
-//    @BeforeTest
-//   public void initPage() {
-//
-//    HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-//}
-  @Test
+ @Test
 
       public void checkHomeTitle() {
        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
@@ -90,6 +85,7 @@ public class HomePageTest extends CommonAPI {
 //
 //
 //    }
+  //  @Test refresh driver.navigate().refresh()
 
 
     }

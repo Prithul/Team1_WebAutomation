@@ -14,6 +14,7 @@
     <test name = "FaceBook Home">
         <classes>
             <class name="tests.TestHomeFacebook"/>
+
         </classes>
     </test>
 
