@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
 //    public String browserstack_username= "victoriaarda1";
 //    public String browserstack_accesskey = "Csjpsa97AQqfqypSgphy";
 //    public String saucelabs_username = "";
@@ -301,6 +301,8 @@ public class CommonAPI {
         return st;
     }
 
+
+
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         System.out.println(list.size());
@@ -433,6 +435,13 @@ public class CommonAPI {
 
 
     //By Halima
+    //
+    public List<WebElement> getListOfItem(String locator) {
+
+
+        List<WebElement> list = driver.findElements(By.cssSelector("#nav > div.nav__container > div.nav - menu - links"));
+        return list;
+    }
     //Click Method by using JAVA Generics (You can use both By or Webelement)
     public <T> void click (T elementAttr) {
         if(elementAttr.getClass().getName().contains("By")) {

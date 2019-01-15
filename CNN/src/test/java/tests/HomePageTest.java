@@ -20,23 +20,22 @@ public class HomePageTest extends CommonAPI {
    //WebDriver driver;
     HomePage homePage;
 
-    //HomePage homePage = new HomePage(driver);
-    @BeforeTest
-   public void initPage() {
 
-   // HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-}
-//  @Test
+//    @BeforeTest
+//   public void initPage() {
 //
-//      public void checkHomeTitle() {
-//       HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-//       //homePage.goCnn();
-//     String url=  homePage.getUrl();
-//      System.out.println(url);
-////      String title = homePage.driver.getTitle();
-////       Assert.assertEquals(title,"CNN-Breaking News, Latest News and Videos");
-////       Assert.assertEquals(url,"https://www.cnn.com/");
-//   }
+//    HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//}
+  @Test
+
+      public void checkHomeTitle() {
+       HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+       //homePage.goCnn();
+     String url=  homePage.getUrl();
+     String title = homePage.driver.getTitle();
+       Assert.assertEquals(title,"CNN - Breaking News, Latest News and Videos");
+       Assert.assertEquals(url,"https://www.cnn.com/");
+   }
 //   @Test
 //        public void openNavPage() throws InterruptedException{
 //      HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
@@ -79,17 +78,18 @@ public class HomePageTest extends CommonAPI {
 //    public void writeOn
 
 
-    @Test
-    public void getNavList()throws InterruptedException
-    {
-        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-        List<WebElement> list = homePage.navItemList;
-           List<String> slist = getListOfString(list);
-           for(int i=0;i<slist.size();i++)
-               System.out.println("     " +slist.get(i));
-
-
-    }
+//    @Test
+//    public void getNavList()throws InterruptedException
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        List<WebElement> list = homePage.getListOfItem("a")  ;    //homePage.navItemList;
+//
+//           List<String> slist = getListOfString(list);
+//           for(int i=0;i<slist.size();i++)
+//               System.out.println("     " +slist.get(i));
+//
+//
+//    }
 
 
     }
