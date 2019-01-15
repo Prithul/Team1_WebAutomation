@@ -9,7 +9,7 @@ public class TestFrontPage extends FrontPageNdSignOut {
         createAcct();
     }
 
-    @Test
+/*    @Test
     public void test1() throws InterruptedException {
         signIn();
     }
@@ -62,6 +62,6 @@ public class TestFrontPage extends FrontPageNdSignOut {
         signIn();
         Thread.sleep(5000);
         SignOut();
-    }
+    }*/
 
 }

@@ -5,14 +5,19 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class searchPage extends CommonAPI {
     public void signIn() throws InterruptedException {
+
         driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("ameladrv@gmail.com");
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("PNTeam1234");
         driver.findElement(By.xpath("//input[@value='Log In']")).click();
