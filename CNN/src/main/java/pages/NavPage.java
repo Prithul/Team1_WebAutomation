@@ -15,6 +15,7 @@ import java.util.Map;
 public class NavPage extends CommonAPI {
 
      public Map<WebElement,String> navList = new HashMap< WebElement,String>();
+     public List<String> slist = new ArrayList<String>();
 
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--us > a")
     public WebElement US;
@@ -53,9 +54,6 @@ public class NavPage extends CommonAPI {
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
     public WebElement coupons;
 
-//   // public NavPage(WebDriver driver){
-//       // super(driver);
-//    }
 
      public void navigationList(){
         //List<String> navList = new ArrayList<String>();
@@ -93,10 +91,19 @@ public class NavPage extends CommonAPI {
   return list;
 
     }
+    public List<String> getStringListFromWebelementList(List<WebElement> list)
+    {
+        List<String> slist = null;
+        for(WebElement e: list)
+            slist.add(navList.get(e));
 
-    public void storeNavListToDb() {
+        return slist;
+
+    }
+
+    public void storeNavListToDb(List<String> list) {
         ConnectDB db = new ConnectDB();
-        List<String> list = null;  // later
+
         String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
        try {
            db.connectToSqlDatabase(path);
