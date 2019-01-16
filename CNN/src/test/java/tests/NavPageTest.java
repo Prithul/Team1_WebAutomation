@@ -16,6 +16,7 @@ import util.excel.ReadFromExcel;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class NavPageTest extends CommonAPI {
@@ -116,17 +117,18 @@ public class NavPageTest extends CommonAPI {
 //    }
 
     @Test
-    public void checkNavFromExcel() throws IOException, InvalidFormatException
+    public void checkNavFromExcel() throws IOException, InvalidFormatException,InterruptedException
     {
 
         List<String> slist = new ArrayList<String >();
-             slist = ReadFromExcel.CnnexcelReader(0);
+             slist = ReadFromExcel.CnnexcelReader(0,4,16);
          HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
          navPage = new PageFactory().initElements(driver, NavPage.class);
-           List<WebElement> list = navPage.navigationArrayList();
-           for (WebElement l : list) {
+           Map<String,WebElement> list = navPage.navigationList();
+           for (int i=0;i<slist.size();i++) {
+               System.out.println(slist.get(i));
                homePage.navPageButton.click();
-             l.click();
+               list.get(slist.get(i)).click();
                sleepFor(2);
                homePage.goCnn();
             }

@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class NavPage extends CommonAPI {
 
-     public Map<WebElement,String> navList = new HashMap< WebElement,String>();
+     public Map<String,WebElement> navList = new HashMap< String, WebElement>();
      public List<String> slist = new ArrayList<String>();
 
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--us > a")
@@ -50,7 +50,7 @@ public class NavPage extends CommonAPI {
     public WebElement videos;
 
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--opinions > a")
-    public WebElement opinion;
+    public WebElement opinions;
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
     public WebElement coupons;
 
@@ -62,24 +62,24 @@ public class NavPage extends CommonAPI {
     public List<WebElement> subUS;
 
 
-     public void navigationList(){
+     public Map<String,WebElement> navigationList(){
         //List<String> navList = new ArrayList<String>();
-        navList.put(US,"US");
-        navList.put(world,"world");
-        navList.put(politics,"politics");
-        navList.put(tech,"tech");
-        navList.put(health,"health");
-        navList.put(entertainment,"entertainment");
-        navList.put(business,"business");
-        navList.put(travel,"travel");
-        navList.put(style,"style");
-        navList.put(br,"br");
-        navList.put(videos,"videos");
-        navList.put(opinion,"opinion");
-        navList.put(coupons,"coupons");
+        navList.put("US",US);
+        navList.put("world",world);
+        navList.put("politics",politics);
+        navList.put("tech",tech);
+        navList.put("health",health);
+        navList.put("entertainment",entertainment);
+        navList.put("business",business);
+        navList.put("travel",travel);
+        navList.put("style",style);
+        navList.put("br",br);
+        navList.put("videos",videos);
+        navList.put("opinions",opinions);
+        navList.put("coupons",coupons);
+        return navList;
+   }
 
-
-    }
     public List<WebElement> navigationArrayList(){
         List<WebElement> list = new ArrayList<WebElement>();
         list.add(US);
@@ -93,7 +93,7 @@ public class NavPage extends CommonAPI {
         list.add(style);
         list.add(br);
         list.add(videos);
-        list.add(opinion);
+        list.add(opinions);
         list.add(coupons);
   return list;
 
