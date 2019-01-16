@@ -319,9 +319,11 @@ public class CommonAPI {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
+
     public static void sleepFor(int sec)throws InterruptedException{
         Thread.sleep(sec * 1000);
     }
+
     public void mouseHoverByCSS(String locator){
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));

@@ -14,7 +14,8 @@
     <test name = "CNN Home">
         <classes>
           <!--  <class name="tests.HomePageTest"/> -->
-            <class name="tests.NavPageTest"/>
+           <!-- <class name="tests.NavPageTest"/> -->
+            <class name="tests.SearchPageTest"/>
         </classes>
     </test>
 
