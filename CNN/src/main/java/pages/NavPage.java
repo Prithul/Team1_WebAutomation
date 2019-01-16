@@ -56,6 +56,13 @@ public class NavPage extends CommonAPI {
     public WebElement coupons;
 
 
+    @FindBy(how=How.XPATH,using = "//*[@id=\"nav-expanded-menu\"]/div[9]/ul/li/a")
+    public List<WebElement> subTech;
+
+    @FindBy(how=How.XPATH,using = "//*[@id=\"nav-expanded-menu\"]/div[2]/ul/li/a")
+    public List<WebElement> subUS;
+
+
      public void navigationList(){
         //List<String> navList = new ArrayList<String>();
         navList.put(US,"US");
@@ -92,11 +99,12 @@ public class NavPage extends CommonAPI {
   return list;
 
     }
+
     public List<String> getStringListFromWebelementList(List<WebElement> list)
     {
-        List<String> slist = null;
-        for(WebElement e: list)
-            slist.add(navList.get(e));
+        List<String> slist = new ArrayList<String>();
+        for(int i=0 ; i<list.size();i++)
+            slist.add(list.get(i).getText());
 
         return slist;
 

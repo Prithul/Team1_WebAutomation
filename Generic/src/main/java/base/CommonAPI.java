@@ -273,6 +273,7 @@ public class CommonAPI {
         list = driver.findElements(By.cssSelector(locator));
         return list;
     }
+
     public List<WebElement> getListOfWebElementsByXpath(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.xpath(locator));
@@ -529,6 +530,8 @@ public class CommonAPI {
             System.out.println("LinkVerified " + expectedList.get(i));
         }
     }
+
+
 
     //****************Halima*************************
 }

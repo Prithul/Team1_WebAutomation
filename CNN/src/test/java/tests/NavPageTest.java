@@ -1,6 +1,8 @@
 package tests;
+import org.apache.poi.ss.formula.functions.Na;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.NavPage;
 
@@ -9,26 +11,104 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class NavPageTest extends CommonAPI {
     NavPage navPage;
 
+//    @Test
+//    public void checkEachNavItem()throws InterruptedException {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        List<WebElement> list = navPage.navigationArrayList();
+//        for(WebElement l:list)
+//        {
+//            homePage.navPageButton.click();
+//            l.click();
+//            sleepFor(2);
+//            homePage.goCnn();
+//        }
+//
+//    }
+//    @Test
+//    public void checkUSNavItemTitleAndUrl()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        homePage.navPageButton.click();
+//        navPage.US.click();
+//        String url= driver.getCurrentUrl();
+//        String title = driver.getTitle();
+//        Assert.assertEquals(title,"US News – Top national stories and latest headlines - CNN");
+//        Assert.assertEquals(url,"https://www.cnn.com/us");
+//    }
+//    @Test
+//    public void checkWorldNavItemTitleAndUrl()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        homePage.navPageButton.click();
+//        navPage.world.click();
+//        String url= driver.getCurrentUrl();
+//        String title = driver.getTitle();
+//        Assert.assertEquals(title,"World news – breaking news, videos and headlines - CNN");
+//        Assert.assertEquals(url,"https://www.cnn.com/world");
+//    }
+//    @Test
+//    public void checkPoliticsNavItemTitleAndUrl()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        homePage.navPageButton.click();
+//        navPage.politics.click();
+//        String url= driver.getCurrentUrl();
+//        String title = driver.getTitle();
+//        Assert.assertEquals(title,"CNNPolitics - Political News, Analysis and Opinion");
+//        Assert.assertEquals(url,"https://www.cnn.com/politics");
+//    }
+
+//    @Test
+//    public void checkSubMenuTech()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        List<String> actualList = new ArrayList<String>();
+//        actualList.add("Inovative");
+//        actualList.add("Gadget");
+//        actualList.add("Mission: Ahead");
+//        actualList.add("Upstarts");
+//        actualList.add("Work Transformed");
+//        actualList.add("Innovative Cities");
+//
+//
+//        homePage.navPageButton.click();
+//        List<WebElement> list = getListOfWebElementsByXpath("//*[@id=\"nav-expanded-menu\"]/div[9]/ul/li/a");
+//        //System.out.println(list.size() + "   "  +list.get(0).getText());
+//        List<String> slist = navPage.getStringListFromWebelementList(list);
+//        //System.out.println(slist.size() + "   "  +slist.get(0));
+//        navPage.assertData(slist,actualList);
+//
+//    }
     @Test
-    public void checkEachNavItem()throws InterruptedException {
+    public void checkSubMenuUS()
+    {
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
-        List<WebElement> list = navPage.navigationArrayList();
-        for(WebElement l:list)
-        {
-            homePage.navPageButton.click();
-            l.click();
-            sleepFor(2);
-            homePage.goCnn();
-        }
+        List<String> actualList = new ArrayList<String>();
+        actualList.add("Crime + Justice");
+        actualList.add("Energy + Environment");
+        actualList.add("Extreme Weather");
+        actualList.add("Space + Science");
+
+        homePage.navPageButton.click();
+       // List<WebElement> list = getListOfWebElementsByXpath("//*[@id=\"nav-expanded-menu\"]/div[9]/ul/li/a");
+        //System.out.println(list.size() + "   "  +list.get(0).getText());
+        List<WebElement> list = navPage.subUS;
+        List<String> slist = navPage.getStringListFromWebelementList(list);
+        System.out.println(slist.size() + "   "  +slist.get(0));
+        navPage.assertData(slist,actualList);
 
     }
-    @Test
-    public void checkEachNavItemTitle
 }
