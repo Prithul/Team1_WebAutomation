@@ -49,16 +49,22 @@ public class NavPage extends CommonAPI {
     public List<WebElement> subTech;
 
     @FindBy(how =How.CSS,using = "#nav-expanded > div.nav-flyout-footer > form > p")
-    public WebElement preference;
+    public WebElement preferenceLabel;
     @FindBy(how = How.CSS,using ="#nav-expanded > div.nav-flyout-footer > form > label:nth-child(2) > span")
-    public WebElement radioUS;
+    public WebElement radioLabelUS;
     @FindBy(how = How.CSS,using ="#nav-expanded > div.nav-flyout-footer > form > label:nth-child(3) > span")
-    public WebElement radioInternational;
+    public WebElement radioLabelInternational;
     @FindBy(how = How.CSS,using ="#nav-expanded > div.nav-flyout-footer > form > button")
     public WebElement buttonConfirm;
+    @FindBy(how = How.CSS, using = "#nav-expanded > div.nav-flyout-footer > form > label:nth-child(2) > input")
+    public WebElement radioUS ;
+    @FindBy(how = How.CSS, using = "#nav-expanded > div.nav-flyout-footer > form > label:nth-child(3) > input")
+    public WebElement radioInternational ;
 
 
-     public Map<String,WebElement> navigationList(){
+
+
+    public Map<String,WebElement> navigationList(){
         //List<String> navList = new ArrayList<String>();
         navList.put("US",US);
         navList.put("world",world);

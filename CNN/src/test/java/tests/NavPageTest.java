@@ -140,7 +140,7 @@ public class NavPageTest extends CommonAPI {
 //     HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
 //    navPage = new PageFactory().initElements(driver, NavPage.class);
 //      homePage.navPageButton.click();
-//      String label = navPage.preference.getText();
+//      String label = navPage.preferenceLabel.getText();
 //      Assert.assertEquals(label, "Set edition preference:");
 // }
 //    @Test
@@ -149,19 +149,59 @@ public class NavPageTest extends CommonAPI {
 //        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
 //        navPage = new PageFactory().initElements(driver, NavPage.class);
 //        homePage.navPageButton.click();
-//        String labelUS = navPage.radioUS.getText();
-//        String labelInt = navPage.radioInternational.getText();
+//        String labelUS = navPage.radioLabelUS.getText();
+//        String labelInt = navPage.radioLabelInternational.getText();
 //        Assert.assertEquals(labelUS, "U.S.");
 //        Assert.assertEquals(labelInt, "International");
 //    }
-   @Test
-    public void checkLabelOfRadioButton()
+//   @Test
+//    public void checkLabelOfRadioButton()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        homePage.navPageButton.click();
+//        String labelUS = navPage.buttonConfirm.getText();
+//        Assert.assertEquals(labelUS, "Confirm");
+//
+//    }
+
+//    @Test
+//    public void checkSelectReadioButton() throws InterruptedException
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        homePage.navPageButton.click();
+//       if(!navPage.radioUS.isSelected())
+//           navPage.radioUS.click();
+//        sleepFor(3);
+//        if(!navPage.radioInternational.isSelected())
+//            navPage.radioInternational.click();
+//        sleepFor(3);
+//        if(!navPage.radioUS.isSelected())
+//            navPage.radioUS.click();
+//        sleepFor(3);
+//
+//    }
+@Test
+    public void checkSubmitReadioButton() throws InterruptedException
     {
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
-        String labelUS = navPage.buttonConfirm.getText();
-        Assert.assertEquals(labelUS, "Confirm");
+        if(!navPage.radioUS.isSelected())
+            navPage.radioUS.click();
+        navPage.buttonConfirm.submit();
+        //sleepFor(13);
+        String usURL= driver.getCurrentUrl();
+        Assert.assertEquals(usURL,"https://us.cnn.com");
+        homePage.goCnn();
+        homePage.navPageButton.submit();
+        if(!navPage.radioInternational.isSelected())
+            navPage.radioInternational.click();
+        String internationalURL= driver.getCurrentUrl();
+        Assert.assertEquals(internationalURL,"https://edition.cnn.com");
+
+
 
     }
 
