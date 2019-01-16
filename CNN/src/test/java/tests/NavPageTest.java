@@ -116,23 +116,54 @@ public class NavPageTest extends CommonAPI {
 //
 //    }
 
-    @Test
-    public void checkNavFromExcel() throws IOException, InvalidFormatException,InterruptedException
+//    @Test
+//    public void checkNavFromExcel() throws IOException, InvalidFormatException,InterruptedException
+//    {
+//
+//        List<String> slist = new ArrayList<String >();
+//             slist = ReadFromExcel.CnnexcelReader(0,4,16);
+//         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//         navPage = new PageFactory().initElements(driver, NavPage.class);
+//           Map<String,WebElement> list = navPage.navigationList();
+//           for (int i=0;i<slist.size();i++) {
+//               System.out.println(slist.get(i));
+//               homePage.navPageButton.click();
+//               list.get(slist.get(i)).click();
+//               sleepFor(2);
+//               homePage.goCnn();
+//            }
+//
+//        }
+//@Test
+// public void checkLabelOfPreference()
+// {
+//     HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//    navPage = new PageFactory().initElements(driver, NavPage.class);
+//      homePage.navPageButton.click();
+//      String label = navPage.preference.getText();
+//      Assert.assertEquals(label, "Set edition preference:");
+// }
+//    @Test
+//    public void checkLabelOfRedioButton()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        homePage.navPageButton.click();
+//        String labelUS = navPage.radioUS.getText();
+//        String labelInt = navPage.radioInternational.getText();
+//        Assert.assertEquals(labelUS, "U.S.");
+//        Assert.assertEquals(labelInt, "International");
+//    }
+   @Test
+    public void checkLabelOfRadioButton()
     {
+        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+        navPage = new PageFactory().initElements(driver, NavPage.class);
+        homePage.navPageButton.click();
+        String labelUS = navPage.buttonConfirm.getText();
+        Assert.assertEquals(labelUS, "Confirm");
 
-        List<String> slist = new ArrayList<String >();
-             slist = ReadFromExcel.CnnexcelReader(0,4,16);
-         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-         navPage = new PageFactory().initElements(driver, NavPage.class);
-           Map<String,WebElement> list = navPage.navigationList();
-           for (int i=0;i<slist.size();i++) {
-               System.out.println(slist.get(i));
-               homePage.navPageButton.click();
-               list.get(slist.get(i)).click();
-               sleepFor(2);
-               homePage.goCnn();
-            }
+    }
 
-        }
     }
 

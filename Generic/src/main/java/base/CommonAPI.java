@@ -440,7 +440,7 @@ public class CommonAPI {
     public List<WebElement> getListOfItem(String locator) {
 
 
-        List<WebElement> list = driver.findElements(By.cssSelector("#nav > div.nav__container > div.nav - menu - links"));
+        List<WebElement> list = driver.findElements(By.cssSelector(locator));
         return list;
     }
     //Click Method by using JAVA Generics (You can use both By or Webelement)

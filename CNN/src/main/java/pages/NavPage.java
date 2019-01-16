@@ -18,48 +18,44 @@ public class NavPage extends CommonAPI {
 
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--us > a")
     public WebElement US;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--world > a")
     public WebElement world;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--politics > a")
     public WebElement politics;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--tech > a")
     public WebElement tech;
-
     @FindBy(how = How.CLASS_NAME, using = "nav-menu__img-health")
     public WebElement health;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--entertainment > a > img")
     public WebElement entertainment;
-
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--business > a")
     public WebElement business;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--travel > a > img")
     public WebElement travel;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--style > a > img")
     public WebElement style;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--bleacher > a > img")
     public WebElement br;
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--videos > a")
     public WebElement videos;
-
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--opinions > a")
     public WebElement opinions;
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
     public WebElement coupons;
 
-
+    @FindBy(how=How.XPATH,using = "//*[@id=\"nav-expanded-menu\"]/div[2]/ul/li/a")
+    public List<WebElement> subUS;
     @FindBy(how=How.XPATH,using = "//*[@id=\"nav-expanded-menu\"]/div[9]/ul/li/a")
     public List<WebElement> subTech;
 
-    @FindBy(how=How.XPATH,using = "//*[@id=\"nav-expanded-menu\"]/div[2]/ul/li/a")
-    public List<WebElement> subUS;
+    @FindBy(how =How.CSS,using = "#nav-expanded > div.nav-flyout-footer > form > p")
+    public WebElement preference;
+    @FindBy(how = How.CSS,using ="#nav-expanded > div.nav-flyout-footer > form > label:nth-child(2) > span")
+    public WebElement radioUS;
+    @FindBy(how = How.CSS,using ="#nav-expanded > div.nav-flyout-footer > form > label:nth-child(3) > span")
+    public WebElement radioInternational;
+    @FindBy(how = How.CSS,using ="#nav-expanded > div.nav-flyout-footer > form > button")
+    public WebElement buttonConfirm;
 
 
      public Map<String,WebElement> navigationList(){
