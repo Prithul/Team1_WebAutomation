@@ -1,4 +1,5 @@
 package tests;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.Na;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -10,7 +11,9 @@ import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
+import util.excel.ReadFromExcel;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -91,24 +94,43 @@ public class NavPageTest extends CommonAPI {
 //        navPage.assertData(slist,actualList);
 //
 //    }
+//    @Test
+//    public void checkSubMenuUS()
+//    {
+//        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+//        navPage = new PageFactory().initElements(driver, NavPage.class);
+//        List<String> actualList = new ArrayList<String>();
+//        actualList.add("Crime + Justice");
+//        actualList.add("Energy + Environment");
+//        actualList.add("Extreme Weather");
+//        actualList.add("Space + Science");
+//
+//        homePage.navPageButton.click();
+//       // List<WebElement> list = getListOfWebElementsByXpath("//*[@id=\"nav-expanded-menu\"]/div[9]/ul/li/a");
+//        //System.out.println(list.size() + "   "  +list.get(0).getText());
+//        List<WebElement> list = navPage.subUS;
+//        List<String> slist = navPage.getStringListFromWebelementList(list);
+//        System.out.println(slist.size() + "   "  +slist.get(0));
+//        navPage.assertData(slist,actualList);
+//
+//    }
+
     @Test
-    public void checkSubMenuUS()
+    public void checkNavFromExcel() throws IOException, InvalidFormatException
     {
-        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-        navPage = new PageFactory().initElements(driver, NavPage.class);
-        List<String> actualList = new ArrayList<String>();
-        actualList.add("Crime + Justice");
-        actualList.add("Energy + Environment");
-        actualList.add("Extreme Weather");
-        actualList.add("Space + Science");
 
-        homePage.navPageButton.click();
-       // List<WebElement> list = getListOfWebElementsByXpath("//*[@id=\"nav-expanded-menu\"]/div[9]/ul/li/a");
-        //System.out.println(list.size() + "   "  +list.get(0).getText());
-        List<WebElement> list = navPage.subUS;
-        List<String> slist = navPage.getStringListFromWebelementList(list);
-        System.out.println(slist.size() + "   "  +slist.get(0));
-        navPage.assertData(slist,actualList);
+        List<String> slist = new ArrayList<String >();
+             slist = ReadFromExcel.CnnexcelReader(0);
+         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+         navPage = new PageFactory().initElements(driver, NavPage.class);
+           List<WebElement> list = navPage.navigationArrayList();
+           for (WebElement l : list) {
+               homePage.navPageButton.click();
+             l.click();
+               sleepFor(2);
+               homePage.goCnn();
+            }
 
+        }
     }
-}
+

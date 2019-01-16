@@ -1,5 +1,7 @@
-package util;
+package util.sql;
 
+
+import util.sql.ConnectDB;
 
 import java.util.ArrayList;
 import java.util.List;

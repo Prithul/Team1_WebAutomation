@@ -517,7 +517,7 @@ public class CommonAPI {
     }
 //    //Get Assert Data
 //    public List<String> getAssertData(String DataFilePath, int ColumnNo) throws IOException {
-//        utility.DataReader dtr = new utility.DataReader();
+//        util.excel.DataReader dtr = new util.excel.DataReader();
 //        List<String> output = Arrays.asList(dtr.colReader(DataFilePath,ColumnNo));
 //        return output;
 //    }

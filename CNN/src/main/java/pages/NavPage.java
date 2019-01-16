@@ -1,11 +1,10 @@
 package pages;
 
 import base.CommonAPI;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import util.ConnectDB;
+import util.sql.ConnectDB;
 
 import java.util.ArrayList;
 import java.util.HashMap;
