@@ -1,6 +1,7 @@
 package tests;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.formula.functions.Na;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -190,9 +191,11 @@ public class NavPageTest extends CommonAPI {
         homePage.navPageButton.click();
         if(!navPage.radioUS.isSelected())
             navPage.radioUS.click();
+        JavascriptExecutor js = (JavascriptExecutor)driver;
         navPage.buttonConfirm.submit();
+        //js.executeScript( navPage.buttonConfirm.submit());
         //sleepFor(13);
-        String usURL= driver.getCurrentUrl();
+        String usURL= js.executeAsyncScript(getCurrentUrl();
         Assert.assertEquals(usURL,"https://us.cnn.com");
         homePage.goCnn();
         homePage.navPageButton.submit();
