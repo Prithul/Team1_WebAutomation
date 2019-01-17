@@ -10,6 +10,7 @@ import reporting.TestLogger;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.sql.SQLException;
 import java.util.List;
 
 public class SearchPageTest extends CommonAPI{
@@ -120,11 +121,11 @@ public class SearchPageTest extends CommonAPI{
 //        searchHomePage.homeSearchItemsAndEnter();
 //    }
 
-//    @Test
-//    public void searchItemsFromSearchPageNEnter()throws Exception, IOException, SQLException, ClassNotFoundException {
-//        SearchPage searchHomePage = PageFactory.initElements(driver, SearchPage.class);
-//        searchHomePage.searchPageSearchItemsAndEnter();
-//    }
+    @Test
+    public void searchItemsFromSearchPageNEnter()throws Exception, IOException, SQLException, ClassNotFoundException {
+        SearchPage searchHomePage = PageFactory.initElements(driver, SearchPage.class);
+        searchHomePage.searchPageSearchItemsAndEnter();
+    }
 
     @Test
     public void readFromGoogleSheetAndCheck() throws IOException, GeneralSecurityException, InterruptedException
