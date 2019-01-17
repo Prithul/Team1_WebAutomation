@@ -12,6 +12,7 @@
         <module>Generic</module>
         <!--module>Amazon</module-->
         <module>CNN</module>
+        <module>AMEX</module>
         <!--<module>Facebook</module>-->
     </modules>
 

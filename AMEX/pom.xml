@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>CNN</artifactId>
-
+    <artifactId>AMEX</artifactId>
     <dependencies>
         <dependency>
             <groupId>WebAutomationTeam1</groupId>
@@ -46,4 +45,5 @@
 
 
 </project>
+
 

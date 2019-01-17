@@ -1,16 +1,15 @@
 package tests;
 import base.CommonAPI;
-import org.openqa.selenium.Keys;
+import cnnutility.GoogleSheetReader;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import pages.HomePage;
 import pages.SearchPage;
 import reporting.TestLogger;
-import util.GoogleSheetReader;
+
+
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
-import java.sql.SQLException;
 import java.util.List;
 
 public class SearchPageTest extends CommonAPI{
@@ -130,10 +129,11 @@ public class SearchPageTest extends CommonAPI{
     @Test
     public void readFromGoogleSheetAndCheck() throws IOException, GeneralSecurityException, InterruptedException
     {
-        TestLogger.log("Browser is launched");
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+//        TestLogger.log("Browser is launched");
+//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         SearchPage searchHomePage = PageFactory.initElements(driver, SearchPage.class);
         GoogleSheetReader gr = new GoogleSheetReader();
+
         List<String> list = gr.readFromGoogleSheet();
         searchHomePage.searchButton.click();
         for(String st:list) {

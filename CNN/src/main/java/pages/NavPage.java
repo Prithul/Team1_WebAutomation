@@ -4,7 +4,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import util.sql.ConnectDB;
+import util.ConnectDB;
 
 import java.util.ArrayList;
 import java.util.HashMap;

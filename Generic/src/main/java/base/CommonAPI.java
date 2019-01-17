@@ -20,6 +20,8 @@ import org.testng.annotations.*;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Optional;
 import org.testng.asserts.SoftAssert;
+import reporting.ExtentManager;
+import reporting.ExtentTestManager;
 //import reporting.ExtentManager;
 //import reporting.ExtentTestManager;
 //import reporting.TestLogger;
@@ -53,20 +55,20 @@ public class CommonAPI {
     }
 
 
-//    //ExtentReport
-//    public static ExtentReports extent;
-//    @BeforeSuite
-//    public void extentSetup(ITestContext context) {
-//        ExtentManager.setOutputDirectory(context);
-//        extent = ExtentManager.getInstance();
-//    }
-//    @BeforeMethod
-//    public void startExtent(Method method) {
-//        String className = method.getDeclaringClass().getSimpleName();
-//        String methodName = method.getName().toLowerCase();
-//        ExtentTestManager.startTest(method.getName());
-//        ExtentTestManager.getTest().assignCategory(className);
-//    }
+    //ExtentReport
+    public static ExtentReports extent;
+    @BeforeSuite
+    public void extentSetup(ITestContext context) {
+        ExtentManager.setOutputDirectory(context);
+        extent = ExtentManager.getInstance();
+    }
+    @BeforeMethod
+    public void startExtent(Method method) {
+        String className = method.getDeclaringClass().getSimpleName();
+        String methodName = method.getName().toLowerCase();
+        ExtentTestManager.startTest(method.getName());
+        ExtentTestManager.getTest().assignCategory(className);
+    }
 
     protected String getStackTrace(Throwable t) {
         StringWriter sw = new StringWriter();
@@ -74,38 +76,38 @@ public class CommonAPI {
         t.printStackTrace(pw);
         return sw.toString();
     }
-   // @AfterMethod
-//    public void afterEachTestMethod(ITestResult result) {
-//        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
-//        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
-//
-//        for (String group : result.getMethod().getGroups()) {
-//            ExtentTestManager.getTest().assignCategory(group);
-//        }
-//
-//        if (result.getStatus() == 1) {
-//            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
-//        } else if (result.getStatus() == 2) {
-//            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
-//        } else if (result.getStatus() == 3) {
-//            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
-//        }
-//        ExtentTestManager.endTest();
-//        extent.flush();
-//        if (result.getStatus() == ITestResult.FAILURE) {
-//            captureScreenshot(driver, result.getName());
-//        }
-//        driver.quit();
-//    }
-//    @AfterSuite
-//    public void generateReport() {
-//        extent.close();
-//    }
-//    private Date getTime(long millis) {
-//        Calendar calendar = Calendar.getInstance();
-//        calendar.setTimeInMillis(millis);
-//        return calendar.getTime();
-//    }
+    @AfterMethod
+    public void afterEachTestMethod(ITestResult result) {
+        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));
+        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));
+
+        for (String group : result.getMethod().getGroups()) {
+            ExtentTestManager.getTest().assignCategory(group);
+        }
+
+        if (result.getStatus() == 1) {
+            ExtentTestManager.getTest().log(LogStatus.PASS, "Test Passed");
+        } else if (result.getStatus() == 2) {
+            ExtentTestManager.getTest().log(LogStatus.FAIL, getStackTrace(result.getThrowable()));
+        } else if (result.getStatus() == 3) {
+            ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+        }
+        ExtentTestManager.endTest();
+        extent.flush();
+        if (result.getStatus() == ITestResult.FAILURE) {
+            captureScreenshot(driver, result.getName());
+        }
+        driver.quit();
+    }
+    @AfterSuite
+    public void generateReport() {
+        extent.close();
+    }
+    private Date getTime(long millis) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(millis);
+        return calendar.getTime();
+    }
     //Selenium API start
 
     @Parameters({"url"})
