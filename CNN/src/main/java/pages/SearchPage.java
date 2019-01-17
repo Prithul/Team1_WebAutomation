@@ -18,10 +18,10 @@ public class SearchPage extends HomePage {
     //    @FindBy(how = How.XPATH, using = "/html/body/div[5]/div[3]/div/div[1]/div/div[1]/button[2]")
 //    public static WebElement searchPageSearchButton;
     @FindBy(how = How.CLASS_NAME, using = "cnn-search__input")
-    public static WebElement searchPageSearchTextBox;
+    public  WebElement searchPageSearchTextBox;
 
     @FindBy(how = How.XPATH, using = "/html/body/div[5]/div[3]/div/div[1]/div/div[1]/button[2]")
-    public static WebElement searchPageSubmitButton;
+    public  WebElement searchPageSubmitButton;
     @FindBy(how = How.CLASS_NAME, using = "cnn-search__clear")
     public WebElement clearButton;
 
@@ -98,7 +98,7 @@ public class SearchPage extends HomePage {
         clearInput();
         for (int i = 1; i < list.size(); i++) {
             searchPageSearchTextBox.sendKeys(list.get(i), Keys.ENTER);
-            submitSearchButton();
+            //submitSearchButton();
             sleepFor(5);
             clearInput();
 
