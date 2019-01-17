@@ -1,4 +1,6 @@
-package util.excel;
+package util;
+
+
 
 import base.CommonAPI;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -56,14 +58,14 @@ public class ReadFromExcel {
         List<String> list = new ArrayList<String>();
 
         for (int i = srow;i<=erow;i++) {
-             Cell cell = sheet.getRow(i).getCell(0);
-                String cellValue = dataFormatter.formatCellValue(cell);
-                System.out.print(cellValue + "\t");
-                list.add(cellValue);
-            }
+            Cell cell = sheet.getRow(i).getCell(0);
+            String cellValue = dataFormatter.formatCellValue(cell);
+            System.out.print(cellValue + "\t");
+            list.add(cellValue);
+        }
 
         workbook.close();
         return list ;
-        }
-
     }
+
+}

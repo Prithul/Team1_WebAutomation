@@ -1,6 +1,4 @@
-package util.sql;
-
-
+package util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,7 +21,7 @@ public class ConnectDB {
     public static Properties loadPropertiesFile(String path)throws Exception{
 
         Properties prop = new Properties();
-       // InputStream ism = new FileInputStream("Generic/lib/MySQL.properties");
+        // InputStream ism = new FileInputStream("Generic/lib/MySQL.properties");
         InputStream ism = new FileInputStream(path);  //your own path to secret data
         prop.load(ism);
         ism.close();
@@ -76,7 +74,7 @@ public class ConnectDB {
 
     // This Method needs to be Generic , so that it works for all type of class
 
-//    public void insertDataFromArrayListToSqlTable(String path,List<Student> list, String tableName, String columnName) throws Exception
+    //    public void insertDataFromArrayListToSqlTable(String path,List<Student> list, String tableName, String columnName) throws Exception
 //    {
 //        try {
 //            connectToSqlDatabase(path);
