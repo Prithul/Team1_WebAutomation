@@ -1,4 +1,9 @@
-utility\DataReader.class
-util\ConnectDB.class
-util\DBConnectTest.class
+util\excel\DataReader.class
+util\sql\ConnectDB.class
+reporting\ExtentManager.class
+reporting\ExtentTestManager.class
+reporting\ApplicationLog.class
+util\excel\ReadFromExcel.class
+reporting\TestLogger.class
+util\sql\DBConnectTest.class
 base\CommonAPI.class
