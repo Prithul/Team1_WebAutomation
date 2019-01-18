@@ -4,7 +4,7 @@
 <suite name="CNN Automation Script " parallel="false">
     <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
-    <parameter name="os" value="Windows 10"/>
+    <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10.0"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="71.0.3578.98"/>
@@ -14,7 +14,7 @@
         <classes>
           <!--  <class name="tests.HomePageTest"/> -->
            <!-- <class name="tests.NavPageTest"/> -->
-            <class name="tests.SearchPageTest"/>
+            <class name="tests.NavBarPageTest"/>
         </classes>
     </test>
 </suite>

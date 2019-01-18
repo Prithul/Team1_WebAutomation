@@ -37,7 +37,7 @@ public class NavPage extends CommonAPI {
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--bleacher > a > img")
     public WebElement br;
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--videos > a")
-    public WebElement videos;
+    public WebElement video;
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--opinions > a")
     public WebElement opinions;
     @FindBy(how = How.CSS, using = "#nav-expanded-menu > div.nav-flyout__menu-item.nav-flyout__menu-item--Coupons > a")
@@ -76,7 +76,7 @@ public class NavPage extends CommonAPI {
         navList.put("travel",travel);
         navList.put("style",style);
         navList.put("br",br);
-        navList.put("videos",videos);
+        navList.put("video",video);
         navList.put("opinions",opinions);
         navList.put("coupons",coupons);
         return navList;
@@ -94,7 +94,7 @@ public class NavPage extends CommonAPI {
         list.add(travel);
         list.add(style);
         list.add(br);
-        list.add(videos);
+        list.add(video);
         list.add(opinions);
         list.add(coupons);
   return list;

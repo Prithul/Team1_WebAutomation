@@ -45,7 +45,7 @@ public class ReadFromExcel {
         workbook.close();
     }
 
-    public static List<String> CnnexcelReader(int sheetno,int srow,int erow)throws IOException, InvalidFormatException {
+    public static List<String> CnnexcelReader(int sheetno,int srow,int erow, int colno)throws IOException, InvalidFormatException {
         String SAMPLE_XLSX_FILE_PATH = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\CnnExcel.xlsx";
 
         // Creating a Workbook from an Excel file (.xls or .xlsx)
@@ -58,7 +58,7 @@ public class ReadFromExcel {
         List<String> list = new ArrayList<String>();
 
         for (int i = srow;i<=erow;i++) {
-            Cell cell = sheet.getRow(i).getCell(0);
+            Cell cell = sheet.getRow(i).getCell(colno);
             String cellValue = dataFormatter.formatCellValue(cell);
             System.out.print(cellValue + "\t");
             list.add(cellValue);

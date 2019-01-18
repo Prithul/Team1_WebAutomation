@@ -122,7 +122,7 @@ public class NavPageTest extends CommonAPI {
 //    {
 //
 //        List<String> slist = new ArrayList<String >();
-//             slist = ReadFromExcel.CnnexcelReader(0,4,16);
+//             slist = ReadFromExcel.CnnexcelReader(0,4,16,0);
 //         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
 //         navPage = new PageFactory().initElements(driver, NavPage.class);
 //           Map<String,WebElement> list = navPage.navigationList();
