@@ -2,13 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="CNN Automation Script " parallel="false">
-
-    <!--<parameter name="useCloudEnv" value="false"/>-->
-    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
-    <!--<parameter name="os" value="OS X"/>-->
-    <!--<parameter name="os_version" value="Sierra"/>-->
-    <!--<parameter name="browserName" value="${browserName}"/>-->
-    <!--<parameter name="browserVersion" value="53.0"/>-->
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows 10"/>
+    <parameter name="os_version" value="10.0"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="71.0.3578.98"/>
     <parameter name="url" value="https://www.cnn.com"/>
     <parameter name="user" value="cnn"/>
     <test name = "CNN Home">
@@ -18,5 +17,4 @@
             <class name="tests.SearchPageTest"/>
         </classes>
     </test>
-
 </suite>

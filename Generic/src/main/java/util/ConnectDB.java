@@ -30,6 +30,7 @@ public class ConnectDB {
     }
 
     //Connect to Database
+    //Modified by Halima
     public void connectToSqlDatabase(String path) throws Exception{
         Properties prop = loadPropertiesFile(path);
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
@@ -43,7 +44,7 @@ public class ConnectDB {
         System.out.println("Database connected");
 
     }
-
+//Modified by Halima
     public List<String> readDataBase(String path, String tableName, String columnName)throws Exception{
         List<String> data = new ArrayList<String>();
 
@@ -96,6 +97,7 @@ public class ConnectDB {
 //            e.printStackTrace();
 //        }
 //    }
+    //Modified by Halima
     public void insertStringDataFromArrayListToSqlTable(String path, List<String> list, String tableName, String columnName) throws Exception
     {
         try {
@@ -118,6 +120,8 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
+
+    //Modified by Halima
     public void insertDataFromArrayToSqlTable(String path, int [] ArrayData, String tableName, String columnName) throws Exception
     {
         try {
@@ -140,6 +144,7 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
+
     private void writeResultSetToConsole(ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
             String itemName = resultSet.getString("item_name");

@@ -127,24 +127,24 @@ public class SearchPageTest extends CommonAPI{
         searchHomePage.searchPageSearchItemsAndEnter();
     }
 
-    @Test
-    public void readFromGoogleSheetAndCheck() throws IOException, GeneralSecurityException, InterruptedException
-    {
-//        TestLogger.log("Browser is launched");
-//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        SearchPage searchHomePage = PageFactory.initElements(driver, SearchPage.class);
-        GoogleSheetReader gr = new GoogleSheetReader();
-
-        List<String> list = gr.readFromGoogleSheet();
-        searchHomePage.searchButton.click();
-        for(String st:list) {
-            searchHomePage.searchFor(st);
-            searchHomePage.searchSubmitButton.submit();
-            sleepFor(5);
-            searchHomePage.goCnn();
-            System.out.println(st);
-       }
-    }
+//    @Test
+//    public void readFromGoogleSheetAndCheck() throws IOException, GeneralSecurityException, InterruptedException
+//    {
+////        TestLogger.log("Browser is launched");
+////        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+//        SearchPage searchHomePage = PageFactory.initElements(driver, SearchPage.class);
+//        GoogleSheetReader gr = new GoogleSheetReader();
+//
+//        List<String> list = gr.readFromGoogleSheet();
+//        searchHomePage.searchButton.click();
+//        for(String st:list) {
+//            searchHomePage.searchFor(st);
+//            searchHomePage.searchSubmitButton.submit();
+//            sleepFor(5);
+//            searchHomePage.goCnn();
+//            System.out.println(st);
+//       }
+//    }
 
     }
 
