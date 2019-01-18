@@ -86,8 +86,6 @@ public class GoogleSheetReader {
                 // Print columns A and E, which correspond to indices 0 and 4.
                 System.out.printf("%s\n", row.get(0));
                 list.add( row.get(0).toString());
-
-
             }
         }
         return list;
