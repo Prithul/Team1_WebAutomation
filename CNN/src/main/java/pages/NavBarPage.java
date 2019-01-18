@@ -69,6 +69,7 @@ public class NavBarPage extends CommonAPI {
     public List<WebElement> navBarWebElements()
     {
         List<WebElement> wlist = new ArrayList<WebElement>();
+        wlist.add(navBarVideo);
         wlist.add(navBarUS);
         wlist.add(navBarWorld);
         wlist.add(navBarPolitics);
@@ -79,7 +80,7 @@ public class NavBarPage extends CommonAPI {
         wlist.add(navBarStyle);
         wlist.add(navBarTravel);
         wlist.add(navBarSports);
-        wlist.add(navBarVideo);
+
         return wlist;
 
     }

@@ -5,7 +5,7 @@
     <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
-    <parameter name="os_version" value="10.0"/>
+    <parameter name="os_version" value="10"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="71.0.3578.98"/>
     <parameter name="url" value="https://www.cnn.com"/>
