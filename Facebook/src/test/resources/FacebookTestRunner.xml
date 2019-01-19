@@ -13,7 +13,7 @@
 
     <test name = "FaceBook Home">
         <classes>
-            <class name="tests.TestHomeFacebook"/>
+            <!--<class name="pageModelObject.TestHomeFacebook"/>-->
         </classes>
     </test>
 

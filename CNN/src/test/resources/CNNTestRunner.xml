@@ -13,7 +13,7 @@
 
     <test name = "CNN Home">
         <classes>
-            <class name="tests.TestHomeCNN"/>
+            <!--<class name="pageModelObject.TestHomeCNN"/>-->
         </classes>
     </test>
 

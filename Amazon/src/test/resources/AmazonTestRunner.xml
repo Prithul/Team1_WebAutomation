@@ -3,7 +3,7 @@
 
 <suite name="Amazon Automation Script " parallel="false">
 
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -13,13 +13,28 @@
 
     <test name = "Amazon Home">
         <classes>
-            <!--<class name="pageModelObject.TestHomeAmazon"/>-->
+            <!--<class name="pageModelObject.TestHome"/>-->
             <!--<class name="dataDriven.TestSearchPageBySql"/>-->
-            <!--<class name="pageModelObject.TestSignInSignOut"/>-->
-            <class name="pageModelObject.TestDropDown"/>
-            <!--<class name="pageModelObject.TestNavigation"/>-->
             <!--<class name="dataDriven.TestSearchByExcel"/>-->
+            <!--<class name="dataDriven.TestSearchByGoogleSheet"/>-->
+            <!--<class name="pageModelObject.TestSignInSignOut"/>-->
+            <!--<class name="pageModelObject.TestDropDown"/>-->
+            <!--<class name="pageModelObject.TestSearchOnSearchBox"/>-->
+            <!--<class name="pageModelObject.TestNavigation"/>-->
+            <class name="pageModelObject.TestHomePage"/>
+            <!--<class name="testNavPages.TestYourAmazon"/>-->
+            <!--<class name="testNavPages.TestTodayDeal"/>-->
+            <!--<class name="testNavPages.TestGiftCards"/>-->
+            <!--<class name="testNavPages.TestWholeFoods"/>-->
+            <!--<class name="testNavPages.TestRigistry"/>-->
+            <!--<class name="testNavPages.TestSell"/>-->
+            <!--<class name="testNavPages.TestHelp"/>-->
+            <!--<class name="pageModelObject.TestURL"/>-->
+            <!--<class name="pageModelObject.TestPageTitle"/>-->
+            <!--<class name="pageModelObject.TestAmazonPrime"/>-->
+            <!--<class name="pageModelObject.TestAllLinks"/>-->
         </classes>
     </test>
 
 </suite>
+
