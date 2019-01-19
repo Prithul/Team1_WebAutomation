@@ -36,19 +36,16 @@ public class NavBarPage extends CommonAPI {
     {
         we.click();
     }
-
     public String checkEachNavTabUrl(WebElement we)
     {
         we.click();
        return driver.getCurrentUrl();
     }
-
     public String checkEachNavTabTitle(WebElement we)
     {
         we.click();
         return driver.getTitle();
     }
-
     public List<String> navBarStringElements()
     {
         List<String> slist = new ArrayList<String>();
@@ -64,7 +61,6 @@ public class NavBarPage extends CommonAPI {
         slist.add(navBarSports.getText());
         slist.add(navBarVideo.getText());
         return slist;
-
     }
     public List<WebElement> navBarWebElements()
     {
@@ -80,7 +76,6 @@ public class NavBarPage extends CommonAPI {
         wlist.add(navBarStyle);
         wlist.add(navBarTravel);
         wlist.add(navBarSports);
-
         return wlist;
 
     }

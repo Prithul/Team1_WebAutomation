@@ -19,21 +19,17 @@ public class SearchPage extends HomePage {
 //    public static WebElement searchPageSearchButton;
     @FindBy(how = How.CLASS_NAME, using = "cnn-search__input")
     public  WebElement searchPageSearchTextBox;
-
     @FindBy(how = How.XPATH, using = "/html/body/div[5]/div[3]/div/div[1]/div/div[1]/button[2]")
     public  WebElement searchPageSubmitButton;
     @FindBy(how = How.CLASS_NAME, using = "cnn-search__clear")
     public WebElement clearButton;
 
-
     public void searchFor(String value) {
         getSearchInputField().sendKeys(value);
     }
-
     public void searchForAndEnter(String value) {
         getSearchInputField().sendKeys(value, Keys.ENTER);
     }
-
     public void submitSearchButton() {
         searchPageSubmitButton.click();
     }
@@ -42,15 +38,12 @@ public class SearchPage extends HomePage {
         //driver.findElement(By.className("cnn-search__clear")).click();
         clearButton.click();
     }
-
     public WebElement getSearchInputField() {
         return searchTextBox;
     }
-
     public void setSearchInputField(WebElement searchInputField) {
         this.searchTextBox = searchInputField;
     }
-
     public void homeSearchItemsAndSubmitButton() throws IOException, InterruptedException {
         searchButton.click();
         List<String> list = getItemValue();
@@ -62,7 +55,6 @@ public class SearchPage extends HomePage {
 
         }
     }
-
     public void searchPageSearchItemsAndSubmitButton() throws IOException, InterruptedException {
         List<String> list = getItemValue();
         searchButton.click();
@@ -74,12 +66,8 @@ public class SearchPage extends HomePage {
             submitSearchButton();
             sleepFor(5);
             clearInput();
-
-
         }
     }
-
-
     public void homeSearchItemsAndEnter() throws InterruptedException {
         searchButton.click();
         List<String> list = getItemValue();
@@ -91,7 +79,6 @@ public class SearchPage extends HomePage {
     }
 
     public void searchPageSearchItemsAndEnter() throws InterruptedException {
-
         List<String> list = getItemValue();
         searchButton.click();
         searchForAndEnter(list.get(0));
@@ -101,13 +88,8 @@ public class SearchPage extends HomePage {
             //submitSearchButton();
             sleepFor(5);
             clearInput();
-
-
         }
     }
-
-
-
         public List<String> getItemValue()
         {
             List<String> itemsList = new ArrayList<String>();
@@ -119,7 +101,6 @@ public class SearchPage extends HomePage {
             itemsList.add("Business");
             itemsList.add("Travel");
             itemsList.add("Style");
-
             return itemsList;
         }
     }

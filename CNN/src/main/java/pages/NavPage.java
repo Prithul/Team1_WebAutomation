@@ -100,17 +100,13 @@ public class NavPage extends CommonAPI {
   return list;
 
     }
-
     public List<String> getStringListFromWebelementList(List<WebElement> list)
     {
         List<String> slist = new ArrayList<String>();
         for(int i=0 ; i<list.size();i++)
             slist.add(list.get(i).getText());
-
         return slist;
-
     }
-
     public void storeNavListToDb(List<String> list) {
         ConnectDB db = new ConnectDB();
 
@@ -125,10 +121,8 @@ public class NavPage extends CommonAPI {
        }catch (Exception e){
            System.out.println("NavList Insertion probnem: "+e );
        }
-
         //db.readDataBase(path);
     }
-
        public List<String> readNavListFromDb() {
         ConnectDB db = new ConnectDB();
         List<String> list = new ArrayList<String>();
@@ -146,7 +140,6 @@ public class NavPage extends CommonAPI {
         }
         return list;
         }
-
     public void goNavSite() {
         List<WebElement> list = navigationArrayList();
         for(int i=0; i<list.size(); i++) {
@@ -154,15 +147,5 @@ public class NavPage extends CommonAPI {
 
         }
     }
-
-//    //public WebElement clickTech(){
-//        return new NavPage(driver).tech;
-//    }
-//    public WebElement clickWorld(){
-//        return new NavPage(driver).world;
-//    }
-//    public void clickByElement(WebElement element){
-//        element.click();
-//    }
 
 }

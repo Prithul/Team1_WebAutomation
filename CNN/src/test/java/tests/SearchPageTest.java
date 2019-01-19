@@ -113,7 +113,6 @@ public class SearchPageTest extends CommonAPI{
         SearchPage searchHomePage = PageFactory.initElements(driver, SearchPage.class);
         searchHomePage.searchPageSearchItemsAndEnter();
     }
-
     @Test
     public void readFromGoogleSheetAndCheck() throws IOException, GeneralSecurityException, InterruptedException
     {
