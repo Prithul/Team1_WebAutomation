@@ -43,11 +43,11 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.13</version>
             </dependency>
-            <dependency>
+    <!--        <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>3.17</version>
-            </dependency>
+            </dependency> -->
             <dependency>
                 <groupId>com.aventstack</groupId>
                 <artifactId>extentreports</artifactId>
@@ -93,25 +93,25 @@
                 <artifactId>rest-assured</artifactId>
                 <version>3.0.6</version>
             </dependency>
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi-ooxml</artifactId>
-                <version>4.0.1</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+                  <dependency>
+                      <groupId>org.apache.poi</groupId>
+                      <artifactId>poi-ooxml</artifactId>
+                      <version>4.0.1</version>
+                  </dependency>
+              </dependencies>
+          </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+          <build>
+              <plugins>
+                  <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-compiler-plugin</artifactId>
+                      <configuration>
+                          <source>1.8</source>
+                          <target>1.8</target>
+                      </configuration>
+                  </plugin>
+              </plugins>
+          </build>
 
-</project>
+      </project>
