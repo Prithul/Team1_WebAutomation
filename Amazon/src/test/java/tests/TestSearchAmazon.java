@@ -1,6 +1,6 @@
 package tests;
 
-import essentialUtility.SearchPage;
+//import essentialUtility.SearchPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -9,11 +9,11 @@ import java.sql.SQLException;
 
 public class TestSearchAmazon extends essentialUtility.SearchFeature {
 
-    @Test
-    public void test4()
-    {
-        searchMenu();
-    }
-
+//    @Test
+//    public void test4()
+//    {
+//        searchMenu();
+//    }
+//
 
 }
