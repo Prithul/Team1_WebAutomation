@@ -1,5 +1,5 @@
 pages\NavPage.class
-cnnutility\GoogleSheetReader.class
-pages\LiveTvPage.class
 pages\HomePage.class
 pages\SearchPage.class
+cnnutility\GoogleSheetReader.class
+pages\LiveTvPage.class

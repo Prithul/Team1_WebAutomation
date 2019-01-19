@@ -26,8 +26,8 @@ public class HomePageTest extends CommonAPI {
       public void checkHomeTitle() {
        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
        //homePage.goCnn();
-     String url=  homePage.getUrl();
-     String title = homePage.driver.getTitle();
+       String url=  homePage.getUrl();
+       String title = homePage.driver.getTitle();
        Assert.assertEquals(title,"CNN - Breaking News, Latest News and Videos");
        Assert.assertEquals(url,"https://www.cnn.com/");
    }
