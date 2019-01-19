@@ -13,6 +13,7 @@
     <module>Amazon</module>
     <module>CNN</module>
     <module>Facebook</module>
+    <module>Ebay</module>
 </modules>
 
 
@@ -42,11 +43,6 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.13</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi</artifactId>
-                <version>3.17</version>
             </dependency>
             <dependency>
                 <groupId>com.aventstack</groupId>
@@ -97,6 +93,11 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
                 <version>4.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>3.17</version>
             </dependency>
 
         </dependencies>

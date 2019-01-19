@@ -10,7 +10,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseSearch extends searchPage {
+public class DatabaseSearch extends CommonAPI {
+
+    public void signIn() throws InterruptedException {
+        driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("ameladrv@gmail.com");
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("PNTeam1234");
+        driver.findElement(By.xpath("//input[@value='Log In']")).click();
+    }
 
         static SqlDatabase connectToSqlDB = new SqlDatabase();
 
@@ -31,21 +37,19 @@ public class DatabaseSearch extends searchPage {
             list = connectToSqlDB.readDataBase("SearchFriends", "list");
             System.out.println("Read Data From Database: ");
             for (String st : list) {
-                System.out.println(st);
-            }
+                System.out.println(st); }
             return list;
         }
+
         public void searchFriends () {
             try {
                 List<String> list = new ArrayList<>();
                 list = getItemsListFromDB();
 
-                for (String st : list) {
-                    //CommonAPI.typeOnElementNEnter("//*[@id=\"js_1l\"]", st);
+            for (String st : list) {
                     driver.findElement(By.xpath("//input[@aria-label='Search']")).sendKeys(st, Keys.ENTER);
-                    navigateBack();
-                }
-            } catch (Exception e) {
+                    navigateBack(); }
+            }catch (Exception e) {
                 e.printStackTrace();
             }
         }

@@ -19,7 +19,6 @@ public class excel {
         this.path = path;
         try {
             fis = new FileInputStream(path);
-            /// workbook = new XSSFWorkbook(fis);
             workbook = new HSSFWorkbook(fis);
             sheet = workbook.getSheetAt(0);
             fis.close();
@@ -144,7 +143,7 @@ public class excel {
             return "row " + rowNum + " or column " + colNum + " does not exist  in xls";
         }
     }
-            // find whether sheets exists
+ /*           // find whether sheets exists
             public boolean isSheetExist(String sheetName) {
             int index = workbook.getSheetIndex(sheetName);
             if (index == -1) {
@@ -167,5 +166,5 @@ public class excel {
             return -1;
            return row.getLastCellNum();
 
-    }
+    }*/
 }

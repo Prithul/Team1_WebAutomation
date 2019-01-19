@@ -2,19 +2,13 @@ package Excel;
 
 import base.CommonAPI;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class implementExcel extends CommonAPI {
 
-    static excel reader;
+        static excel reader;
 
-    public  void getDataFromExcel() throws InterruptedException{
+        public  void getDataFromExcel() throws InterruptedException{
 
         try {
             reader = new excel("/Users/ameladervishi/Downloads/Team1/Facebook/src/main/java/ExcelDoc/SignUp.xls");
