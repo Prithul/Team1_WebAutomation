@@ -73,7 +73,7 @@ public class ConnectDB {
         return dataList;
     }
 
-    // This Method needs to be Generic , so that it works for all type of class
+    // This Method needs to be Generic , so that it works for all type of classes
 
     //    public void insertDataFromArrayListToSqlTable(String path,List<Student> list, String tableName, String columnName) throws Exception
 //    {
@@ -120,7 +120,6 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
-
     //Modified by Halima
     public void insertDataFromArrayToSqlTable(String path, int [] ArrayData, String tableName, String columnName) throws Exception
     {
@@ -144,7 +143,6 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
-
     private void writeResultSetToConsole(ResultSet resultSet) throws SQLException {
         while (resultSet.next()) {
             String itemName = resultSet.getString("item_name");
@@ -152,7 +150,6 @@ public class ConnectDB {
         }
 
     }
-
     private void close() {
         try {
             if (resultSet != null) {

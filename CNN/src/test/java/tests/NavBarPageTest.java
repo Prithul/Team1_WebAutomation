@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NavBarPageTest extends CommonAPI {
-
     @Test
     public void checkNavBarTabUS()
     {
@@ -46,7 +45,6 @@ public class NavBarPageTest extends CommonAPI {
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarOpinion);
     }
-
     @Test
     public void checkNavBarTabHealth()
     {
@@ -71,14 +69,12 @@ public class NavBarPageTest extends CommonAPI {
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarSports);
     }
-
     @Test
     public void checkNavBarVideo()
     {
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarVideo);
     }
-
     @Test
     public void checkNavBarTitle()throws IOException, InvalidFormatException
     {
@@ -93,7 +89,6 @@ public class NavBarPageTest extends CommonAPI {
             driver.get("http://www.cnn.com/");
         }
       }
-
     @Test
     public void checkNavBarText()throws IOException, InvalidFormatException, InterruptedException
     {

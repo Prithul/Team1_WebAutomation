@@ -69,7 +69,6 @@ public class NavPageTest extends CommonAPI {
         Assert.assertEquals(title,"CNNPolitics - Political News, Analysis and Opinion");
         Assert.assertEquals(url,"https://www.cnn.com/politics");
     }
-
     @Test
     public void checkSubMenuTech()
     {
@@ -99,7 +98,6 @@ public class NavPageTest extends CommonAPI {
         actualList.add("Energy + Environment");
         actualList.add("Extreme Weather");
         actualList.add("Space + Science");
-
         homePage.navPageButton.click();
        List<WebElement> list = navPage.subUS;
         List<String> slist = navPage.getStringListFromWebelementList(list);
@@ -109,9 +107,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkNavFromExcel() throws IOException, InvalidFormatException,InterruptedException
     {
-
-        List<String> slist = new ArrayList<String >();
-             slist = ReadFromExcel.CnnexcelReader(0,4,16,0);
+      List<String> slist = new ArrayList<String >();
+         slist = ReadFromExcel.CnnexcelReader(0,4,16,0);
          HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
          navPage = new PageFactory().initElements(driver, NavPage.class);
            Map<String,WebElement> list = navPage.navigationList();
@@ -122,7 +119,6 @@ public class NavPageTest extends CommonAPI {
                sleepFor(2);
                homePage.goCnn();
             }
-
         }
 @Test
  public void checkLabelOfPreference()
@@ -152,7 +148,6 @@ public class NavPageTest extends CommonAPI {
         homePage.navPageButton.click();
         String labelUS = navPage.buttonConfirm.getText();
         Assert.assertEquals(labelUS, "Confirm");
-
     }
     @Test
     public void checkSelectReadioButton() throws InterruptedException

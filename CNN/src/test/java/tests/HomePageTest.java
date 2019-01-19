@@ -11,13 +11,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.NavPage;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
 public class HomePageTest extends CommonAPI {
-
     HomePage homePage;
  @Test
       public void checkHomeTitle() {
@@ -48,14 +45,11 @@ public class HomePageTest extends CommonAPI {
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         Thread.sleep(500);
         homePage.searchButton.click();
-        Thread.sleep(500);
-   }
+    }
     @Test
         public void closeSearchField()throws InterruptedException {
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-        Thread.sleep(500);
         homePage.searchButton.click();
-        Thread.sleep(500);
     }
     @Test
         public void writeOnTextBox()throws InterruptedException
@@ -70,12 +64,9 @@ public class HomePageTest extends CommonAPI {
     {
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.getListOfItem("a")  ;    //homePage.navItemList;
-
-           List<String> slist = getListOfString(list);
+        List<String> slist = getListOfString(list);
            for(int i=0;i<slist.size();i++)
                System.out.println("     " +slist.get(i));
-
-
     }
      }
 
