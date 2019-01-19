@@ -1,8 +1,0 @@
-reporting\ExtentManager.class
-util\DBConnectTest.class
-reporting\ExtentTestManager.class
-reporting\ApplicationLog.class
-reporting\TestLogger.class
-util\ConnectDB.class
-util\ReadFromExcel.class
-base\CommonAPI.class
