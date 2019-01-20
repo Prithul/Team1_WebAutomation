@@ -9,13 +9,7 @@
 </parent>
 <modelVersion>4.0.0</modelVersion>
 
-<<<<<<< HEAD
 <artifactId>Generic</artifactId>
-
-
-=======
-    <artifactId>Generic</artifactId>
->>>>>>> TempDev
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -46,13 +40,6 @@
             <artifactId>extentreports</artifactId>
         </dependency>
         <dependency>
-<<<<<<< HEAD
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-        </dependency>
-        <dependency>
-=======
->>>>>>> TempDev
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
         </dependency>
@@ -96,19 +83,10 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
         </dependency>
-<<<<<<< HEAD
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
         </dependency>
-
-
-
-=======
-      <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-        </dependency>
->>>>>>> TempDev
     </dependencies>
 </project>

@@ -2,11 +2,9 @@ package base;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
-<<<<<<< HEAD
-=======
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
->>>>>>> TempDev
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,23 +12,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-<<<<<<< HEAD
 import org.openqa.selenium.remote.RemoteWebDriver;
-=======
->>>>>>> TempDev
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-<<<<<<< HEAD
 import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import org.apache.commons.io.FileUtils;
-=======
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Optional;
 import org.testng.asserts.SoftAssert;
@@ -38,7 +31,6 @@ import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
->>>>>>> TempDev
 import reporting.TestLogger;
 
 import java.io.File;
@@ -53,20 +45,20 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-<<<<<<< HEAD
-    public WebDriver driver = null;
-    public String browserstack_username = "ameladervishi1";
-    public String browserstack_accesskey = "ST8xejNXoQ2jgZGmx2fU";
-    public String saucelabs_username = "AmelaDrv";
-    public String saucelabs_accesskey = "dd455722-faa6-4669-bc51-c1944f80b467";
-=======
+
+//    public WebDriver driver = null;
+//    public String browserstack_username = "ameladervishi1";
+//    public String browserstack_accesskey = "ST8xejNXoQ2jgZGmx2fU";
+//    public String saucelabs_username = "AmelaDrv";
+//    public String saucelabs_accesskey = "dd455722-faa6-4669-bc51-c1944f80b467";
+
 
     public static WebDriver driver = null;
     public String browserstack_username= "halimadewanbabee1";
     public String browserstack_accesskey = "NZSu59zkiixqekfFzoYS";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
->>>>>>> TempDev
+
 
     //ExtentReport
     public static ExtentReports extent;
@@ -85,12 +77,7 @@ public class CommonAPI {
         ExtentTestManager.getTest().assignCategory(className);
     }
 
-    protected String getStackTrace(Throwable t) {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        t.printStackTrace(pw);
-        return sw.toString();
-    }
+
 
 
 //    @AfterMethod
@@ -142,7 +129,7 @@ public class CommonAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-<<<<<<< HEAD
+
         driver.quit();
     }
 
@@ -208,7 +195,6 @@ public class CommonAPI {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-=======
         System.out.println("Clean up");
         driver.quit();
     }
@@ -223,107 +209,11 @@ public class CommonAPI {
     }
 
 
-    //Selenium API start
-    @Parameters({"useCloudEnv","cloudEnvName","os","os_version","browserName","browserVersion","url"})
-    @BeforeMethod
-    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
-                      @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("34")
-                              String browserVersion, @Optional("http://www.cnn.com") String url)throws IOException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\Generic\\browser-driver\\chromedriver");
-        if(useCloudEnv==true){
-            if(cloudEnvName.equalsIgnoreCase("browserstack")) {
-                getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);
-            }else if (cloudEnvName.equalsIgnoreCase("saucelabs")){
-                getCloudDriver(cloudEnvName,saucelabs_username, saucelabs_accesskey,os,os_version, browserName, browserVersion);
-            }
-        }else{
-            getLocalDriver(os, browserName);
-        }
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
-        driver.get(url);
-        driver.manage().window().maximize();
-    }
-    public WebDriver getLocalDriver(@Optional("mac") String OS, String browserName){
-        if(browserName.equalsIgnoreCase("chrome")){
-            if(OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
-            }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
-            }
-            driver = new ChromeDriver();
-        } else if(browserName.equalsIgnoreCase("chrome-options")){
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--disable-notifications");
-            if(OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
-            }else if(OS.equalsIgnoreCase("Windows")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
-            }
-            driver = new ChromeDriver(options);
-        }
-
-        else if(browserName.equalsIgnoreCase("firefox")){
-            if(OS.equalsIgnoreCase("OS X")){
-                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver");
-            }else if(OS.equalsIgnoreCase("Windows")) {
->>>>>>> TempDev
-                System.setProperty("webdriver.gecko.driver", "../Generic/browser-driver/geckodriver.exe");
-            }
-            driver = new FirefoxDriver();
-
-<<<<<<< HEAD
-        } else if (browserName.equalsIgnoreCase("ie")) {
-=======
-        } else if(browserName.equalsIgnoreCase("ie")) {
->>>>>>> TempDev
-            System.setProperty("webdriver.ie.driver", "../Generic/browser-driver/IEDriverServer.exe");
-            driver = new InternetExplorerDriver();
-        }
-        return driver;
-
-    }
-
-
-<<<<<<< HEAD
-    public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String os_version, String browserName,
-                                    String browserVersion) throws IOException {
-        DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("browser", browserName);
-        cap.setCapability("browser_version", browserVersion);
-        cap.setCapability("os", os);
-        cap.setCapability("os_version", os_version);
-        if (envName.equalsIgnoreCase("Saucelabs")) {
-            //resolution for Saucelabs
-            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
-                    "@ondemand.saucelabs.com:80/wd/hub"), cap);
-        } else if (envName.equalsIgnoreCase("Browserstack")) {
-=======
-    public WebDriver getCloudDriver(String envName,String envUsername, String envAccessKey,String os, String os_version,String browserName,
-                                    String browserVersion)throws IOException {
-        DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("browser",browserName);
-        cap.setCapability("browser_version",browserVersion);
-        cap.setCapability("os", os);
-        cap.setCapability("os_version", os_version);
-        if(envName.equalsIgnoreCase("Saucelabs")){
-            //resolution for Saucelabs
-            driver = new RemoteWebDriver(new URL("http://"+envUsername+":"+envAccessKey+
-                    "@ondemand.saucelabs.com:80/wd/hub"), cap);
-        }else if(envName.equalsIgnoreCase("Browserstack")) {
->>>>>>> TempDev
-            cap.setCapability("resolution", "1024x768");
-            driver = new RemoteWebDriver(new URL("http://" + envUsername + ":" + envAccessKey +
-                    "@hub-cloud.browserstack.com/wd/hub"), cap);
-        }
-        return driver;
-    }
-<<<<<<< HEAD
     @AfterMethod
     public void cleanUP() {
         //driver.close();
     }
-=======
+
    public String getUrl()
    {
        String url = driver.getCurrentUrl();
@@ -331,7 +221,7 @@ public class CommonAPI {
   return url;
    }
 
->>>>>>> TempDev
+
     //type
     public void typeOnCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
@@ -339,11 +229,11 @@ public class CommonAPI {
     public void typeOnID(String locator, String value) {
         driver.findElement(By.id(locator)).sendKeys(value);
     }
-<<<<<<< HEAD
+
     public void typeOnElement(String locator, String value) {
-=======
+
     public void typeOnElement(String locator, String value){
->>>>>>> TempDev
+
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
         } catch (Exception ex1) {
@@ -361,14 +251,14 @@ public class CommonAPI {
             }
         }
     }
-<<<<<<< HEAD
+
     public void typeOnElementNEnter(String locator, String value) {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
-=======
+
     public void typeOnElementNEnter(String locator, String value){
        // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
->>>>>>> TempDev
+
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
         } catch (Exception ex1) {
@@ -397,7 +287,7 @@ public class CommonAPI {
         Date date = new Date();
         df.format(date);
 
-<<<<<<< HEAD
+
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(file, new File(System.getProperty("user.dir") + "/screenshots/" + screenshotName + " " + df.format(date) + ".png"));
@@ -616,7 +506,7 @@ public class CommonAPI {
             System.out.println("CSS locator didn't work");
         }
     }
-=======
+
     public static void captureScreenshot(WebDriver driver, String screenshotName){
         DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
@@ -651,7 +541,6 @@ public class CommonAPI {
             }
         }
     }
-
     public void typeOnInputField(String locator, String value){
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
@@ -731,9 +620,6 @@ public class CommonAPI {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
     }
-
-
-
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         System.out.println(list.size());
@@ -744,7 +630,6 @@ public class CommonAPI {
         }
         return items;
     }
-
     public void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
@@ -966,5 +851,5 @@ public class CommonAPI {
 
 
     //****************Halima*************************
->>>>>>> TempDev
+
 }
