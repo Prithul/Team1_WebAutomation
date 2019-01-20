@@ -2,14 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>WebAutomationTeam1</artifactId>
-        <groupId>WebAutomationTeam1</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+<parent>
+    <artifactId>WebAutomationTeam1</artifactId>
+    <groupId>WebAutomationTeam1</groupId>
+    <version>1.0-SNAPSHOT</version>
+</parent>
+<modelVersion>4.0.0</modelVersion>
 
+<<<<<<< HEAD
+<artifactId>Generic</artifactId>
+
+
+=======
     <artifactId>Generic</artifactId>
+>>>>>>> TempDev
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -40,6 +46,13 @@
             <artifactId>extentreports</artifactId>
         </dependency>
         <dependency>
+<<<<<<< HEAD
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+        </dependency>
+        <dependency>
+=======
+>>>>>>> TempDev
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
         </dependency>
@@ -83,9 +96,19 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
         </dependency>
+<<<<<<< HEAD
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+        </dependency>
+
+
+
+=======
       <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
         </dependency>
+>>>>>>> TempDev
     </dependencies>
 </project>
