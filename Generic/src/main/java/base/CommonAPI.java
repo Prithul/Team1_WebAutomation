@@ -35,7 +35,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
     public String browserstack_username = "ameladervishi1";
     public String browserstack_accesskey = "ST8xejNXoQ2jgZGmx2fU";
     public String saucelabs_username = "AmelaDrv";
@@ -211,8 +211,8 @@ public class CommonAPI {
             }
         }
     }
-    public void typeOnElementNEnter(String locator, String value) {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
+    public static void typeOnElementNEnter(String locator, String value) {
+        TestLogger.log(CommonAPI.class.getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);

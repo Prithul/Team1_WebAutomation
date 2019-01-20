@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 import reporting.TestLogger;
 import search.FrontPageNdSignOut;
 
+import java.io.IOException;
+import java.security.GeneralSecurityException;
+
+import static util.GoogleSheetReader.getNamesFromGoogleDocs;
+
 public class TestFrontPage extends FrontPageNdSignOut {
 
         FrontPageNdSignOut frontPage;
@@ -62,4 +67,8 @@ public class TestFrontPage extends FrontPageNdSignOut {
         @Test
         public void test11(){
         birthYearSelect(); }
+
+        @Test
+        public void testGoogleSheetReader() throws IOException, GeneralSecurityException {
+        getNamesFromGoogleDocs(); }
 }

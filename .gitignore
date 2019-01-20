@@ -1,2 +1,9 @@
 .idea/
 *.iml
+target/
+*.settings
+.class
+bin/
+obj/
+.factorypath
+*.idea

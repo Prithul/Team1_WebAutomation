@@ -61,11 +61,11 @@ public class testEbayHome extends EbayHome {
     @Test
     public void test51() throws InterruptedException{//failed
         SearchBoxText();
-    }
+    }*/
     @Test
     public void test52(){
         dailyDealsTab();
-    }*/
+    }
     @Test
     public void test53(){
         dailyDealsTab();

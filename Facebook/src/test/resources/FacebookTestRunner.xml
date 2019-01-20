@@ -16,7 +16,7 @@
             <!--class name="tests.ExcelCreateAccount"/-->
             <!--class name="tests.DatabaseSearchFriends"/-->
             <!--class name="tests.TestFrontPage"/-->
-            <class name="tests.TestHomeFacebook"/>
+            <!--class name="tests.TestHomeFacebook"/-->
             <!--class name="tests.TestFacebookDropDown"/-->
         </classes>
     </test>

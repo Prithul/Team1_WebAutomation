@@ -16,6 +16,7 @@ import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.ValueRange;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,6 +40,7 @@ public class GoogleSheetReader extends CommonAPI {
 
     /**
      * Creates an authorized Credential object.
+     *
      * @param HTTP_TRANSPORT The network HTTP Transport.
      * @return An authorized Credential object.
      * @throws IOException If the credentials.json file cannot be found.
@@ -61,28 +63,30 @@ public class GoogleSheetReader extends CommonAPI {
     /**
      * Prints the names of the facebook users in a sample spreadsheet
      */
-    public static void main(String... args) throws IOException, GeneralSecurityException {
+    public static void getNamesFromGoogleDocs() throws IOException, GeneralSecurityException{
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         final String spreadsheetId = "1izyUGbEaQIQnVDkYJlxs0b_H9yWht5HL-nEqfwJgx9k";
-        final String range = "Sheet1!A3:C";
+        final String range = "Sheet1!A3:A6";
         Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
                 .setApplicationName(APPLICATION_NAME)
                 .build();
-        ValueRange response = service.spreadsheets().values()
-                .get(spreadsheetId, range)
-                .execute();
-        List<List<Object>> values = response.getValues();
-        if (values == null || values.isEmpty()) {
-            System.out.println("No data found.");
-        } else {
-            for (List row : values) {
-                // Print columns A and E, which correspond to indices 0 and 4.
-                System.out.printf("%s\n", row.get(0));
+            ValueRange response = service.spreadsheets().values()
+                    .get(spreadsheetId, range)
+                    .execute();
+            List<List<Object>> values = response.getValues();
+            if (values == null || values.isEmpty()) {
+                System.out.println("No data found.");
+            } else {
+                for (List row : values) {
+                       String s = row.get(0).toString();
+                       System.out.println(s);
+                       WebElement username = driver.findElement(By.xpath("//input[@type='email']"));
+                       username.clear();
+                       typeOnElementNEnter("//input[@type='email']", s);
+                       driver.navigate().back();
+                    }
+                }
             }
+
         }
-    }
-   // public void getData(){
-    //    driver.findElement(By.xpath("//input[@aria-label='Search']")).sendKeys(row, Keys.ENTER);
-   //    navigateBack(); }
-    }
