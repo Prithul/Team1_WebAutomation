@@ -5,9 +5,6 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
-import essentialUtility.SearchPage;
 
 public class ReadFromExcel extends CommonAPI {
 
@@ -32,8 +29,8 @@ public class ReadFromExcel extends CommonAPI {
             for(Cell cell: row) {
                 String cellValue = dataFormatter.formatCellValue(cell);
                 System.out.print(cellValue + "\t");
-                //typeOnElementNEnter("#twotabsearchtextbox", cellValue);
-                //navigateBack();
+                typeOnElementNEnter("#twotabsearchtextbox", cellValue);
+                driver.navigate().back();
             }
             System.out.println();
         }

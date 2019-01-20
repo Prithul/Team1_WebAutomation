@@ -1,6 +1,9 @@
-<<<<<<< HEAD
-=======
-base\CommonAPI.class
-util\ConnectDB.class
+reporting\ExtentManager.class
 util\DBConnectTest.class
->>>>>>> 21ff02c49db6a39452ad9882e03086b50e01607e
+reporting\ExtentTestManager.class
+reporting\ApplicationLog.class
+base\CommonAPI$1.class
+reporting\TestLogger.class
+util\ConnectDB.class
+base\CommonAPI.class
+base\CommonAPI$2.class

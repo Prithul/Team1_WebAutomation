@@ -1,10 +1,19 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/Users/ameladervishi/Downloads/Team1/Amazon/src/main/java/search/searchPage.java
-=======
-=======
-C:\Users\HALIMA\IdeaProjects\Team1\Amazon\src\main\java\essentialUtility\SearchFeature.java
-C:\Users\HALIMA\IdeaProjects\Team1\Amazon\src\main\java\essentialUtility\SignInSignOut.java
->>>>>>> 9b16659f728aa77df0d8fcb8a0409a0f48eb9d9b
-C:\Users\HALIMA\IdeaProjects\Team1\Amazon\src\main\java\search\searchPage.java
->>>>>>> 21ff02c49db6a39452ad9882e03086b50e01607e
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\GiftCards.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\DropDown.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\SearchOnSearchBox.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\WholeFoods.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\SignInSignOut.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\TodayDeal.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\AllLinks.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\YourAmazon.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\SearchPageForDB.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\URL.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\Help.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\Sell.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\amazonPrime\AmazonPrime.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\HomePage.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\essentialUtility\NavigationTab.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\excelUtility\ReadFromExcel.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\navPages\Registry.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\dbUtility\ConnectToSqlDB.java
+C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\java\util\GoogleSheetReader.java
