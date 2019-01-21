@@ -5,8 +5,5 @@ public class ApplicationLog {
         //TestLogger.log(epic);
         TestLogger.log("Browser is launching");
     }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> TempDev

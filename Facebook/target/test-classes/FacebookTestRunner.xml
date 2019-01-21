@@ -17,7 +17,11 @@
             <!--class name="tests.DatabaseSearchFriends"/-->
             <!--class name="tests.TestFrontPage"/-->
             <class name="tests.TestHomeFacebook"/>
+<<<<<<< HEAD
             <!--class name="tests.TestFacebookDropDown"/-->
+=======
+
+>>>>>>> TempDev
         </classes>
     </test>
 

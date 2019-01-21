@@ -64,7 +64,7 @@ public class GoogleSheetReader {
      */
     //  public static void main(String... args) throws IOException, GeneralSecurityException
     public List<String> readFromGoogleSheet() throws IOException, GeneralSecurityException{
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+       // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         final String spreadsheetId = "1W3yZT34O2bXi98xT1eNoOqkAyXxbSHe6GS0h5J5Tb_w";

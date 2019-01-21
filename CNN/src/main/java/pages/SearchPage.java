@@ -25,7 +25,7 @@ public class SearchPage extends HomePage {
     public WebElement clearButton;
 
     public void searchFor(String value) {
-        getSearchInputField().sendKeys(value);
+        searchTextBox.sendKeys(value);
     }
     public void searchForAndEnter(String value) {
         getSearchInputField().sendKeys(value, Keys.ENTER);
