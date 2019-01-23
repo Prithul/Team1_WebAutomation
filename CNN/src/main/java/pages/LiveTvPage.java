@@ -17,9 +17,21 @@ public class LiveTvPage extends CommonAPI {
     public WebElement logInButton;
     @FindBy(how = How.CSS,using ="#mvpdpicker > div.header > div.help")
     public WebElement helpButton;
-    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul > li")
     public List<WebElement> listOfProviders;
-
+//    //#mvpdpicker > div.slates > div.slate.pickbylogo > ul > li:nth-child(1)
+//    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+//    public List<WebElement> listOfProviders;
+//    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+//    public List<WebElement> listOfProviders;
+//    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+//    public List<WebElement> listOfProviders;
+//    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+//    public List<WebElement> listOfProviders;
+//    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+//    public List<WebElement> listOfProviders;
+//    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
+//    public List<WebElement> listOfProviders;
 
 public void checkLiveTv()
 {
@@ -99,16 +111,20 @@ public void checkLiveTv()
 
     }
 
-    public void checkListOfProviders()
+    public void checkListOfProviders() throws InterruptedException
     {
         liveTvPageIcon.click();
+        String parentWindowHandler = driver.getWindowHandle();
         List<WebElement> list = listOfProviders;
+        System.out.println(list.size());
         for(WebElement provider :list)
         {
             provider.click();
+            sleepFor(10);
+            driver.switchTo().window(parentWindowHandler);
         }
     }
-    public String checkListOfProvidersUrl(int urlNo)
+    public String checkListOfProvidersTitle(int urlNo)
     {
         liveTvPageIcon.click();
         List<WebElement> list = listOfProviders;
@@ -122,7 +138,7 @@ public void checkLiveTv()
             driver.switchTo().window(handle);
         }
 
-        return driver.getCurrentUrl();
+        return driver.getTitle();
     }
 
 }
