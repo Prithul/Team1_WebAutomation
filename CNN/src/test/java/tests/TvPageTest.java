@@ -9,12 +9,13 @@ import org.testng.annotations.Test;
 import pages.TvPage;
 
 public class TvPageTest extends TvPage {
-    TvPage tvPage;
+    TvPage tvpage;
 
-    @BeforeTest
-            public void initPage() {
-        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
-    }
+//    @BeforeTest
+//            public void initPage() {
+//         driver.get("https://www.cnn.com/tv");
+//         tvpage = new PageFactory().initElements(driver, TvPage.class);
+//   }
 //    @Test
 //    public void testTvPageUrl()
 //    {
@@ -27,47 +28,111 @@ public class TvPageTest extends TvPage {
 //        String pageTitle = getTvPageTitle();
 //        Assert.assertEquals(pageTitle,"CNN TV - CNN");
 //    }
-    @Test
-    public void testFirstIframe() throws InterruptedException{ getFirstIframe();}
 //    @Test
-//    public void testFirstIframeUrl()
+//    public void testNoOfIFrame()
 //    {
-//        String url = getFirstIframeUrl();
+//        Assert.assertEquals(getNoOfIframe(),14);
+//    }
+//    @Test
+//    public void testNoOfLinks()
+//{
+//
+//    Assert.assertEquals(getNoOfLinks(),325);
+//}
+//    @Test
+//    public void testFirstIframe() throws InterruptedException{ getFirstIframe();}
+//    @Test
+//    public void testFirstIframeUrls() throws InterruptedException
+//    {
+//        String url = getFirstIframeUrls();
+//        System.out.println(url);
+//
+//    }
+//    @Test
+//    public void testTvHeading()throws InterruptedException
+//    {
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        Assert.assertEquals(tvpage.getHeaderTV(),"TV");
+//    }
+ //   @Test
+//    public void testDontMissOnCnn()throws InterruptedException
+//    {
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//
+//        Assert.assertEquals(tvpage.getDontMissOnCnn(),"Don't miss on CNN ");
 //
 //    }
 //    @Test
 //    public void testClickOnFirstTab()
 //    {
-//        clickOnFirstTab();
+//    driver.get("https://www.cnn.com/tv");
+//    TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//    tvpage.clickOnFirstTab();
+//    }
+//    @Test
+//    public void testFirstTabUrl()
+//    {
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        Assert.assertEquals(tvpage.getFirstTabUrl(),"https://explorepartsunknown.com/");
+//
 //    }
 //    @Test
 //    public void testClickOnSecondTab()
 //    {
-//        clickOnSecondTab();
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        tvpage.clickOnSecondTab();
+//    }
+//    @Test
+//    public void testSecondTabUrl()
+//    {
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        Assert.assertEquals(tvpage.getSecondTabUrl(),"https://www.cnn.com/shows/this-is-life-with-lisa-ling");
+//
 //    }
 //    @Test
 //    public void testClickOnThirdTab()
 //    {
-//        clickOnThirdTab();
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        tvpage.clickOnThirdTab();
 //    }
 //    @Test
+//    public void testThirdTabUrl()
+//    {
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        Assert.assertEquals(tvpage.getThirdTabUrl(),"https://www.cnn.com/shows/cuomo-prime-time");
+//
+//    }
+  //  @Test
 //    public void testGoCnnTitle()
 //    {
-//        String goCnnText = goCnnTitle();
-//        Assert.assertEquals("Watch CNN on demand with CNNgo",goCnnText);
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        String goCnnText = tvpage.goCnnTitle();
+//        Assert.assertEquals("Watch CNN on demand with CNNgo ",goCnnText);
 //
 //    }
 //   @Test
 //    public void testClickOnGoCnnImage()
 //    {
-//       clickOnGoCnnImage();
+//        driver.get("https://www.cnn.com/tv");
+//        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+//        tvpage.clickOnGoCnnImage();
 //    }
-//    @Test
-//    public void testGoCnnImageUrl()
-//    {
-//        String url = goCnnImageUrl();
-//        Assert.assertEquals(url,"http://go.cnn.com/?stream=cnn");
-//    }
+    @Test
+    public void testGoCnnImageUrl()
+    {
+        driver.get("https://www.cnn.com/tv");
+        TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
+        String url = tvpage.goCnnImageUrl();
+        Assert.assertEquals(url,"https://go.cnn.com/?stream=cnn");
+    }
 //@Test
 //    public void SwitchToframe()   {
 //    driver.get("https://www.cnn.com/tv");

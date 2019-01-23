@@ -251,7 +251,7 @@ public class CommonAPI {
     }
 
     public static void captureScreenshot(WebDriver driver, String screenshotName){
-        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mm a)");
         Date date = new Date();
         df.format(date);
 
