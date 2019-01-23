@@ -14,7 +14,7 @@
         <classes>
           <!--  <class name="tests.HomePageTest"/> -->
            <!-- <class name="tests.NavPageTest"/> -->
-            <class name="tests.TvPageTest"/>
+            <class name="tests.LiveTvPageTest"/>
         </classes>
     </test>
 </suite>
