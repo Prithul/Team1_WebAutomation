@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class LiveTvPage extends CommonAPI {
     @FindBy(how = How.CSS,using="#nav-mobileTV")
@@ -111,33 +112,39 @@ public void checkLiveTv()
 
     }
 
-    public void checkListOfProviders() throws InterruptedException
+    public int checkNoOfProviders() throws InterruptedException
     {
         liveTvPageIcon.click();
         String parentWindowHandler = driver.getWindowHandle();
         List<WebElement> list = listOfProviders;
-        System.out.println(list.size());
-        for(WebElement provider :list)
-        {
-            provider.click();
-            sleepFor(10);
-            driver.switchTo().window(parentWindowHandler);
-        }
+        return list.size();
+
     }
-    public String checkListOfProvidersTitle(int urlNo)
+
+    public void checkListOfProviders( int urlNo) throws InterruptedException {
+        liveTvPageIcon.click();
+        List<WebElement> list = listOfProviders;
+      if(urlNo<list.size())
+        {
+            list.get(urlNo).click();
+       }
+    }
+
+    public String checkListOfProvidersTitle(int urlNo) throws InterruptedException
     {
         liveTvPageIcon.click();
         List<WebElement> list = listOfProviders;
-        for(int i =urlNo;i<list.size();i++)
+        if(urlNo<list.size())
         {
-            list.get(i).click();
-            break;
+            list.get(urlNo).click();
+            driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+            sleepFor(5);
         }
         for (String handle : driver.getWindowHandles()) {
 
             driver.switchTo().window(handle);
-        }
-
+           }
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         return driver.getTitle();
     }
 
