@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import reporting.TestLogger;
 
 import java.util.List;
 
@@ -45,21 +46,25 @@ public class HomePage extends CommonAPI {
 
   //Go to Homepage
     public void goCnn (){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get(baseURL);
         driver.manage().window().maximize();
     }
     public SearchPage gotoSearchPage(){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchButton.click();
         searchTextBox.sendKeys("politics", Keys.ENTER);
         return new PageFactory().initElements(driver,SearchPage.class);
     }
     //Go to navPage
     public NavPage goToNavPage (){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
        click(navPageButton);
        return new PageFactory().initElements(driver,NavPage.class);
   }
    //Go to Live Tv Page
    public LiveTvPage goToLiveTvPage () {
+       TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
        click(liveTvButton);
        return new PageFactory().initElements(driver, LiveTvPage.class);
    }

@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import reporting.TestLogger;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -40,11 +41,13 @@ public void checkLiveTv()
 }
     public String checkLiveTvTitle()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         liveTvPageIcon.click();
         return driver.getTitle();
     }
     public String checkLiveTvUrl()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         liveTvPageIcon.click();
         for (String handle : driver.getWindowHandles()) {
 
@@ -56,6 +59,7 @@ public void checkLiveTv()
 
     public void checkLiveTvClose()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         liveTvPageIcon.click();
         for (String handle : driver.getWindowHandles()) {
 

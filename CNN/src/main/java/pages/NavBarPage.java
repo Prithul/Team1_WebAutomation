@@ -4,6 +4,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import reporting.TestLogger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,20 +35,24 @@ public class NavBarPage extends CommonAPI {
 
     public void checkEachNavTab(WebElement we)
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         we.click();
     }
     public String checkEachNavTabUrl(WebElement we)
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         we.click();
        return driver.getCurrentUrl();
     }
     public String checkEachNavTabTitle(WebElement we)
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         we.click();
         return driver.getTitle();
     }
     public List<String> navBarStringElements()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> slist = new ArrayList<String>();
         slist.add(navBarUS.getText());
         slist.add(navBarWorld.getText());
@@ -64,6 +69,7 @@ public class NavBarPage extends CommonAPI {
     }
     public List<WebElement> navBarWebElements()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<WebElement> wlist = new ArrayList<WebElement>();
         wlist.add(navBarVideo);
         wlist.add(navBarUS);

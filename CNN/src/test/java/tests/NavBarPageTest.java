@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.NavBarPage;
+import reporting.TestLogger;
 import util.ReadFromExcel;
 
 import java.io.IOException;
@@ -18,66 +19,77 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabUS()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarUS);
     }
     @Test
     public void checkNavBarTabWorld()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarWorld);
     }
     @Test
     public void checkNavBarTabPolitics()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarPolitics);
     }
     @Test
     public void checkNavBarTabBusiness()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarBusiness);
     }
     @Test
     public void checkNavBarTabOpinion()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarOpinion);
     }
     @Test
     public void checkNavBarTabHealth()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarHealth);
     }
     @Test
     public void checkNavBarTabStyle()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarStyle);
     }
     @Test
     public void checkNavBarTravel()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarTravel);
     }
     @Test
     public void checkNavBarSports()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarSports);
     }
     @Test
     public void checkNavBarVideo()
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarVideo);
     }
     @Test
     public void checkNavBarTitle()throws IOException, InvalidFormatException
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         List<WebElement> slist = navBarPage.navBarWebElements();
         //titles reading from excel sheet
@@ -92,6 +104,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarText()throws IOException, InvalidFormatException, InterruptedException
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         List<WebElement> slist = navBarPage.navBarWebElements();
         System.out.println(navBarPage.navBarVideo.getText());

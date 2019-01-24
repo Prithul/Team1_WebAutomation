@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import reporting.TestLogger;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -25,26 +26,33 @@ public class SearchPage extends HomePage {
     public WebElement clearButton;
 
     public void searchFor(String value) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchTextBox.sendKeys(value);
     }
     public void searchForAndEnter(String value) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getSearchInputField().sendKeys(value, Keys.ENTER);
     }
     public void submitSearchButton() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchPageSubmitButton.click();
     }
 
     public void clearInput() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         //driver.findElement(By.className("cnn-search__clear")).click();
         clearButton.click();
     }
     public WebElement getSearchInputField() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         return searchTextBox;
     }
     public void setSearchInputField(WebElement searchInputField) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         this.searchTextBox = searchInputField;
     }
     public void homeSearchItemsAndSubmitButton() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchButton.click();
         List<String> list = getItemValue();
         for (int i = 0; i < list.size(); i++) {
@@ -56,6 +64,7 @@ public class SearchPage extends HomePage {
         }
     }
     public void searchPageSearchItemsAndSubmitButton() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> list = getItemValue();
         searchButton.click();
         searchFor(list.get(0));
@@ -69,6 +78,7 @@ public class SearchPage extends HomePage {
         }
     }
     public void homeSearchItemsAndEnter() throws InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchButton.click();
         List<String> list = getItemValue();
         for (int i = 0; i < list.size(); i++) {
@@ -79,6 +89,7 @@ public class SearchPage extends HomePage {
     }
 
     public void searchPageSearchItemsAndEnter() throws InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> list = getItemValue();
         searchButton.click();
         searchForAndEnter(list.get(0));
@@ -92,6 +103,7 @@ public class SearchPage extends HomePage {
     }
         public List<String> getItemValue()
         {
+            TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
             List<String> itemsList = new ArrayList<String>();
             itemsList.add("US");
             itemsList.add("Politics");
