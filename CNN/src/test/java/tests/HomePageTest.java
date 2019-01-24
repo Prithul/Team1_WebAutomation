@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.NavPage;
 import reporting.TestLogger;
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -20,15 +19,15 @@ public class HomePageTest extends CommonAPI {
     HomePage homePage;
  @Test
       public void checkHomeUrl() {
+     TestLogger.log("Browser is launched");
      TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-       HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-       //homePage.goCnn();
-       String url=  homePage.getUrl();
-        Assert.assertEquals(url,"https://www.cnn.com/");
+     HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+     String url=  homePage.getUrl();
+     Assert.assertEquals(url,"https://www.cnn.com/");
    }
-
     @Test
     public void checkHomeTitle() {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         String title = homePage.driver.getTitle();
@@ -36,14 +35,16 @@ public class HomePageTest extends CommonAPI {
      }
    @Test
         public void openNavPage() throws InterruptedException{
+       TestLogger.log("Browser is launched");
        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
-        driver.manage().timeouts().implicitlyWait(900, TimeUnit.SECONDS);
-        homePage.navPageButton.click();
-        Thread.sleep(500);
+       HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
+       driver.manage().timeouts().implicitlyWait(900, TimeUnit.SECONDS);
+       homePage.navPageButton.click();
+       Thread.sleep(500);
    }
     @Test
         public void closeNavPage() throws InterruptedException{
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         homePage.navPageButton.click();
@@ -52,6 +53,7 @@ public class HomePageTest extends CommonAPI {
    }
     @Test
         public void expandSearchField() throws InterruptedException{
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         Thread.sleep(500);
@@ -59,6 +61,7 @@ public class HomePageTest extends CommonAPI {
     }
     @Test
         public void closeSearchField()throws InterruptedException {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         homePage.searchButton.click();
@@ -68,6 +71,7 @@ public class HomePageTest extends CommonAPI {
     @Test
         public void writeOnTextBox()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         homePage.searchButton.click();
@@ -77,6 +81,7 @@ public class HomePageTest extends CommonAPI {
         @Test
         public void writeOnTextBoxNSearch()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         homePage.searchButton.click();
@@ -87,6 +92,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void writeOnTextBoxNEnter()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         homePage.searchButton.click();
@@ -97,6 +103,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void editionPageOpen()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         sleepFor(5);
@@ -106,6 +113,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void editionPageclose()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         sleepFor(1);
@@ -116,6 +124,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void editionUSOpen()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         sleepFor(1);
@@ -125,6 +134,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void editionUSClose()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         sleepFor(1);
@@ -135,6 +145,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void editionList()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         sleepFor(1);
@@ -144,6 +155,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void navBarList()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         sleepFor(1);
@@ -153,6 +165,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName0()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -161,6 +174,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName1()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -169,6 +183,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName2()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -177,6 +192,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName3()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -185,6 +201,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName4()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -193,6 +210,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName5()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -201,6 +219,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName6()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -209,6 +228,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName7()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -217,6 +237,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName8()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -225,6 +246,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName9()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;
@@ -233,6 +255,7 @@ public class HomePageTest extends CommonAPI {
     @Test
     public void getNavListName10()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         List<WebElement> list = homePage.navItemList;

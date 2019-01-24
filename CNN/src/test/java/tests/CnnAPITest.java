@@ -12,6 +12,7 @@ import static io.restassured.RestAssured.given;
 public class CnnAPITest extends CommonAPI {
     @Test
     public void callNewsResourses() {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Response response = given().when().get("https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=0d9e35dfa3c140aab8bf9cdd70df957f").then().statusCode(200).extract().response();
         String statusLine = response.getStatusLine();
@@ -24,6 +25,7 @@ public class CnnAPITest extends CommonAPI {
 
     @Test
     public void badCallNewsResources() {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Response response = null;
         int statusCode = 0;
@@ -34,9 +36,9 @@ public class CnnAPITest extends CommonAPI {
         }
         Assert.assertEquals(statusCode, 404);
     }
-
     @Test
     public void serverErrorCallNewsResources() {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Response response = null;
         int statusCode = 0;

@@ -20,13 +20,15 @@ public class TvPageTest extends TvPage {
     @Test
     public void testTvPageUrl()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-       String url =getTvPageUrl();
+        String url =getTvPageUrl();
         Assert.assertEquals(url ,"https://www.cnn.com/tv");
     }
     @Test
     public void testTvPageTitle()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         String pageTitle = getTvPageTitle();
         Assert.assertEquals(pageTitle,"CNN TV - CNN");
@@ -34,23 +36,27 @@ public class TvPageTest extends TvPage {
     @Test
     public void testNoOfIFrame()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Assert.assertEquals(getNoOfIframe(),14);
     }
     @Test
     public void testNoOfLinks()
 {
+    TestLogger.log("Browser is launched");
     TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     Assert.assertEquals(getNoOfLinks(),325);
 }
     @Test
     public void testFirstIframe() throws InterruptedException{
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getFirstIframe();
     }
     @Test
     public void testFirstIframeUrls() throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         String url = getFirstIframeUrls();
         System.out.println(url);
@@ -58,6 +64,7 @@ public class TvPageTest extends TvPage {
     @Test
     public void testTvHeading()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -66,6 +73,7 @@ public class TvPageTest extends TvPage {
     @Test
     public void testDontMissOnCnn()throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -75,6 +83,7 @@ public class TvPageTest extends TvPage {
     @Test
     public void testClickOnFirstTab()
     {
+    TestLogger.log("Browser is launched");
     TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     driver.get("https://www.cnn.com/tv");
     TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -83,15 +92,16 @@ public class TvPageTest extends TvPage {
     @Test
     public void testFirstTabUrl()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
         Assert.assertEquals(tvpage.getFirstTabUrl(),"https://explorepartsunknown.com/");
-
     }
     @Test
     public void testClickOnSecondTab()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -100,15 +110,16 @@ public class TvPageTest extends TvPage {
     @Test
     public void testSecondTabUrl()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
         Assert.assertEquals(tvpage.getSecondTabUrl(),"https://www.cnn.com/shows/this-is-life-with-lisa-ling");
-
     }
     @Test
     public void testClickOnThirdTab()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -117,15 +128,16 @@ public class TvPageTest extends TvPage {
     @Test
     public void testThirdTabUrl()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
         Assert.assertEquals(tvpage.getThirdTabUrl(),"https://www.cnn.com/shows/cuomo-prime-time");
-
     }
     @Test
     public void testGoCnnTitle()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -136,6 +148,7 @@ public class TvPageTest extends TvPage {
    @Test
     public void testClickOnGoCnnImage()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
@@ -144,16 +157,18 @@ public class TvPageTest extends TvPage {
     @Test
     public void testGoCnnImageUrl()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
         String url = tvpage.goCnnImageUrl();
         Assert.assertEquals(url,"https://go.cnn.com/?stream=cnn");
     }
-@Test
+    @Test
     public void SwitchToframe()   {
-    TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-    driver.get("https://www.cnn.com/tv");
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        driver.get("https://www.cnn.com/tv");
         int size = driver.findElements(By.tagName("iframe")).size();
         for(int i=0; i<=size; i++){
 	    driver.switchTo().frame(i);

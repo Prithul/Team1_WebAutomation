@@ -19,6 +19,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabUS()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarUS);
@@ -26,6 +27,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabWorld()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarWorld);
@@ -33,6 +35,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabPolitics()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarPolitics);
@@ -40,6 +43,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabBusiness()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarBusiness);
@@ -47,6 +51,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabOpinion()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarOpinion);
@@ -54,6 +59,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabHealth()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarHealth);
@@ -61,6 +67,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTabStyle()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarStyle);
@@ -68,6 +75,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTravel()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarTravel);
@@ -75,6 +83,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarSports()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarSports);
@@ -82,6 +91,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarVideo()
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         navBarPage.checkEachNavTab(navBarPage.navBarVideo);
@@ -89,6 +99,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarTitle()throws IOException, InvalidFormatException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         List<WebElement> slist = navBarPage.navBarWebElements();
@@ -104,6 +115,7 @@ public class NavBarPageTest extends CommonAPI {
     @Test
     public void checkNavBarText()throws IOException, InvalidFormatException, InterruptedException
     {
+        TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         NavBarPage navBarPage = new PageFactory().initElements(driver, NavBarPage.class);
         List<WebElement> slist = navBarPage.navBarWebElements();
