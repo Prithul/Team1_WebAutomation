@@ -16,7 +16,8 @@
            <!-- <class name="tests.NavPageTest"/> -->
             <!--<class name="tests.LiveTvPageTest"/>-->
             <!--<class name="tests.NavBarPageTest"/>-->
-            <class name="tests.CnnAPITest"/>
+           <!-- <class name="tests.CnnAPITest"/> -->
+            <class name="datadriven.DbTest"/>
 
         </classes>
     </test>
