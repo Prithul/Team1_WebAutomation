@@ -17,7 +17,8 @@
             <!--<class name="tests.LiveTvPageTest"/>-->
             <!--<class name="tests.NavBarPageTest"/>-->
            <!-- <class name="tests.CnnAPITest"/> -->
-            <class name="datadriven.DbTest"/>
+           <!-- <class name="datadriven.DbTest"/>-->
+            <class name="datadriven.ExcelReaderTest"/>
 
         </classes>
     </test>
