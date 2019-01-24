@@ -18,7 +18,8 @@
             <!--<class name="tests.NavBarPageTest"/>-->
            <!-- <class name="tests.CnnAPITest"/> -->
            <!-- <class name="datadriven.DbTest"/>-->
-            <class name="datadriven.ExcelReaderTest"/>
+           <!-- <class name="datadriven.ExcelReaderTest"/>-->
+            <class name="datadriven.GoogleSheetReaderTest"/>
 
         </classes>
     </test>

@@ -27,8 +27,8 @@ public class DbTest extends DBReader{
                driver.findElement(By.className("cnn-search__input")).clear();
                driver.findElement(By.cssSelector(".cnn-search__clear")).click();
                navigateBack();
+               driver.navigate().refresh();
                 }
-
             }
         }
 

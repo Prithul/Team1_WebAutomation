@@ -27,8 +27,9 @@ public class ExcelReader extends CommonAPI {
        // reading Title from excel sheet
         List<String> elist = ReadFromExcel.CnnexcelReader(1, 4, 14, 2);
         itemList.get(domindex).click();
+        sleepFor(3);  // without this through error in assertion
         driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
-        Assert.assertEquals(elist.get(exlindex), driver.getTitle());
+        Assert.assertEquals(driver.getTitle(),elist.get(exlindex));
 
         }
     }

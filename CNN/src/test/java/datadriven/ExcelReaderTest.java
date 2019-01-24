@@ -73,7 +73,7 @@ public class ExcelReaderTest extends ExcelReader {
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
         }.getClass().getEnclosingMethod().getName()));
         readNavItemExcel(9, 9);
-    }
+   }
 //    @Test
 //    public void testNavItemfromExcel10() throws InvalidFormatException, IOException ,InterruptedException {
 //        TestLogger.log("Browser is launched");

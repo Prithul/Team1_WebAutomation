@@ -16,8 +16,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class HomePageTest extends CommonAPI {
-    HomePage homePage;
- @Test
+   @Test
       public void checkHomeUrl() {
      TestLogger.log("Browser is launched");
      TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
