@@ -90,24 +90,21 @@ public class CommonAPI {
         }
         driver.quit();
     }
-
     @AfterSuite
     public void generateReport() {
         extent.close();
     }
-
     private Date getTime(long millis) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
-
     //Selenium API start
     @Parameters({"useCloudEnv", "cloudEnvName", "os", "os_version", "browserName", "browserVersion", "url"})
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("Windows") String os, @Optional("10") String os_version, @Optional("Chrome") String browserName, @Optional("71")
-                              String browserVersion, @Optional("http://www.amazon.com") String url) throws IOException {
+                              String browserVersion, @Optional("https://www.amazon.com") String url) throws IOException {
         System.setProperty("webdriver.chrome.driver", "/Users/Papri.Barua/IdeaProjects/driver/chromedriver/chromedriver.exe");
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -156,7 +153,6 @@ public class CommonAPI {
         return driver;
 
     }
-
 
     public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String os_version, String browserName,
                                     String browserVersion) throws IOException {
@@ -409,9 +405,7 @@ public class CommonAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
 
     //handling Alert

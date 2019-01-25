@@ -2,273 +2,141 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee20ced8-738c-4749-899e-6f5c1eb4cc35" name="Default Changelist" comment="Added dependency for .xlsx file (number 7)">
-      <change afterPath="$PROJECT_DIR$/.idea/WebAutomationTeam1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_25_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_jdk5_17_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_json_path_3_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_3_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_rest_assured_common_3_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_rest_assured_xml_path_3_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_extras_beanshell_bsh_2_0b6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_6_0_beta1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_9_4_12_v20180830.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/Amazon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/screenshots/test10_navigationTab (01.14.2019-18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/amazonPrime/AmazonPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/AllLinks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/NavigationTab.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchOnSearchBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/URL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/GiftCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Registry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/YourAmazon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/util/GoogleSheetReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/main/resources/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByGoogleSheet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchPageBySql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAllLinks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAmazonPrime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestNavigation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestPageTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSearchOnSearchBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSignInSignOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestURL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestHelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestRigistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestSell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestTodayDeal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestWholeFoods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestYourAmazon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/amazonPrime/AmazonPrime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/credentials.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/dbUtility/ConnectToSqlDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/AllLinks.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/HomePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/NavigationTab$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/NavigationTab.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SearchOnSearchBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SearchPageForDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SignInSignOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/URL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/excelUtility/ReadFromExcel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/GiftCards.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/Help.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/Registry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/Sell.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/TodayDeal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/WholeFoods.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/YourAmazon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/classes/util/GoogleSheetReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchByExcel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchByGoogleSheet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchPageBySql.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestAllLinks.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestAmazonPrime.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHomePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestNavigation$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestNavigation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestSearchOnSearchBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestSignInSignOut.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestGiftCards.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestHelp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestRigistry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestSell.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestTodayDeal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestWholeFoods.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Amazon/tokens/StoredCredential" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CNN/CNN.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CNN/src/test/java/pageModelObject/NavPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facebook/Facebook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/Generic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/browser-driver/IEDriverServer.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/browser-driver/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/browser-driver/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/browser-driver/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/browser-driver/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/ApplicationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentTestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/ApplicationLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/ExtentManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/ExtentTestManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/TestLogger.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/util/ConnectDB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/classes/util/DBConnectTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generic/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestCheckBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCBS/BCBS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCBS/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BCBS/src/test/resources/BCBSTestRunner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestAssuredRestAPI/RestAssuredRestAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/Extent-Report/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/amazonPrime/AmazonPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/amazonPrimeCheckout/AmazonPrime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/dbUtility/ConnectToSqlDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/dbUtility/ConnectToSqlDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/AllLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/AllLinks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DropDown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/Navigation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchFeature.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/NavigationTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/NavigationTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchOnSearchBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchOnSearchBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SignInSignOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SignInSignOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/URL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/excelUtility/ReadFromExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/excelUtility/ReadFromExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/tests/TestDropDownAmazon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/tests/TestHomeAmazon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/tests/TestNavigationAmazon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/tests/TestSearchAmazon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/tests/TestSearchPageAmazon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/tests/TestSignInSignOutAmazon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/GiftCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/GiftCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Registry.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Registry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/navPages/YourAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/navPages/YourAmazon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/util/GoogleSheetReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/googleSheetUtility/GoogleSheetReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByGoogleSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByGoogleSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchPageBySql.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchPageBySql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAllLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAllLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAmazonPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAmazonPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestNavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestNavigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestPageTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestPageTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSearchOnSearchBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSearchOnSearchBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSignInSignOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSignInSignOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestURL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestRigistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestRigistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestSell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestTodayDeal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestTodayDeal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestWholeFoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestWholeFoods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestYourAmazon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestYourAmazon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/search/searchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/TEST-tests.TestHomeAmazon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/TEST-tests.TestHomeAmazon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/junitreports/TEST-tests.TestHomeAmazon.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/junitreports/TEST-tests.TestHomeAmazon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/old/tests.TestHomeAmazon/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/old/tests.TestHomeAmazon/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/old/tests.TestHomeAmazon/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/old/tests.TestHomeAmazon/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/old/tests.TestHomeAmazon/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/old/tests.TestHomeAmazon/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/testng.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/tests.TestHomeAmazon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/tests.TestHomeAmazon.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/tests.TestHomeAmazon/Command line test.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/tests.TestHomeAmazon/Command line test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amazon/target/surefire-reports/tests.TestHomeAmazon/Command line test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/surefire-reports/tests.TestHomeAmazon/Command line test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/test/java/tests/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/test/java/pageModelObject/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/test/java/tests/NavPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/test/java/tests/TestHomeCNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/test/java/pageModelObject/TestHomeCNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNN/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/src/test/java/tests/DatabaseSearchFriends.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook/src/test/java/pageModelObject/DatabaseSearchFriends.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/src/test/java/tests/TestFrontPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook/src/test/java/pageModelObject/TestFrontPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/src/test/java/tests/TestHomeFacebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook/src/test/java/pageModelObject/TestHomeFacebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/classes/Database/SqlDatabase$ConnectToSqlDB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/classes/Database/SqlDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/classes/search/DatabaseSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/classes/search/FrontPageNdSignOut.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/classes/search/searchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook/target/classes/search/searchPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/test-classes/FacebookTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook/target/test-classes/FacebookTestRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/test-classes/META-INF/Facebook.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/test-classes/tests/DatabaseSearchFriends.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/test-classes/tests/TestFrontPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facebook/target/test-classes/tests/TestHomeFacebook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/amazonPrime/AmazonPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/dbUtility/ConnectToSqlDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/dbUtility/ConnectToSqlDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/AllLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/AllLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/DropDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/NavigationTab$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/NavigationTab$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/NavigationTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/NavigationTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SearchOnSearchBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SearchOnSearchBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SearchPageForDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SearchPageForDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SignInSignOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/SignInSignOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/URL.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/essentialUtility/URL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/excelUtility/ReadFromExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/excelUtility/ReadFromExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/GiftCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/GiftCards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/Help.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/Help.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/Registry.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/Registry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/Sell.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/Sell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/TodayDeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/TodayDeal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/WholeFoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/WholeFoods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/navPages/YourAmazon.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/classes/navPages/YourAmazon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/classes/util/GoogleSheetReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/AmazonTestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchByExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchByExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchByGoogleSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchByGoogleSheet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchPageBySql.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/dataDriven/TestSearchPageBySql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestAllLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestAllLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestAmazonPrime.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestAmazonPrime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestDropDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestNavigation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestNavigation$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestNavigation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestNavigation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestPageTitle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestSearchOnSearchBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestSearchOnSearchBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestSignInSignOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestSignInSignOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/pageModelObject/TestURL.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestGiftCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestGiftCards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestHelp.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestHelp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestRigistry.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestRigistry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestSell.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestSell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestTodayDeal.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestTodayDeal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestWholeFoods.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestWholeFoods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon.class" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/target/test-classes/testNavPages/TestYourAmazon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/tokens/StoredCredential" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN/src/main/java/pages/NavPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/CNN/src/main/java/pages/NavPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facebook/Facebook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Facebook/Facebook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/Generic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/Generic.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/target/Generic-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/Generic-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/util/ConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/googleSheetUtility/ConnectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/util/DBConnectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/googleSheetUtility/DBConnectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/base/CommonAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/reporting/TestLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/target/classes/reporting/TestLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/util/ConnectDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/target/classes/util/DBConnectTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestAssuredRestAPI/src/main/java/getRequest/GetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssuredRestAPI/src/main/java/getRequest/GetData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestAssuredRestAPI/src/test/java/restAPI/TestRestAssured.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssuredRestAPI/src/test/java/restAPI/TestRestAssured.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestAssuredRestAPI/src/test/resources/RestAssuredTestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssuredRestAPI/src/test/resources/RestAssuredTestRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -277,6 +145,8 @@
     <ignored path="$PROJECT_DIR$/Amazon/target/" />
     <ignored path="$PROJECT_DIR$/CNN/target/" />
     <ignored path="$PROJECT_DIR$/Facebook/target/" />
+    <ignored path="$PROJECT_DIR$/RestAssuredRestAPI/target/" />
+    <ignored path="$PROJECT_DIR$/BCBS/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,83 +157,7 @@
     <favorites_list name="WebAutomationTeam1" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-              <folding>
-                <marker date="1547953604239" expanded="true" signature="1038:1091" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/ApplicationLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentTestManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -386,57 +180,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentTestManager.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPage.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHomeAmazon.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestNavigation.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/Navigation.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/NavigationTab.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestURL.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestPageTitle.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/URL.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSearchPageOnSearchBox.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForSearchBox.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/YourAmazon.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestYourAmazon.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByExcel.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/amazonPrime/AmazonPrimeCheckout.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAmazonPrime.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SignInSignOut.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/amazonPrime/AmazonPrime.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAllLinks.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DropDown.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/Home.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHiddenButton.java" />
         <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHome.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/AllLinks.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestTodayDeal.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestWholeFoods.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestRigistry.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/Registry.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestSell.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestHelp.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/excelUtility/ReadFromExcel.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByGoogleSheet.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/GiftCards.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchOnSearchBox.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestIFrame.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestMouseHoverAction.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestNavigation.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestPageTitle.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestRadioButton.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestReviewCheckByStar.java" />
         <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSearchOnSearchBox.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestShopByCategory.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSignInSignOut.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestURL.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestHelp.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestRigistry.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestSell.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestTodayDeal.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestWholeFoods.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestYourAmazon.java" />
+        <option value="$PROJECT_DIR$/BCBS/src/main/java/keywordDrivenUtility/Actions.java" />
+        <option value="$PROJECT_DIR$/BCBS/src/main/java/keywordDrivenUtility/DriverScript.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HiddenButton.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/IFrame.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/RadioButton.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/ReviewCheckByStar.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchOnSearchBox.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SignInSignOut.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/excelUtility/ReadFromExcel.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/keywordDrivenUtility/DriverScript.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/YourAmazon.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/amazonPrimeCheckout/AmazonPrime.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchPageBySql.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/ShopByCategory.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/ArrowKeys.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestArrowKeys.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/MouseHoverAction.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/LogoAndVideo.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestLogoAndVideo.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DeliverTo.java" />
         <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HomePage.java" />
         <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHomePage.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java" />
-        <option value="$PROJECT_DIR$/Amazon/src/main/java/util/GoogleSheetReader.java" />
-        <option value="$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml" />
-        <option value="$PROJECT_DIR$/Generic/pom.xml" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DropDown.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/main/java/navPages/GiftCards.java" />
+        <option value="$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
-        <option value="$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentManager.java" />
-        <option value="$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java" />
       </list>
     </option>
   </component>
@@ -452,25 +246,17 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Amazon" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="WebAutomationTeam1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="WebAutomationTeam1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="405" />
-    <option name="width" value="1880" />
-    <option name="height" value="1010" />
+    <option name="x" value="518" />
+    <option name="y" value="72" />
+    <option name="width" value="1120" />
+    <option name="height" value="574" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -478,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -491,101 +278,15 @@
               <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
               <item name="Amazon" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="Extent-Report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Amazon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebAutomationTeam1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebAutomationTeam1" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="reporting" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547955135134" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Amazon/lib/xmlbeans-3.0.2.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548459033545" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MidtermNovember2018" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -593,11 +294,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1" />
+      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src" />
+      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\BCBS\src" />
+      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\BCBS\src\test" />
       <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\main\resources" />
-      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Generic\browser-driver" />
-      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\BCBS\src\test" />
+      <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\RestAssuredRestAPI\src\test" />
       <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Facebook\src\test" />
       <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\CNN\src\test" />
       <recent name="C:\Users\Papri.Barua\IdeaProjects\WebAutomationTeam1\Amazon\src\test" />
@@ -616,58 +321,6 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml">
-    <configuration name="AllLinks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="essentialUtility.AllLinks" />
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="essentialUtility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoogleSheetReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="util.GoogleSheetReader" />
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="excelUtility.ReadExcel" />
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="excelUtility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadFromExcel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="excelUtility.ReadFromExcel" />
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="excelUtility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml" />
@@ -678,13 +331,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/BCBS/src/test/resources/BCBSTestRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BCBS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/BCBS/src/test/resources/BCBSTestRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BCBS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keywordDriven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="keywordDriven" />
+      <option name="MAIN_CLASS_NAME" value="keywordDriven.TestHomePage" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage.testNavigate" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BCBS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="keywordDriven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="keywordDriven" />
+      <option name="MAIN_CLASS_NAME" value="keywordDriven.TestHomePage" />
+      <option name="METHOD_NAME" value="testNavigate" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRestAssured" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredRestAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restAPI" />
+      <option name="MAIN_CLASS_NAME" value="restAPI.TestRestAssured" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" />
-        <item itemvalue="Application.GoogleSheetReader" />
-        <item itemvalue="Application.AllLinks" />
-        <item itemvalue="Application.ReadFromExcel" />
-        <item itemvalue="Application.ReadExcel" />
+        <item itemvalue="TestNG.TestRestAssured" />
+        <item itemvalue="TestNG.C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/BCBS/src/test/resources/BCBSTestRunner.xml" />
+        <item itemvalue="TestNG.TestHomePage" />
+        <item itemvalue="TestNG.TestHomePage.testNavigate" />
       </list>
     </recent_temporary>
   </component>
@@ -979,46 +692,73 @@
       <option name="project" value="LOCAL" />
       <updated>1547515731934</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Testing Rest Assured...">
+      <created>1548032476462</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1548032476462</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Testing Rest Assured...">
+      <created>1548032511191</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1548032511191</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Testing Rest Assured...">
+      <created>1548032539995</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1548032539995</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Added gitignore">
+      <created>1548459004227</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1548459004227</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 48m 50s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 12h 32m 19s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 49m 53s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 09m 38s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 51m 39s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 22m 13s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 53m 07s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 22m 51s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 53m 55s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 32m 32s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 55m 06s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 34m 16s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 20h 56m 33s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 39m 01s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 21h 33m 29s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 39m 42s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 22h 21m 01s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 13h 40m 57s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.19 at 22h 22m 00s.xml">
+    <history-entry file="C__Users_Papri_Barua_IdeaProjects_WebAutomationTeam1_Amazon_src_test_resources_AmazonTestRunner_xml - 2019.01.25 at 18h 21m 17s.xml">
       <configuration name="C:/Users/Papri.Barua/IdeaProjects/WebAutomationTeam1/Amazon/src/test/resources/AmazonTestRunner.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.23154363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.16308725" />
       <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.22751679" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1026,60 +766,58 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5034965" side_tool="true" weight="0.21275167" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.15722379" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40651557" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33144477" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54815865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31161472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5240793" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.4036827" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2082153" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.18271954" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.28186968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.19463088" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.09261745" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Mongo Explorer" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Event Log" order="9" weight="0.3295302" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Event Log" order="8" weight="0.3295302" />
+      <window_info anchor="right" id="Mongo Explorer" order="9" weight="0.3295302" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979592" visible="true" weight="0.22013423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965035" visible="true" weight="0.24362417" />
       <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.22751679" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5034965" side_tool="true" weight="0.21275167" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.15722379" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16997167" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33144477" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22521247" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31161472" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.15580736" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.14447592" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.19688386" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6303116" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.18271954" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.28186968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.020134227" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.08389262" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Mongo Explorer" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Event Log" order="8" weight="0.3295302" />
+      <window_info anchor="right" id="Mongo Explorer" order="9" weight="0.3295302" />
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Modified Methods &amp; Variable as static" />
-    <MESSAGE value="Search with DB data" />
     <MESSAGE value="Test Class for DB data" />
     <MESSAGE value="Adds AmazonTestRunner.xml" />
     <MESSAGE value="Modified methods and variable as static" />
@@ -1103,27 +841,15 @@
     <MESSAGE value="Added dependency for .xlsx file (number 7)" />
     <MESSAGE value="Added jars for .xlsx in lib (if dependency does't work)" />
     <MESSAGE value="Added jars for .xlsx (if dependency doesn't work)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jars for .xlsx (if dependency doesn't work)" />
+    <MESSAGE value="Testing Rest Assured..." />
+    <MESSAGE value="Added gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added gitignore" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SignInSignOut.java">
+    <entry file="file://$PROJECT_DIR$/BCBS/src/main/java/keywordDrivenUtility/ReadExcelData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="72" column="5" selection-start-line="68" selection-start-column="8" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/resources/credentials.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/Home.java" />
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DropDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1132,97 +858,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/AllLinks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/BrokenImages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="8">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/CheckBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HiddenButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/NavigationTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByGoogleSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAmazonPrime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-200">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1230,90 +894,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSearchOnSearchBox.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/RadioButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="-9">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestSignInSignOut.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/IFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="447">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/ReviewCheckByStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="97" selection-start-line="13" selection-start-column="97" selection-end-line="13" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestHelp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestRigistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestSell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestTodayDeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestWholeFoods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestYourAmazon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+        <state relative-caret-position="388">
+          <caret line="45" column="72" selection-start-line="45" selection-start-column="72" selection-end-line="45" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1322,18 +923,146 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchOnSearchBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="401">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestAllLinks.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SignInSignOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/excelUtility/ReadFromExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/googleSheetUtility/GoogleSheetReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/keywordDrivenUtility/Actions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/keywordDrivenUtility/DriverScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/keywordDrivenUtility/ReadExcelData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/Registry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/Sell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/TodayDeal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/WholeFoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/YourAmazon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RestAssuredRestAPI/src/main/java/getRequest/GetData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/amazonPrimeCheckout/AmazonPrime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/dbUtility/ConnectToSqlDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/SearchPageForDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="61" column="134" selection-start-line="61" selection-start-column="134" selection-end-line="61" selection-end-column="134" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1342,241 +1071,168 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchPageBySql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestURL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestPageTitle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="44" column="134" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="134" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestNavigation.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/ShopByCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/dataDriven/TestSearchByExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/BrokenLinks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestArrowKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/ArrowKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/MouseHoverAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestLogoAndVideo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/LogoAndVideo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DeliverTo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestHomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="129" column="37" selection-start-line="129" selection-start-column="37" selection-end-line="129" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/search/searchPage.java" />
-    <entry file="file://$PROJECT_DIR$/Amazon/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/dbUtility/ConnectToSqlDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/base/CommonAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2039">
-          <caret line="525" selection-start-line="525" selection-end-line="525" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8058#8059#0" expanded="true" />
-            <element signature="e#8182#8183#0" expanded="true" />
-            <element signature="e#9936#9937#0" expanded="true" />
-            <element signature="e#10010#10011#0" expanded="true" />
-            <element signature="e#10992#10993#0" expanded="true" />
-            <element signature="e#11740#11741#0" expanded="true" />
-            <element signature="e#11874#11875#0" expanded="true" />
-            <element signature="e#12156#12157#0" expanded="true" />
-            <element signature="e#12285#12286#0" expanded="true" />
-            <element signature="e#12403#12404#0" expanded="true" />
-            <element signature="e#13638#13639#0" expanded="true" />
-            <element signature="e#14050#14051#0" expanded="true" />
-            <element signature="e#16213#16214#0" expanded="true" />
-            <element signature="e#16303#16304#0" expanded="true" />
-            <element signature="e#17692#17693#0" expanded="true" />
-            <element signature="e#17817#17818#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/amazonPrime/AmazonPrime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/Registry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/Help.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="134" column="21" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/essentialUtility/DropDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/pageModelObject/TestDropDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amazon/src/test/java/testNavPages/TestGiftCards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/navPages/GiftCards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="294">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/excelUtility/ReadFromExcel.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="347">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Amazon/src/main/java/util/GoogleSheetReader.java">
+    <entry file="file://$PROJECT_DIR$/Amazon/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CNN/src/test/java/pageModelObject/TestHomeCNN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CNN/src/test/resources/CNNTestRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="443">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Generic/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+        <state relative-caret-position="460">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/googleSheetUtility/ConnectDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/ApplicationLog.java">
+    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/googleSheetUtility/DBConnectTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/ExtentTestManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Generic/src/main/java/reporting/TestLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Amazon/src/test/resources/AmazonTestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <marker date="1547953604239" expanded="true" signature="1038:1091" ph="..." />
-          </folding>
+        <state relative-caret-position="201">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1657,6 +1313,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: com.aventstack:extentreports:3.0.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -13,14 +13,14 @@
 
     <test name = "Amazon Home">
         <classes>
-            <class name="pageModelObject.TestAmazonPrime"/>
+            <!--<class name="pageModelObject.TestAmazonPrime"/>-->
             <!--<class name="pageModelObject.TestHome"/>-->
             <!--<class name="dataDriven.TestSearchPageBySql"/>-->
             <!--<class name="dataDriven.TestSearchByExcel"/>-->
             <!--<class name="dataDriven.TestSearchByGoogleSheet"/>-->
+            <!--<class name="pageModelObject.TestSearchOnSearchBox"/>-->
             <!--<class name="pageModelObject.TestSignInSignOut"/>-->
             <!--<class name="pageModelObject.TestDropDown"/>-->
-            <!--<class name="pageModelObject.TestSearchOnSearchBox"/>-->
             <!--<class name="pageModelObject.TestNavigation"/>-->
             <!--<class name="pageModelObject.TestHomePage"/>-->
             <!--<class name="testNavPages.TestYourAmazon"/>-->
@@ -33,8 +33,21 @@
             <!--<class name="pageModelObject.TestURL"/>-->
             <!--<class name="pageModelObject.TestPageTitle"/>-->
             <!--<class name="pageModelObject.TestAllLinks"/>-->
-        </classes>
-    </test>
-
+            <!--<class name="pageModelObject.TestShopByCategory"/>-->
+            <!--<class name="pageModelObject.TestRadioButton"/>-->
+            <!--<class name="pageModelObject.TestBrokenLinks"/>-->
+            <!--<class name="pageModelObject.TestBrokenImages"/>-->
+            <!--<class name="pageModelObject.TestArrowKeys"/>-->
+            <!--<class name="pageModelObject.TestCheckBox"/>-->
+            <!--<class name="pageModelObject.TestLogoAndVideo"/>-->
+            <!--<class name="pageModelObject.TestMouseHoverAction"/>-->
+            <!--<class name="pageModelObject.TestHiddenButton"/>-->
+            <!--<class name="pageModelObject.TestDeliverTo"/>-->
+            <!--<class name="pageModelObject.TestReviewCheckByStar"/>-->
+            <!--<class name="pageModelObject.TestIFrame"/>-->
+            <!--<class name="keywordDriven.TestSISO"/>-->
+       </classes>
+   </test>
 </suite>
+
 

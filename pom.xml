@@ -14,6 +14,8 @@
         <module>CNN</module>
         <!--<module>AMEX</module>-->
         <module>Facebook</module>
+        <module>RestAssuredRestAPI</module>
+        <module>BCBS</module>
     </modules>
 
     <dependencyManagement>
