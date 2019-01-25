@@ -56,9 +56,7 @@ public class testEbayHome extends EbayHome {
         findHelp();
     }
     @Test
-    public void test51(){
-        AlertNotification();
-    }
+    public void test51(){ AlertNotification(); }
     @Test
     public void test52(){
         dailyDealsTab();

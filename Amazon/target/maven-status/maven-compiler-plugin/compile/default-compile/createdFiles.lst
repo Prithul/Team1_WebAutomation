@@ -1,1 +1,7 @@
+essentialUtility/DropDown.class
+essentialUtility/SignInSignOut.class
+essentialUtility/SearchPage.class
+essentialUtility/SearchFeature.class
+dbUtility/ConnectToSqlDB.class
 search/searchPage.class
+essentialUtility/Navigation.class

@@ -18,6 +18,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.Optional;
+import org.testng.asserts.SoftAssert;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import org.apache.commons.io.FileUtils;
@@ -455,4 +456,51 @@ public class CommonAPI {
             System.out.println("CSS locator didn't work");
         }
     }
-}
+    //By Halima
+    //
+    public List<WebElement> getListOfItem(String locator) {
+
+
+        List<WebElement> list = driver.findElements(By.cssSelector(locator));
+        return list;
+    }
+    //Click Method by using JAVA Generics (You can use both By or Webelement)
+    public <T> void click (T elementAttr) {
+        if(elementAttr.getClass().getName().contains("By")) {
+            driver.findElement((By) elementAttr).click();
+        } else {
+            ((WebElement) elementAttr).click();
+        }
+    }
+
+
+    //Write Text by using JAVA Generics (You can use both By or Webelement)
+    public <T> void writeText (T elementAttr, String text) {
+        if(elementAttr.getClass().getName().contains("By")) {
+            driver.findElement((By) elementAttr).sendKeys(text);
+        } else {
+            ((WebElement) elementAttr).sendKeys(text);
+        }
+    }
+
+    //Write Text by using JAVA Generics (You can use both By or Webelement)
+    public <T> void writeTextAndEnter (T elementAttr, String text) {
+        if(elementAttr.getClass().getName().contains("By")) {
+            driver.findElement((By) elementAttr).sendKeys(text);
+        } else {
+            ((WebElement) elementAttr).sendKeys(text,Keys.ENTER);
+        }
+    }
+    // Assert Data
+    public void assertData(List<String> actualList, List<String> expectedList){
+        for (int i = 0; i < actualList.size(); i++) {
+            SoftAssert softAssert = new SoftAssert();
+            softAssert.assertTrue(actualList.get(i).contains(expectedList.get(i)));
+            System.out.println("LinkVerified " + expectedList.get(i));
+        }
+    }
+    public String getUrl() {
+        String url = driver.getCurrentUrl();
+        return url;
+
+    }}

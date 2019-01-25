@@ -1,5 +1,3 @@
-pages/NavPage.class
-pages/PageGenerator.class
-pages/HomePage.class
-pages/SearchPage.class
-pages/BasePage.class
+cnnutility/GoogleSheetReader.class
+pages/LiveTvPage.class
+cnnutility/GoogleSheetReader$1.class

@@ -1,5 +1,6 @@
-/Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/BasePage.java
-/Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/PageGenerator.java
+/Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/LiveTvPage.java
+/Users/ameladervishi/Downloads/Team1/CNN/src/main/java/cnnutility/GoogleSheetReader.java
+/Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/NavBarPage.java
 /Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/SearchPage.java
 /Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/HomePage.java
 /Users/ameladervishi/Downloads/Team1/CNN/src/main/java/pages/NavPage.java

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-13T00:25:29Z" name="Amazon Automation Script " finished-at="2019-01-13T00:25:29Z" duration-ms="2">
+  <suite name="Amazon Automation Script " duration-ms="4" started-at="2019-01-25T06:28:37Z" finished-at="2019-01-25T06:28:37Z">
     <groups>
     </groups>
-    <test started-at="2019-01-13T00:25:29Z" name="Amazon Home" finished-at="2019-01-13T00:25:29Z" duration-ms="2">
+    <test name="Amazon Home" duration-ms="4" started-at="2019-01-25T06:28:37Z" finished-at="2019-01-25T06:28:37Z">
     </test> <!-- Amazon Home -->
   </suite> <!-- Amazon Automation Script  -->
 </testng-results>

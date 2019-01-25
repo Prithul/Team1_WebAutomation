@@ -1,0 +1,6 @@
+tests/TestSearchPageAmazon.class
+tests/TestSignInSignOutAmazon.class
+tests/TestNavigationAmazon.class
+tests/TestSearchAmazon.class
+tests/TestHomeAmazon.class
+tests/TestDropDownAmazon.class
