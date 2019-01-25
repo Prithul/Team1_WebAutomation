@@ -1,7 +1,5 @@
 package util;
 
-
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,7 +21,7 @@ public class ConnectDB {
     public static Properties loadPropertiesFile(String path)throws Exception{
 
         Properties prop = new Properties();
-       // InputStream ism = new FileInputStream("Generic/lib/MySQL.properties");
+        // InputStream ism = new FileInputStream("Generic/lib/MySQL.properties");
         InputStream ism = new FileInputStream(path);  //your own path to secret data
         prop.load(ism);
         ism.close();
@@ -32,6 +30,7 @@ public class ConnectDB {
     }
 
     //Connect to Database
+    //Modified by Halima
     public void connectToSqlDatabase(String path) throws Exception{
         Properties prop = loadPropertiesFile(path);
         String driverClass = prop.getProperty("MYSQLJDBC.driver");
@@ -45,7 +44,7 @@ public class ConnectDB {
         System.out.println("Database connected");
 
     }
-
+//Modified by Halima
     public List<String> readDataBase(String path, String tableName, String columnName)throws Exception{
         List<String> data = new ArrayList<String>();
 
@@ -74,9 +73,9 @@ public class ConnectDB {
         return dataList;
     }
 
-    // This Method needs to be Generic , so that it works for all type of class
+    // This Method needs to be Generic , so that it works for all type of classes
 
-//    public void insertDataFromArrayListToSqlTable(String path,List<Student> list, String tableName, String columnName) throws Exception
+    //    public void insertDataFromArrayListToSqlTable(String path,List<Student> list, String tableName, String columnName) throws Exception
 //    {
 //        try {
 //            connectToSqlDatabase(path);
@@ -98,6 +97,7 @@ public class ConnectDB {
 //            e.printStackTrace();
 //        }
 //    }
+    //Modified by Halima
     public void insertStringDataFromArrayListToSqlTable(String path, List<String> list, String tableName, String columnName) throws Exception
     {
         try {
@@ -120,6 +120,7 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
+    //Modified by Halima
     public void insertDataFromArrayToSqlTable(String path, int [] ArrayData, String tableName, String columnName) throws Exception
     {
         try {
@@ -149,7 +150,6 @@ public class ConnectDB {
         }
 
     }
-
     private void close() {
         try {
             if (resultSet != null) {

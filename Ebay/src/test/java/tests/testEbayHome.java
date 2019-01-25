@@ -2,9 +2,6 @@ package tests;
 
 import EbayPom.EbayHome;
 import base.CommonAPI;
-import org.apache.commons.exec.OS;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,7 +14,7 @@ public class testEbayHome extends EbayHome {
     public void initialize() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         frontPage = PageFactory.initElements(driver, EbayHome.class); }
-/*
+
         @Test
     public void test41() throws InterruptedException {
         searchMenu();
@@ -55,19 +52,19 @@ public class testEbayHome extends EbayHome {
         isLogoDisplayed();
     }
     @Test
-    public void test50(){  //failed
-        bannerChange();
+    public void test50(){
+        findHelp();
     }
     @Test
-    public void test51() throws InterruptedException{//failed
-        SearchBoxText();
-    }*/
+    public void test51(){
+        AlertNotification();
+    }
     @Test
     public void test52(){
         dailyDealsTab();
     }
     @Test
     public void test53(){
-        dailyDealsTab();
+        FAQBox();
     }
 }

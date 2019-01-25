@@ -20,7 +20,7 @@ public class TestHomeFacebook extends HomePage {
         SignIn();
         chat(); }
         @Test
-        public void test13()  {//failed
+        public void test13()  {
         SignIn();
         createPost();}
         @Test

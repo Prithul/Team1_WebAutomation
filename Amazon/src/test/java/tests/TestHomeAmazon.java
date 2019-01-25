@@ -9,13 +9,13 @@ public class TestHomeAmazon extends CommonAPI {
     @Test
     public void test1() {
 
-        getCurrentURL();
+       // getCurrentURL();
     }
 
     @Test
     public void test2() {
 
-        getPageTitle();
+       // getPageTitle();
     }
 
 }

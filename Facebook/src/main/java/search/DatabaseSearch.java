@@ -45,7 +45,6 @@ public class DatabaseSearch extends CommonAPI {
             try {
                 List<String> list = new ArrayList<>();
                 list = getItemsListFromDB();
-
             for (String st : list) {
                     driver.findElement(By.xpath("//input[@aria-label='Search']")).sendKeys(st, Keys.ENTER);
                     navigateBack(); }

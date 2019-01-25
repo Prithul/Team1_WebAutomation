@@ -67,7 +67,6 @@ public class FrontPageNdSignOut extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Select birthYear = new Select(yearDropDown);
         birthYear.selectByVisibleText("1994"); }
-
     // compares the default (month) value with the value (month) we select
     public void verifyDDMonth() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -79,7 +78,6 @@ public class FrontPageNdSignOut extends CommonAPI {
         WebElement selectedValueTwo = birthMonth.getFirstSelectedOption();
         System.out.println("After selecting my value, the value showed is " + selectedValueTwo.getText());
         Assert.assertEquals(selectedValue, selectedValueTwo); }
-
     // compares the default (day) value with the value (day) we select
     public void verifyDDday() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));

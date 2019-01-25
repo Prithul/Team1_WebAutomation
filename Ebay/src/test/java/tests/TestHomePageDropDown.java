@@ -3,21 +3,19 @@ package tests;
 import EbayPom.EbayHome;
 import EbayPom.HomePageDropDown;
 import base.CommonAPI;
-import org.apache.commons.exec.OS;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
+
 public class TestHomePageDropDown extends HomePageDropDown {
     HomePageDropDown dropdownMenu;
     @BeforeMethod
     public void initialize() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         dropdownMenu = PageFactory.initElements(driver, HomePageDropDown.class); }
-/*
-        @Test
+
+    @Test
     public void test42(){
         ebayDropDown();
         }
@@ -96,7 +94,7 @@ public class TestHomePageDropDown extends HomePageDropDown {
     @Test
     public void test61(){
         selectDropDownNinteen();
-    }   */
+    }
     @Test
     public void test62(){
         selectDropDownTwenty();

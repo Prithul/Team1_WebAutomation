@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amex Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="71.0.3578.98"/>
+    <parameter name="url" value="https://www.americanexpress.com/"/>
+    <parameter name="user" value="amex"/>
+    <test name = "AMEX Home">
+        <classes>
+            <!--  <class name="tests.HomePageTest"/> -->
+            <!-- <class name="tests.NavPageTest"/> -->
+            <class name="amex.tests.TestAmexHomePage"/>
+        </classes>
+    </test>
+
+</suite>

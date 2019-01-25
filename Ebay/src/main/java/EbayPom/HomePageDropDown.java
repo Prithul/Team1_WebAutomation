@@ -65,8 +65,6 @@ public class HomePageDropDown extends CommonAPI {
         for (String text : listOfText) {
             System.out.println(text);
         }
-        //List<String> expectedMenu = listOfText;
-        //Assert.assertEquals(listOfText, expectedMenu);
     }
     public void selectDropDownOne(){
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));

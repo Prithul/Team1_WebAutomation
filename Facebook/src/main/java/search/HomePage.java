@@ -93,9 +93,6 @@ public class HomePage extends CommonAPI {
         password.sendKeys("PNTeam1234");
         logInBttn.click(); }
 
-    public void clickNext() {
-        next.click(); }
-
     public void chat() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         chatBoxWindow.click();
@@ -126,7 +123,6 @@ public class HomePage extends CommonAPI {
         notifications.click();
         markNotifications.click();
     }
-
     public void addToStory() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         AddToStory.click();
@@ -137,7 +133,6 @@ public class HomePage extends CommonAPI {
         findFriends.click();
         ViewSentRequests.click();
     }
-
     //testing aboutMe tab from homepage
     public void aboutMe(){
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));

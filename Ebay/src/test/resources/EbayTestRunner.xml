@@ -14,8 +14,10 @@
     <test name = "Ebay Home">
         <classes>
             <!--class name="tests.testEbayHome"/-->
-            <class name="tests.TestHomePageDropDown"/>
-            <!--class name=""/-->
+            <!--class name="tests.TestHomePageDropDown"/-->
+            <!--class name="tests.testCreateAccount"/-->
+            <!--class name="tests.testShopByCategory"/-->
+            <class name="tests.testShopShoes"/>
             <!--class name=""/-->
             <!--class name=""/-->
             <!--class name=""/-->

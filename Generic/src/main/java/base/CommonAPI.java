@@ -105,9 +105,9 @@ public class CommonAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("53")
-                              String browserVersion, @Optional("http://www.facebook.com") String url) throws IOException {
+                              String browserVersion, @Optional("https://www.ebay.com/") String url) throws IOException {
        // System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
-        System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Facebook/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/ameladervishi/Downloads/Team1/Generic/browser-driver/chromedriver");
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName, browserstack_username, browserstack_accesskey, os, os_version, browserName, browserVersion);
@@ -126,19 +126,14 @@ public class CommonAPI {
     public WebDriver getLocalDriver(@Optional("mac") String OS, String browserName) {
 
         //options.addArguments("--disable-notifications");
-        if (browserName.equalsIgnoreCase("chrome")) {
+        if (browserName.equalsIgnoreCase("chrome-options")) {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/browser-driver/chromedriver.exe");
             }
             driver = new ChromeDriver();
-        } else if (browserName.equalsIgnoreCase("chrome-options")) {
-          /*  Map<String, Object> prefs = new HashMap<String, Object>();
-            prefs.put("profile.default_content_setting_values.notifications", 2);
-            ChromeOptions options = new ChromeOptions();
-            options.setExperimentalOption("prefs", prefs);
-            driver = new ChromeDriver(options);*/
+        } else if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
             if (OS.equalsIgnoreCase("OS X")) {

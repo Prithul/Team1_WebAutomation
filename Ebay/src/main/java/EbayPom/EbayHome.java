@@ -1,7 +1,6 @@
 package EbayPom;
 
 import base.CommonAPI;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
@@ -23,10 +22,10 @@ public class EbayHome extends CommonAPI {
     public static WebElement HomeAndGarden;
     @FindBy(xpath ="//*[@id=\"gh-logo\"]")
     public static WebElement Logo;
-    @FindBy(xpath ="//button[@class='hl-common-carousel__btn hl-common-carousel__btn-next btn']")
-    public static WebElement changeBanners;
-    @FindBy(xpath ="input[@id='gh-ac']")
-    public static WebElement searchBoxText;
+    @FindBy(xpath ="//*[@id=\"i-faq\"]")
+    public static WebElement faq;
+    @FindBy(xpath ="//*[@id=\"gh-Alerts-i\"]")
+    public static WebElement alert;
     @FindBy(linkText ="Daily Deals")
     public static WebElement dailyDeals;
     @FindBy(linkText ="Help & Contact")
@@ -72,19 +71,9 @@ public class EbayHome extends CommonAPI {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         Logo.isDisplayed();
     }
-    public void bannerChange(){//failed
+    public void AlertNotification(){
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        mouseHoverByXpath("//button[@class='hl-common-carousel__btn hl-common-carousel__btn-next btn']");
-        waitUntilClickAble(By.xpath("//button[@class='hl-common-carousel__btn hl-common-carousel__btn-next btn']"));
-        changeBanners.click();
-        //changeBanners.click();
-    }
-    public void SearchBoxText() throws InterruptedException{//failed
-        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        String searchText = searchBoxText.getText();
-        Thread.sleep(1000);
-        System.out.println(searchText);
-        Assert.assertEquals(searchText,"Search for anything");
+        alert.click();
     }
     public void dailyDealsTab(){
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -93,5 +82,9 @@ public class EbayHome extends CommonAPI {
     public void findHelp(){
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         helpTab.click();
+    }
+    public void FAQBox(){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        faq.click();
     }
 }
