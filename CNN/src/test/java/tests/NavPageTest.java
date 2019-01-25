@@ -128,8 +128,9 @@ public class NavPageTest extends CommonAPI {
          navPage = new PageFactory().initElements(driver, NavPage.class);
            Map<String,WebElement> list = navPage.navigationList();
            for (int i=0;i<slist.size();i++) {
-               System.out.println(slist.get(i));
+               //System.out.println(slist.get(i));
                homePage.navPageButton.click();
+               sleepFor(3);
                list.get(slist.get(i)).click();
                sleepFor(2);
                homePage.goCnn();
@@ -190,7 +191,8 @@ public class NavPageTest extends CommonAPI {
 
     }
 
-  //Needs to be fixed later
+  //need to fix later
+ //   @Test
 //    public void checkSubmitReadioButton() throws InterruptedException
 //    {
 //        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);

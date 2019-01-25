@@ -12,11 +12,11 @@ import reporting.TestLogger;
 public class TvPageTest extends TvPage {
     TvPage tvpage;
 
-//    @BeforeTest
-//            public void initPage() {
-//         driver.get("https://www.cnn.com/tv");
-//         tvpage = new PageFactory().initElements(driver, TvPage.class);
-//   }
+    @BeforeTest
+            public void initPage() {
+         driver.get("https://www.cnn.com/tv");
+         tvpage = new PageFactory().initElements(driver, TvPage.class);
+   }
     @Test
     public void testTvPageUrl()
     {
@@ -78,7 +78,6 @@ public class TvPageTest extends TvPage {
         driver.get("https://www.cnn.com/tv");
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
         Assert.assertEquals(tvpage.getDontMissOnCnn(),"Don't miss on CNN ");
-
     }
     @Test
     public void testClickOnFirstTab()
@@ -143,7 +142,6 @@ public class TvPageTest extends TvPage {
         TvPage tvpage = PageFactory.initElements(driver, TvPage.class);
         String goCnnText = tvpage.goCnnTitle();
         Assert.assertEquals("Watch CNN on demand with CNNgo ",goCnnText);
-
     }
    @Test
     public void testClickOnGoCnnImage()
@@ -164,19 +162,17 @@ public class TvPageTest extends TvPage {
         String url = tvpage.goCnnImageUrl();
         Assert.assertEquals(url,"https://go.cnn.com/?stream=cnn");
     }
-    @Test
-    public void SwitchToframe()   {
-        TestLogger.log("Browser is launched");
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        driver.get("https://www.cnn.com/tv");
-        int size = driver.findElements(By.tagName("iframe")).size();
-        for(int i=0; i<=size; i++){
-	    driver.switchTo().frame(i);
-	    int total= driver.findElements(By.cssSelector("#google_ads_iframe_/8663477/CNN/tv/landing_0")).size();
-		System.out.println(total);
-	    driver.switchTo().defaultContent(); //switching back from the iframe
-	 }
-
-    }
-
+ //   @Test
+//    public void SwitchToframe(){
+//        TestLogger.log("Browser is launched");
+//        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+//        driver.get("https://www.cnn.com/tv");
+//        int size = driver.findElements(By.tagName("iframe")).size();
+//        System.out.println(size);
+//        for(int i=0; i<=size; i++){
+//	    driver.switchTo().frame(i);
+//	    //int total= driver.findElements(By.cssSelector("#google_ads_iframe_/8663477/CNN/tv/landing_0")).size();
+//		driver.switchTo().defaultContent(); //switching back from the iframe
+//	 }
+ //   }
 }

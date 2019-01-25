@@ -16,8 +16,6 @@ import java.util.List;
 
 public class SearchPage extends HomePage {
 
-    //    @FindBy(how = How.XPATH, using = "/html/body/div[5]/div[3]/div/div[1]/div/div[1]/button[2]")
-//    public static WebElement searchPageSearchButton;
     @FindBy(how = How.CLASS_NAME, using = "cnn-search__input")
     public  WebElement searchPageSearchTextBox;
     @FindBy(how = How.XPATH, using = "/html/body/div[5]/div[3]/div/div[1]/div/div[1]/button[2]")
@@ -33,14 +31,14 @@ public class SearchPage extends HomePage {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         getSearchInputField().sendKeys(value, Keys.ENTER);
     }
-    public void submitSearchButton() {
+    public void submitSearchButton() throws IOException,InterruptedException{
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        sleepFor(3);
         searchPageSubmitButton.click();
-    }
+     }
 
     public void clearInput() {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
-        //driver.findElement(By.className("cnn-search__clear")).click();
         clearButton.click();
     }
     public WebElement getSearchInputField() {
@@ -60,15 +58,16 @@ public class SearchPage extends HomePage {
             searchSubmitButton.submit();
             sleepFor(5);
             goCnn();
-
         }
     }
     public void searchPageSearchItemsAndSubmitButton() throws IOException, InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> list = getItemValue();
+        sleepFor(3);
         searchButton.click();
         searchFor(list.get(0));
-        submitSearchButton();
+        //sleepFor(3);
+        searchSubmitButton.submit();
         clearInput();
         for (int i = 1; i < list.size(); i++) {
             searchPageSearchTextBox.sendKeys(list.get(i));
@@ -87,7 +86,6 @@ public class SearchPage extends HomePage {
             goCnn();
         }
     }
-
     public void searchPageSearchItemsAndEnter() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> list = getItemValue();

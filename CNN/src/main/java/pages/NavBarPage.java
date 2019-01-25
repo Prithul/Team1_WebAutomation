@@ -30,7 +30,7 @@ public class NavBarPage extends CommonAPI {
     public WebElement navBarTravel;
     @FindBy(how =How.CSS,using = "#nav > div.nav__container > div.nav-menu-links > a:nth-child(10)")
     public WebElement navBarSports;
-    @FindBy(how =How.CSS,using = "#nav > div.nav__container > div.nav-menu-links > a:nth-child(11)")
+    @FindBy(how =How.XPATH,using = "//*[@id=\"nav\"]/div[2]/div[2]/a[11]")
     public WebElement navBarVideo;
 
     public void checkEachNavTab(WebElement we)
@@ -71,7 +71,7 @@ public class NavBarPage extends CommonAPI {
     {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<WebElement> wlist = new ArrayList<WebElement>();
-        wlist.add(navBarVideo);
+
         wlist.add(navBarUS);
         wlist.add(navBarWorld);
         wlist.add(navBarPolitics);
@@ -82,6 +82,7 @@ public class NavBarPage extends CommonAPI {
         wlist.add(navBarStyle);
         wlist.add(navBarTravel);
         wlist.add(navBarSports);
+        wlist.add(navBarVideo);
         return wlist;
 
     }

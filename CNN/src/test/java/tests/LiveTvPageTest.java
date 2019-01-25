@@ -7,6 +7,8 @@ import pages.HomePage;
 import pages.LiveTvPage;
 import reporting.TestLogger;
 
+import java.io.IOException;
+
 public class LiveTvPageTest extends LiveTvPage{
     @Test
     public void testCheckLiveTv()
@@ -17,7 +19,7 @@ public class LiveTvPageTest extends LiveTvPage{
         liveTv.checkLiveTv();
     }
     @Test
-    public void testCheckLiveTvTitle()
+    public void testCheckLiveTvTitle() throws InterruptedException, IOException
     {
         TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
@@ -25,7 +27,7 @@ public class LiveTvPageTest extends LiveTvPage{
         Assert.assertEquals(liveTv.checkLiveTvTitle(),"CNNgo - CNN.com");
     }
     @Test
-    public void testCheckLiveTvUrl()
+    public void testCheckLiveTvUrl()throws InterruptedException, IOException
     {
         TestLogger.log("Browser is launched");
         TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));

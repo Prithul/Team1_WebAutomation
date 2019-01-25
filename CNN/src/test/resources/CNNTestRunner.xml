@@ -12,16 +12,17 @@
     <parameter name="user" value="cnn"/>
     <test name = "CNN Home">
         <classes>
-            <!--<class name="tests.HomePageTest"/>-->
-            <!-- <class name="tests.NavPageTest"/> -->
-            <!--<class name="tests.LiveTvPageTest"/>-->
-            <!--<class name="tests.NavBarPageTest"/>-->
-           <!-- <class name="tests.CnnAPITest"/> -->
+           <!-- <class name="tests.HomePageTest"/>-->
+             <!--<class name="tests.NavPageTest"/>-->
+           <!-- <class name="tests.LiveTvPageTest"/>-->
+           <class name="tests.NavBarPageTest"/>
+            <!--<class name="tests.SearchPageTest"/>-->
+          <!--  <class name="tests.TvPageTest"/> -->
+          <!--  <class name="tests.CnnAPITest"/>-->
            <!-- <class name="datadriven.DbTest"/>-->
            <!-- <class name="datadriven.ExcelReaderTest"/>-->
-           <class name="datadriven.GoogleSheetReaderTest"/>
-           <class name="tests.SearchPageTest"/>
-            <class name="tests.TvPageTest"/>
+          <!-- <class name="datadriven.GoogleSheetReaderTest"/> -->
+
         </classes>
     </test>
 </suite>

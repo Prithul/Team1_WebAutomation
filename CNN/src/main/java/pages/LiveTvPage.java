@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import reporting.TestLogger;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -35,17 +36,19 @@ public class LiveTvPage extends CommonAPI {
 //    @FindBy(how = How.CSS,using ="#mvpdpicker > div.slates > div.slate.pickbylogo > ul")
 //    public List<WebElement> listOfProviders;
 
-public void checkLiveTv()
+    public void checkLiveTv()
 {
+    TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
     liveTvPageIcon.click();
 }
-    public String checkLiveTvTitle()
+    public String checkLiveTvTitle() throws InterruptedException, IOException
     {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         liveTvPageIcon.click();
+        sleepFor(5);
         return driver.getTitle();
     }
-    public String checkLiveTvUrl()
+    public String checkLiveTvUrl()throws InterruptedException, IOException
     {
         TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         liveTvPageIcon.click();
@@ -53,6 +56,7 @@ public void checkLiveTv()
 
             driver.switchTo().window(handle);
         }
+        sleepFor(5);
         return driver.getCurrentUrl();
 
     }
@@ -142,13 +146,14 @@ public void checkLiveTv()
         {
             list.get(urlNo).click();
             driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-            sleepFor(5);
+            sleepFor(7);
         }
         for (String handle : driver.getWindowHandles()) {
 
             driver.switchTo().window(handle);
            }
-        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+        //sleepFor(7);
+        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
         return driver.getTitle();
     }
 

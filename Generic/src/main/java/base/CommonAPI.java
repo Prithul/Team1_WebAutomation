@@ -95,6 +95,7 @@ public class CommonAPI {
             captureScreenshot(driver, result.getName());
         }
         System.out.println("Clean up");
+       // driver.close();
         driver.quit();
     }
     @AfterSuite
@@ -191,7 +192,6 @@ public class CommonAPI {
     public String getUrl()
     {
         String url = driver.getCurrentUrl();
-        System.out.println(url);
         return url;
     }
     //type
