@@ -11,6 +11,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
+import reporting.TestLogger;
 import util.ReadFromExcel;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,6 +23,8 @@ public class NavPageTest extends CommonAPI {
     NavPage navPage;
     @Test
     public void checkEachNavItem()throws InterruptedException {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         List<WebElement> list = navPage.navigationArrayList();
@@ -36,6 +39,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkUSNavItemTitleAndUrl()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
@@ -48,6 +53,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkWorldNavItemTitleAndUrl()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
@@ -60,6 +67,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkPoliticsNavItemTitleAndUrl()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
@@ -72,6 +81,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkSubMenuTech()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         List<String> actualList = new ArrayList<String>();
@@ -91,6 +102,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkSubMenuUS()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         List<String> actualList = new ArrayList<String>();
@@ -99,7 +112,7 @@ public class NavPageTest extends CommonAPI {
         actualList.add("Extreme Weather");
         actualList.add("Space + Science");
         homePage.navPageButton.click();
-       List<WebElement> list = navPage.subUS;
+        List<WebElement> list = navPage.subUS;
         List<String> slist = navPage.getStringListFromWebelementList(list);
         System.out.println(slist.size() + "   "  +slist.get(0));
         navPage.assertData(slist,actualList);
@@ -107,14 +120,17 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkNavFromExcel() throws IOException, InvalidFormatException,InterruptedException
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
       List<String> slist = new ArrayList<String >();
          slist = ReadFromExcel.CnnexcelReader(0,4,16,0);
          HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
          navPage = new PageFactory().initElements(driver, NavPage.class);
            Map<String,WebElement> list = navPage.navigationList();
            for (int i=0;i<slist.size();i++) {
-               System.out.println(slist.get(i));
+               //System.out.println(slist.get(i));
                homePage.navPageButton.click();
+               sleepFor(3);
                list.get(slist.get(i)).click();
                sleepFor(2);
                homePage.goCnn();
@@ -123,6 +139,8 @@ public class NavPageTest extends CommonAPI {
 @Test
  public void checkLabelOfPreference()
  {
+     TestLogger.log("Browser is launched");
+     TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
      HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
     navPage = new PageFactory().initElements(driver, NavPage.class);
       homePage.navPageButton.click();
@@ -132,6 +150,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkLabelOfRedioButton()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
@@ -143,6 +163,8 @@ public class NavPageTest extends CommonAPI {
    @Test
     public void checkLabelOfRadioButton()
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
@@ -152,6 +174,8 @@ public class NavPageTest extends CommonAPI {
     @Test
     public void checkSelectReadioButton() throws InterruptedException
     {
+        TestLogger.log("Browser is launched");
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         HomePage homePage = new PageFactory().initElements(driver, HomePage.class);
         navPage = new PageFactory().initElements(driver, NavPage.class);
         homePage.navPageButton.click();
@@ -167,7 +191,8 @@ public class NavPageTest extends CommonAPI {
 
     }
 
-  //Needs to be fixed later
+  //need to fix later
+ //   @Test
 //    public void checkSubmitReadioButton() throws InterruptedException
 //    {
 //        HomePage homePage = new PageFactory().initElements(driver, HomePage.class);

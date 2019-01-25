@@ -16,7 +16,6 @@ public class AmexHomePage extends CommonAPI {
     public WebElement amexSearchFielsOpenButton;
     @FindBy(how = How.CLASS_NAME,using = "axp-global-header__dls__icon___2TD91 axp-global-header__dls__iconSm___1umpi axp-global-header__dls__dlsIconSearch___2ruOU axp-global-header__dls__iconHover___4rBrz")
     public WebElement amexSearchFielsCloseButton;
-
     @FindBy(how= How.CLASS_NAME,using = "axp-global-header__dls__formControl___Xc9-9 undefined")
     public WebElement amexSearchField;
     @FindBy(how = How.CLASS_NAME , using = "axp-global-header__dls__buttonNav___1-Elt")

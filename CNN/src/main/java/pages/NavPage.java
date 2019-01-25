@@ -4,6 +4,7 @@ import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import reporting.TestLogger;
 import util.ConnectDB;
 
 import java.util.ArrayList;
@@ -65,6 +66,7 @@ public class NavPage extends CommonAPI {
 
 
     public Map<String,WebElement> navigationList(){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         //List<String> navList = new ArrayList<String>();
         navList.put("US",US);
         navList.put("world",world);
@@ -83,6 +85,7 @@ public class NavPage extends CommonAPI {
    }
 
     public List<WebElement> navigationArrayList(){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<WebElement> list = new ArrayList<WebElement>();
         list.add(US);
         list.add(world);
@@ -102,12 +105,14 @@ public class NavPage extends CommonAPI {
     }
     public List<String> getStringListFromWebelementList(List<WebElement> list)
     {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<String> slist = new ArrayList<String>();
         for(int i=0 ; i<list.size();i++)
             slist.add(list.get(i).getText());
         return slist;
     }
     public void storeNavListToDb(List<String> list) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         ConnectDB db = new ConnectDB();
 
         String path = "C:\\Users\\HALIMA\\IdeaProjects\\Team1\\CNN\\lib\\MySQL.properties";
@@ -124,6 +129,7 @@ public class NavPage extends CommonAPI {
         //db.readDataBase(path);
     }
        public List<String> readNavListFromDb() {
+           TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         ConnectDB db = new ConnectDB();
         List<String> list = new ArrayList<String>();
 
@@ -141,6 +147,7 @@ public class NavPage extends CommonAPI {
         return list;
         }
     public void goNavSite() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         List<WebElement> list = navigationArrayList();
         for(int i=0; i<list.size(); i++) {
             list.get(i).click();

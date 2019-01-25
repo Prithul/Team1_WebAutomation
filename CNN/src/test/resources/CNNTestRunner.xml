@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="CNN Automation Script " parallel="false">
-    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -12,9 +12,17 @@
     <parameter name="user" value="cnn"/>
     <test name = "CNN Home">
         <classes>
-          <!--  <class name="tests.HomePageTest"/> -->
-           <!-- <class name="tests.NavPageTest"/> -->
-            <class name="tests.NavBarPageTest"/>
+           <!-- <class name="tests.HomePageTest"/>-->
+             <!--<class name="tests.NavPageTest"/>-->
+           <!-- <class name="tests.LiveTvPageTest"/>-->
+           <class name="tests.NavBarPageTest"/>
+            <!--<class name="tests.SearchPageTest"/>-->
+          <!--  <class name="tests.TvPageTest"/> -->
+          <!--  <class name="tests.CnnAPITest"/>-->
+           <!-- <class name="datadriven.DbTest"/>-->
+           <!-- <class name="datadriven.ExcelReaderTest"/>-->
+          <!-- <class name="datadriven.GoogleSheetReaderTest"/> -->
+
         </classes>
     </test>
 </suite>

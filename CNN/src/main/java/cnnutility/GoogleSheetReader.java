@@ -1,6 +1,7 @@
 package cnnutility;
 
 
+import base.CommonAPI;
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -15,8 +16,6 @@ import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import com.google.api.services.sheets.v4.model.ValueRange;
 import reporting.TestLogger;
-
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -27,7 +26,7 @@ import java.util.List;
 
 import static base.CommonAPI.convertToString;
 
-public class GoogleSheetReader {
+public class GoogleSheetReader extends CommonAPI {
     private static final String APPLICATION_NAME = "Google Sheets API Java Quickstart";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
@@ -64,7 +63,7 @@ public class GoogleSheetReader {
      */
     //  public static void main(String... args) throws IOException, GeneralSecurityException
     public List<String> readFromGoogleSheet() throws IOException, GeneralSecurityException{
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+       // TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         final String spreadsheetId = "1W3yZT34O2bXi98xT1eNoOqkAyXxbSHe6GS0h5J5Tb_w";

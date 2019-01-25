@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import reporting.TestLogger;
 
 import java.util.List;
 
@@ -28,39 +29,42 @@ public class HomePage extends CommonAPI {
     public WebElement searchTextBox;
     @FindBy(how=How.CSS,using = "#submit-button")
     public WebElement searchSubmitButton;
-    @FindBy(how=How.CLASS_NAME, using = "nav-section__expand-icon")
+    @FindBy(how=How.CSS, using = "#nav > div.nav__container > div.js-edition-picker.edition-picker > div.edition-picker__current-edition > span")
     public WebElement navSectionExpand ;
-    @FindBy(how=How.CLASS_NAME, using = "")
+    @FindBy(how=How.CSS, using = "#nav > div.nav__container > div.js-edition-picker.edition-picker > div.edition-picker__current-edition > span")
     public WebElement navSectionClose ;
+    @FindBy(how=How.CSS,using = "#nav > div.nav__container > div.js-edition-picker.edition-picker > div.edition-picker__current-edition")
+    public WebElement usEditionOpen;
+    @FindBy(how=How.CSS,using = "#nav > div.nav__container > div.js-edition-picker.edition-picker > div.edition-picker__current-edition")
+    public WebElement usEditionClose;
     @FindBy(how=How.CLASS_NAME,using = "edition-picker__list")
     public List<WebElement> editionList;
     @FindBy(how = How.CSS,using = "#nav-mobileTV")
     public WebElement liveTvButton;
-
-//    @FindBy(how = How.CSS,using = "#nav > div.nav__container > div.nav-menu-links")
-//    public List<WebElement> navItemList ;
-  @FindBy(how = How.CSS, using ="#cnn_hdr-nav li")              //"//*[@id=\"nav\"]/div[2]/div[2]")
-   public List<WebElement> navItemList ;
+    @FindBy(how = How.CSS, using ="#nav > div.nav__container > div.nav-menu-links > a")
+    public List<WebElement> navItemList ;
 
   //Go to Homepage
     public void goCnn (){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         driver.get(baseURL);
         driver.manage().window().maximize();
     }
     public SearchPage gotoSearchPage(){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         searchButton.click();
-//        Actions builder = new Actions(driver);
-//        builder.moveToElement(searchButton).click(searchButton).build().perform();
         searchTextBox.sendKeys("politics", Keys.ENTER);
         return new PageFactory().initElements(driver,SearchPage.class);
     }
     //Go to navPage
     public NavPage goToNavPage (){
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
        click(navPageButton);
        return new PageFactory().initElements(driver,NavPage.class);
   }
    //Go to Live Tv Page
    public LiveTvPage goToLiveTvPage () {
+       TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
        click(liveTvButton);
        return new PageFactory().initElements(driver, LiveTvPage.class);
    }
