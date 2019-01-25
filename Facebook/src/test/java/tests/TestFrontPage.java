@@ -1,67 +1,65 @@
 package tests;
 
+import base.CommonAPI;
+import org.apache.commons.exec.OS;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import reporting.TestLogger;
 import search.FrontPageNdSignOut;
 
 public class TestFrontPage extends FrontPageNdSignOut {
-    @Test
-    public void test19() throws InterruptedException {
-        createAcct();
-    }
 
-    @Test
-    public void test1() throws InterruptedException {
-        signIn();
-    }
+        FrontPageNdSignOut frontPage;
+        @BeforeMethod
+        public void initialize() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        frontPage = PageFactory.initElements(driver, FrontPageNdSignOut.class); }
 
-    @Test
-    public void test3() throws InterruptedException {
-        bDay();
-    }
+        @Test
+        public void test1() throws InterruptedException {
+        createAccount(); }
 
-    @Test
-    public void test4() throws InterruptedException {
-        bMonth();
-    }
+        @Test   //purposed failed test
+        public void test2() {
+        verifyDDMonth(); }
 
-    @Test
-    public void test5() throws InterruptedException {
-        bYear();
-    }
+        @Test   //purposed failed test
+        public void test3() {
+        verifyDDday(); }
 
-    //this is a purposed failed test
-    @Test
-    public void test6() {
-        verifyDDMonth();
-    }
+        @Test
+        public void test4() {
+        verifyDDyear(); }
 
-    //this is a purposed failed test
-    @Test
-    public void test7() {
-        verifyDDday();
-    }
+        @Test   //shows all months listed in dropdown
+        public void test5() {
+        getAllMonthsListedInDropDown(); }
 
-    //for this test - the default value matched the value i selected - test passes
-    @Test
-    public void test8() {
-        verifyDDyear();
-    }
+        @Test
+        public void test6() {
+        SignIn();
+        SignOut(); }
 
-    // gets a list of all the months in the drop down and verifies for the total number if correct
-    @Test
-    public void test9() throws InterruptedException {
-        getDDMonth();
-    }
+        @Test
+        public void test7() {
+        SignIn();}
 
-    @Test
-    public void test10() throws InterruptedException {
-        logo();
-    }
-    @Test
-    public void test18() throws InterruptedException{
-        signIn();
-        Thread.sleep(5000);
-        SignOut();
-    }
+        @Test
+        public void test8() {
+        isLogoDisplayed();}
 
+        @Test
+        public void test9() {
+        birthMonthSelect(); }
+
+        @Test
+        public void test10(){
+        birthDaySelect(); }
+
+        @Test
+        public void test11(){
+        birthYearSelect(); }
 }

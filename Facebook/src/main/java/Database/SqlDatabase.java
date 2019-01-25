@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Properties;
 
 public class SqlDatabase {
-    public static class ConnectToSqlDB {
 
         public static Connection connect = null;
         public static Statement statement = null;
@@ -35,10 +34,8 @@ public class SqlDatabase {
             System.out.println("Database is connected");
             return connect;
         }
-
         public List<String> readDataBase(String tableName, String columnName) throws Exception {
             List<String> data = new ArrayList<String>();
-
             try {
                 connectToSqlDatabase();
                 statement = connect.createStatement();
@@ -51,7 +48,6 @@ public class SqlDatabase {
             }
             return data;
         }
-
         private void close() {
             try {
                 if (resultSet != null) {
@@ -67,7 +63,6 @@ public class SqlDatabase {
 
             }
         }
-
         private List<String> getResultSetData(ResultSet resultSet2, String columnName) throws SQLException {
             List<String> dataList = new ArrayList<String>();
             while (resultSet.next()) {
@@ -76,8 +71,6 @@ public class SqlDatabase {
             }
             return dataList;
         }
-
-
         public void insertStringDataFromArrayListToSqlTable(List<String> list, String tableName, String columnName)
         {
             try {
@@ -91,7 +84,6 @@ public class SqlDatabase {
                     ps.setObject(1,st);
                     ps.executeUpdate();
                 }
-
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (SQLException e) {
@@ -102,4 +94,4 @@ public class SqlDatabase {
         }
 
     }
-}
+

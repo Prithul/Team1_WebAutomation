@@ -44,7 +44,7 @@ public class SearchPage extends CommonAPI {
             list = getItemsListFromDB();
 
             for(String st: list) {
-                CommonAPI.typeOnElementNEnter("#twotabsearchtextbox", st);
+                typeOnElementNEnter("#twotabsearchtextbox", st);
                 navigateBack();
             }
 

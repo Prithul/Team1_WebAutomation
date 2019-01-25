@@ -8,77 +8,110 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import reporting.TestLogger;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchPage extends CommonAPI{
-//    @FindBy(how = How.CSS, using ="#twotabsearchtextbox")
-//    public static WebElement searchInputWebElement;
+public class SearchPage extends HomePage {
 
-    @FindBy(how = How.CSS, using = "#search-button")
-    public static WebElement searchButton;
-    @FindBy(how = How.CSS, using = "#search-input-field")
-    public static WebElement searchTextBox;
+    @FindBy(how = How.CLASS_NAME, using = "cnn-search__input")
+    public  WebElement searchPageSearchTextBox;
+    @FindBy(how = How.XPATH, using = "/html/body/div[5]/div[3]/div/div[1]/div/div[1]/button[2]")
+    public  WebElement searchPageSubmitButton;
+    @FindBy(how = How.CLASS_NAME, using = "cnn-search__clear")
+    public WebElement clearButton;
 
-    @FindBy(how = How.CSS, using ="#submit-button")
-    public static WebElement submitButtonWebElement;
-
-   public WebElement getSubmitButtonWebElement() {
-        return submitButtonWebElement;
-   }
-
-    public WebElement setSubmitButtonWebElement(WebElement searchButton) {
-        return this.submitButtonWebElement = searchButton;
+    public void searchFor(String value) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        searchTextBox.sendKeys(value);
     }
+    public void searchForAndEnter(String value) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        getSearchInputField().sendKeys(value, Keys.ENTER);
+    }
+    public void submitSearchButton() throws IOException,InterruptedException{
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        sleepFor(3);
+        searchPageSubmitButton.click();
+     }
 
-    public void searchFor(String value){
-        getSearchInputField().sendKeys(value);
+    public void clearInput() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        clearButton.click();
     }
-    public void submitSearchButton(){
-        getSubmitButtonWebElement().click();
+    public WebElement getSearchInputField() {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        return searchTextBox;
     }
-    public void clearInput(){
-        driver.findElement(By.className("icon icon--close")).click();
+    public void setSearchInputField(WebElement searchInputField) {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        this.searchTextBox = searchInputField;
     }
-    public void searchItemsAndSubmitButton()throws IOException {
+    public void homeSearchItemsAndSubmitButton() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        searchButton.click();
         List<String> list = getItemValue();
-        for(int i=0; i<list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             searchFor(list.get(i));
+            searchSubmitButton.submit();
+            sleepFor(5);
+            goCnn();
+        }
+    }
+    public void searchPageSearchItemsAndSubmitButton() throws IOException, InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        List<String> list = getItemValue();
+        sleepFor(3);
+        searchButton.click();
+        searchFor(list.get(0));
+        //sleepFor(3);
+        searchSubmitButton.submit();
+        clearInput();
+        for (int i = 1; i < list.size(); i++) {
+            searchPageSearchTextBox.sendKeys(list.get(i));
             submitSearchButton();
-
+            sleepFor(5);
             clearInput();
         }
     }
-
-    public WebElement getSearchInputField() {
-        return searchTextBox;
+    public void homeSearchItemsAndEnter() throws InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        searchButton.click();
+        List<String> list = getItemValue();
+        for (int i = 0; i < list.size(); i++) {
+            searchForAndEnter(list.get(i));
+            sleepFor(5);
+            goCnn();
+        }
     }
-
-    public void setSearchInputField(WebElement searchInputField) {
-        this.searchTextBox = searchInputField;
+    public void searchPageSearchItemsAndEnter() throws InterruptedException {
+        TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+        List<String> list = getItemValue();
+        searchButton.click();
+        searchForAndEnter(list.get(0));
+        clearInput();
+        for (int i = 1; i < list.size(); i++) {
+            searchPageSearchTextBox.sendKeys(list.get(i), Keys.ENTER);
+            //submitSearchButton();
+            sleepFor(5);
+            clearInput();
+        }
     }
-
-    public void searchItems()throws InterruptedException{
-        List<String> itemList = getItemValue();
-        for(String st: itemList) {
-            getSearchInputField().sendKeys(st, Keys.ENTER);
-            getSearchInputField().clear();
+        public List<String> getItemValue()
+        {
+            TestLogger.log(getClass().getSimpleName() + ": " + CommonAPI.convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
+            List<String> itemsList = new ArrayList<String>();
+            itemsList.add("US");
+            itemsList.add("Politics");
+            itemsList.add("World");
+            itemsList.add("Tech");
+            itemsList.add("Entertainment");
+            itemsList.add("Business");
+            itemsList.add("Travel");
+            itemsList.add("Style");
+            return itemsList;
         }
     }
 
-    public List<String> getItemValue(){
-        List<String> itemsList = new ArrayList<String>();
-        itemsList.add("US");
-        itemsList.add("Politics");
-        itemsList.add("World");
-        itemsList.add("Tech");
-        itemsList.add("Entertainment");
-        itemsList.add("Business");
-        itemsList.add("Travel");
-        itemsList.add("Style");
-
-        return itemsList;
-    }
-}
